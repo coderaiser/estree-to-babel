@@ -1,0 +1,50 @@
+{
+  "name": "estree-to-babel",
+  "version": "1.0.0",
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
+  "description": "convert estree ast to babel",
+  "homepage": "http://github.com/coderaiser/estree-to-babel",
+  "main": "lib/estree-to-babel.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderaiser/estree-to-babel.git"
+  },
+  "scripts": {
+    "test": "tape 'test/*.js'",
+    "fixture": "UPDATE_FIXTURE=1 npm test",
+    "watch:test": "nodemon -w lib -w test -x \"npm test\"",
+    "watch:example": "nodemon -w lib -w test -x \"node remove-unused\"",
+    "lint": "eslint lib test --ignore-pattern test/fixture",
+    "coverage": "nyc npm test",
+    "report": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "dependencies": {
+    "@babel/traverse": "^7.1.6",
+    "@babel/types": "^7.2.0"
+  },
+  "keywords": [
+    "ast",
+    "convert",
+    "estree",
+    "babel"
+  ],
+  "devDependencies": {
+    "cherow": "^1.6.9",
+    "coveralls": "^3.0.0",
+    "eslint": "^5.6.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-tape": "^1.1.0",
+    "nodemon": "^1.14.12",
+    "nyc": "^13.0.1",
+    "redrun": "^7.0.2",
+    "tape": "^4.8.0",
+    "try-to-tape": "^1.1.0"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
