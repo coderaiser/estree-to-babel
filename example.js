@@ -8,12 +8,10 @@ const ast = toBabel(cherow.parse(`
     const f = ({a}) => a;
 `));
 
-console.log(ast);
-
-traverse({
+traverse(ast, {
     noScope: false,
     ObjectProperty(path) {
-        console.log(path.value.name);
+        console.log(`variable is "${path.node.value.name}"`);
         // output
         'a';
     }

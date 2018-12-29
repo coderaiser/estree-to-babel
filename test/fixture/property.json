@@ -1,52 +1,55 @@
 {
-    "type": "Program",
-    "sourceType": "script",
-    "body": [
-        {
-            "type": "VariableDeclaration",
-            "kind": "const",
-            "declarations": [
-                {
-                    "type": "VariableDeclarator",
-                    "init": {
-                        "type": "ArrowFunctionExpression",
-                        "body": {
-                            "type": "Identifier",
-                            "name": "a"
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "sourceType": "script",
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "kind": "const",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "init": {
+                            "type": "ArrowFunctionExpression",
+                            "body": {
+                                "type": "Identifier",
+                                "name": "a"
+                            },
+                            "params": [
+                                {
+                                    "type": "ObjectPattern",
+                                    "properties": [
+                                        {
+                                            "type": "ObjectProperty",
+                                            "key": {
+                                                "type": "Identifier",
+                                                "name": "a"
+                                            },
+                                            "value": {
+                                                "type": "Identifier",
+                                                "name": "a"
+                                            },
+                                            "kind": "init",
+                                            "computed": false,
+                                            "method": false,
+                                            "shorthand": true
+                                        }
+                                    ]
+                                }
+                            ],
+                            "id": null,
+                            "async": false,
+                            "generator": false,
+                            "expression": true
                         },
-                        "params": [
-                            {
-                                "type": "ObjectPattern",
-                                "properties": [
-                                    {
-                                        "type": "ObjectProperty",
-                                        "key": {
-                                            "type": "Identifier",
-                                            "name": "a"
-                                        },
-                                        "value": {
-                                            "type": "Identifier",
-                                            "name": "a"
-                                        },
-                                        "kind": "init",
-                                        "computed": false,
-                                        "method": false,
-                                        "shorthand": true
-                                    }
-                                ]
-                            }
-                        ],
-                        "id": null,
-                        "async": false,
-                        "generator": false,
-                        "expression": true
-                    },
-                    "id": {
-                        "type": "Identifier",
-                        "name": "f"
+                        "id": {
+                            "type": "Identifier",
+                            "name": "f"
+                        }
                     }
-                }
-            ]
-        }
-    ]
+                ]
+            }
+        ]
+    }
 }

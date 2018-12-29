@@ -19,7 +19,7 @@ const update = (a, json) => {
         return;
     
     writeFileSync(`${fixtureDir}/${a}.json`, JSON.stringify(json, null, 4));
-}
+};
 
 const readJS = (a) => readFileSync(join(`${fixtureDir}/${a}`), 'utf8');
 const readJSON = (a) => require(`${fixtureDir}/${a}`);
@@ -36,19 +36,21 @@ const fixture = {
 
 test('estree-to-babel: property', (t) => {
     const ast = cherow.parse(fixture.js.property);
-    estreeToBabel(ast);
+    const result = estreeToBabel(ast);
     
-    t.deepEqual(ast, fixture.ast.property, 'should equal');
+    update('property', result);
+    
+    t.deepEqual(result, fixture.ast.property, 'should equal');
     t.end();
 });
 
 test('estree-to-babel: object-method', (t) => {
     const ast = cherow.parse(fixture.js.objectMethod);
+    const result = estreeToBabel(ast);
     
-    estreeToBabel(ast);
-    update('object-method', ast);
+    update('object-method', result);
     
-    t.deepEqual(ast, fixture.ast.objectMethod, 'should equal');
+    t.deepEqual(result, fixture.ast.objectMethod, 'should equal');
     t.end();
 });
 
