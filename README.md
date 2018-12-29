@@ -3,7 +3,7 @@
 [NPMIMGURL]:                https://img.shields.io/npm/v/estree-to-babel.svg?style=flat&longCache=true
 [BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/estree-to-babel/master.svg?style=flat&longCache=true
 [DependencyStatusIMGURL]:   https://img.shields.io/david/coderaiser/estree-to-babel.svg?style=flat&longCache=true
-[NPMURL]:                   https://npmjs.org/package/coderaiser "npm"
+[NPMURL]:                   https://npmjs.org/package/estree-to-babel "npm"
 [BuildStatusURL]:           https://travis-ci.org/coderaiser/estree-to-babel  "Build Status"
 [DependencyStatusURL]:      https://david-dm.org/coderaiser/estree-to-babel "Dependency Status"
 
