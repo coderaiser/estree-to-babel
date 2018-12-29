@@ -24,8 +24,9 @@ With `babel` tools like:
 - etc...
 
 The thing is `@babel/parser` has a [little differences](https://babeljs.io/docs/en/babel-parser#output) with `estree` standard:
-- `Property` of `ObjectExpression` called `ObjectProperty`
-- `FunctionExpression` of a `Property` located in `ObjectMethod` node.
+- `Property` of `ObjectExpression` called `ObjectProperty`;
+- `FunctionExpression` of a `Property` located in `ObjectMethod` node;
+- `File` node;
 - etc...
 
 `estree-to-babel` aims to smooth this differences.
