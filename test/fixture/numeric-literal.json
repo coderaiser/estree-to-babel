@@ -1,0 +1,49 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "sourceType": "script",
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "kind": "const",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "init": {
+                            "type": "ArrayExpression",
+                            "elements": []
+                        },
+                        "id": {
+                            "type": "Identifier",
+                            "name": "t"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "AssignmentExpression",
+                    "left": {
+                        "type": "MemberExpression",
+                        "object": {
+                            "type": "Identifier",
+                            "name": "t"
+                        },
+                        "computed": true,
+                        "property": {
+                            "type": "NumericLiteral",
+                            "value": 0
+                        }
+                    },
+                    "operator": "=",
+                    "right": {
+                        "type": "StringLiteral",
+                        "value": "hello"
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "sourceType": "script",
+        "body": [
+            {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "CallExpression",
+                    "callee": {
+                        "type": "MemberExpression",
+                        "object": {
+                            "type": "Identifier",
+                            "name": "test"
+                        },
+                        "computed": true,
+                        "property": {
+                            "type": "StringLiteral",
+                            "value": "only"
+                        }
+                    },
+                    "arguments": [
+                        {
+                            "type": "StringLiteral",
+                            "value": "should pass"
+                        },
+                        {
+                            "type": "ArrowFunctionExpression",
+                            "body": {
+                                "type": "BlockStatement",
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "t"
+                                                },
+                                                "computed": false,
+                                                "property": {
+                                                    "type": "Identifier",
+                                                    "name": "pass"
+                                                }
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "StringLiteral",
+                                                    "value": "ok"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "t"
+                                                },
+                                                "computed": false,
+                                                "property": {
+                                                    "type": "Identifier",
+                                                    "name": "end"
+                                                }
+                                            },
+                                            "arguments": []
+                                        }
+                                    }
+                                ]
+                            },
+                            "params": [
+                                {
+                                    "type": "Identifier",
+                                    "name": "t"
+                                }
+                            ],
+                            "id": null,
+                            "async": false,
+                            "generator": false,
+                            "expression": false
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

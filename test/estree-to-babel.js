@@ -27,10 +27,14 @@ const fixture = {
     ast: {
         property: readJSON('property.json'),
         objectMethod: readJSON('object-method.json'),
+        stringLiteral: readJSON('string-literal.json'),
+        numericLiteral: readJSON('numeric-literal.json'),
     },
     js: {
         property: readJS('property.js'),
         objectMethod: readJS('object-method.js'),
+        stringLiteral: readJS('string-literal.js'),
+        numericLiteral: readJS('numeric-literal.js'),
     },
 };
 
@@ -54,3 +58,22 @@ test('estree-to-babel: object-method', (t) => {
     t.end();
 });
 
+test('estree-to-babel: string-literal', (t) => {
+    const ast = cherow.parse(fixture.js.stringLiteral);
+    const result = estreeToBabel(ast);
+    
+    update('string-literal', result);
+    
+    t.deepEqual(result, fixture.ast.stringLiteral, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: numeric-literal', (t) => {
+    const ast = cherow.parse(fixture.js.numericLiteral);
+    const result = estreeToBabel(ast);
+    
+    update('numeric-literal', result);
+    
+    t.deepEqual(result, fixture.ast.numericLiteral, 'should equal');
+    t.end();
+});
