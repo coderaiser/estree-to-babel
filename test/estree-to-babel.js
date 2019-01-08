@@ -7,9 +7,17 @@ const {
 } = require('fs');
 
 const test = require('tape');
-const cherow = require('cherow');
+const espree = require('espree');
 
 const estreeToBabel = require('..');
+
+const parse = (source) => {
+    return espree.parse(source, {
+        ecmaVersion: 2018,
+        loc: false,
+        comment: true,
+    });
+};
 
 const fixtureDir = join(__dirname, 'fixture');
 
@@ -29,17 +37,19 @@ const fixture = {
         objectMethod: readJSON('object-method.json'),
         stringLiteral: readJSON('string-literal.json'),
         numericLiteral: readJSON('numeric-literal.json'),
+        comments: readJSON('comments.json'),
     },
     js: {
         property: readJS('property.js'),
         objectMethod: readJS('object-method.js'),
         stringLiteral: readJS('string-literal.js'),
         numericLiteral: readJS('numeric-literal.js'),
+        comments: readJS('comments.js'),
     },
 };
 
 test('estree-to-babel: property', (t) => {
-    const ast = cherow.parse(fixture.js.property);
+    const ast = parse(fixture.js.property);
     const result = estreeToBabel(ast);
     
     update('property', result);
@@ -49,7 +59,7 @@ test('estree-to-babel: property', (t) => {
 });
 
 test('estree-to-babel: object-method', (t) => {
-    const ast = cherow.parse(fixture.js.objectMethod);
+    const ast = parse(fixture.js.objectMethod);
     const result = estreeToBabel(ast);
     
     update('object-method', result);
@@ -59,7 +69,7 @@ test('estree-to-babel: object-method', (t) => {
 });
 
 test('estree-to-babel: string-literal', (t) => {
-    const ast = cherow.parse(fixture.js.stringLiteral);
+    const ast = parse(fixture.js.stringLiteral);
     const result = estreeToBabel(ast);
     
     update('string-literal', result);
@@ -69,7 +79,7 @@ test('estree-to-babel: string-literal', (t) => {
 });
 
 test('estree-to-babel: numeric-literal', (t) => {
-    const ast = cherow.parse(fixture.js.numericLiteral);
+    const ast = parse(fixture.js.numericLiteral);
     const result = estreeToBabel(ast);
     
     update('numeric-literal', result);
@@ -77,3 +87,14 @@ test('estree-to-babel: numeric-literal', (t) => {
     t.deepEqual(result, fixture.ast.numericLiteral, 'should equal');
     t.end();
 });
+
+test('estree-to-babel: comments', (t) => {
+    const ast = parse(fixture.js.comments);
+    const result = estreeToBabel(ast);
+    
+    update('comments', result);
+    
+    t.deepEqual(result, fixture.ast.comments, 'should equal');
+    t.end();
+});
+

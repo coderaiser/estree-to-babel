@@ -1,0 +1,49 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "start": 0,
+        "end": 33,
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "start": 13,
+                "end": 31,
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "start": 19,
+                        "end": 30,
+                        "id": {
+                            "type": "Identifier",
+                            "start": 19,
+                            "end": 20,
+                            "name": "t"
+                        },
+                        "init": {
+                            "type": "StringLiteral",
+                            "start": 23,
+                            "end": 30,
+                            "value": "hello",
+                            "raw": "'hello'"
+                        }
+                    }
+                ],
+                "kind": "const"
+            }
+        ],
+        "sourceType": "script"
+    },
+    "comments": [
+        {
+            "type": "Line",
+            "value": " declare t",
+            "start": 0,
+            "end": 12,
+            "range": [
+                0,
+                12
+            ]
+        }
+    ]
+}

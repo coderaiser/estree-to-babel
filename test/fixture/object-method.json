@@ -2,52 +2,82 @@
     "type": "File",
     "program": {
         "type": "Program",
-        "sourceType": "script",
+        "start": 0,
+        "end": 84,
         "body": [
             {
                 "type": "VariableDeclaration",
-                "kind": "const",
+                "start": 0,
+                "end": 83,
                 "declarations": [
                     {
                         "type": "VariableDeclarator",
+                        "start": 6,
+                        "end": 82,
+                        "id": {
+                            "type": "Identifier",
+                            "start": 6,
+                            "end": 12,
+                            "name": "parser"
+                        },
                         "init": {
                             "type": "ObjectExpression",
+                            "start": 15,
+                            "end": 82,
                             "properties": [
                                 {
                                     "type": "ObjectMethod",
                                     "kind": "method",
                                     "key": {
                                         "type": "Identifier",
+                                        "start": 21,
+                                        "end": 26,
                                         "name": "parse"
                                     },
                                     "params": [
                                         {
                                             "type": "Identifier",
+                                            "start": 27,
+                                            "end": 33,
                                             "name": "source"
                                         }
                                     ],
                                     "body": {
                                         "type": "BlockStatement",
+                                        "start": 35,
+                                        "end": 79,
                                         "body": [
                                             {
                                                 "type": "ReturnStatement",
+                                                "start": 45,
+                                                "end": 73,
                                                 "argument": {
                                                     "type": "CallExpression",
+                                                    "start": 52,
+                                                    "end": 72,
                                                     "callee": {
                                                         "type": "MemberExpression",
+                                                        "start": 52,
+                                                        "end": 64,
                                                         "object": {
                                                             "type": "Identifier",
+                                                            "start": 52,
+                                                            "end": 58,
                                                             "name": "cherow"
                                                         },
-                                                        "computed": false,
                                                         "property": {
                                                             "type": "Identifier",
+                                                            "start": 59,
+                                                            "end": 64,
                                                             "name": "parse"
-                                                        }
+                                                        },
+                                                        "computed": false
                                                     },
                                                     "arguments": [
                                                         {
                                                             "type": "Identifier",
+                                                            "start": 65,
+                                                            "end": 71,
                                                             "name": "source"
                                                         }
                                                     ]
@@ -59,20 +89,21 @@
                                     "trailingComments": [],
                                     "leadingComments": [],
                                     "innerComments": [],
-                                    "async": false,
+                                    "start": 26,
+                                    "end": 79,
+                                    "id": null,
                                     "generator": false,
                                     "expression": false,
-                                    "id": null
+                                    "async": false
                                 }
                             ]
-                        },
-                        "id": {
-                            "type": "Identifier",
-                            "name": "parser"
                         }
                     }
-                ]
+                ],
+                "kind": "const"
             }
-        ]
-    }
+        ],
+        "sourceType": "script"
+    },
+    "comments": []
 }
