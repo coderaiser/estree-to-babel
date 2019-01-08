@@ -1,3 +1,9 @@
+2019.01.08, v1.2.0
+
+feature:
+- (estree-to-babel) add comments support
+
+
 2019.01.05, v1.1.0
 
 feature:
