@@ -45,8 +45,8 @@
                             "start": 28,
                             "end": 69,
                             "id": null,
-                            "generator": false,
                             "expression": false,
+                            "generator": false,
                             "async": false,
                             "params": [
                                 {

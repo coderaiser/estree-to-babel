@@ -37,6 +37,7 @@ const fixture = {
         objectMethod: readJSON('object-method.json'),
         stringLiteral: readJSON('string-literal.json'),
         numericLiteral: readJSON('numeric-literal.json'),
+        nullLiteral: readJSON('null-literal.json'),
         comments: readJSON('comments.json'),
         classMethod: readJSON('class-method.json'),
     },
@@ -45,6 +46,7 @@ const fixture = {
         objectMethod: readJS('object-method.js'),
         stringLiteral: readJS('string-literal.js'),
         numericLiteral: readJS('numeric-literal.js'),
+        nullLiteral: readJS('null-literal.js'),
         comments: readJS('comments.js'),
         classMethod: readJS('class-method.js'),
     },
@@ -87,6 +89,16 @@ test('estree-to-babel: numeric-literal', (t) => {
     update('numeric-literal', result);
     
     t.deepEqual(result, fixture.ast.numericLiteral, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: null literal', (t) => {
+    const ast = parse(fixture.js.nullLiteral);
+    const result = estreeToBabel(ast);
+    
+    update('null-literal', result);
+    
+    t.deepEqual(result, fixture.ast.nullLiteral, 'should equal');
     t.end();
 });
 

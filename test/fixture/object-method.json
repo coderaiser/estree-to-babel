@@ -92,8 +92,8 @@
                                     "start": 26,
                                     "end": 79,
                                     "id": null,
-                                    "generator": false,
                                     "expression": false,
+                                    "generator": false,
                                     "async": false
                                 }
                             ]
