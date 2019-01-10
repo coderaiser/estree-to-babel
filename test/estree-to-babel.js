@@ -38,6 +38,7 @@ const fixture = {
         stringLiteral: readJSON('string-literal.json'),
         numericLiteral: readJSON('numeric-literal.json'),
         comments: readJSON('comments.json'),
+        classMethod: readJSON('class-method.json'),
     },
     js: {
         property: readJS('property.js'),
@@ -45,6 +46,7 @@ const fixture = {
         stringLiteral: readJS('string-literal.js'),
         numericLiteral: readJS('numeric-literal.js'),
         comments: readJS('comments.js'),
+        classMethod: readJS('class-method.js'),
     },
 };
 
@@ -95,6 +97,16 @@ test('estree-to-babel: comments', (t) => {
     update('comments', result);
     
     t.deepEqual(result, fixture.ast.comments, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: class method', (t) => {
+    const ast = parse(fixture.js.classMethod);
+    const result = estreeToBabel(ast);
+    
+    update('class-method', result);
+    
+    t.deepEqual(result, fixture.ast.classMethod, 'should equal');
     t.end();
 });
 

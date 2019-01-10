@@ -1,0 +1,93 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "start": 0,
+        "end": 64,
+        "body": [
+            {
+                "type": "ClassDeclaration",
+                "start": 0,
+                "end": 63,
+                "id": {
+                    "type": "Identifier",
+                    "start": 6,
+                    "end": 11,
+                    "name": "Hello"
+                },
+                "superClass": null,
+                "body": {
+                    "type": "ClassBody",
+                    "start": 12,
+                    "end": 63,
+                    "body": [
+                        {
+                            "type": "ClassMethod",
+                            "kind": "method",
+                            "key": {
+                                "type": "Identifier",
+                                "start": 18,
+                                "end": 21,
+                                "name": "log"
+                            },
+                            "params": [],
+                            "body": {
+                                "type": "BlockStatement",
+                                "start": 24,
+                                "end": 61,
+                                "body": [
+                                    {
+                                        "type": "ExpressionStatement",
+                                        "start": 34,
+                                        "end": 55,
+                                        "expression": {
+                                            "type": "CallExpression",
+                                            "start": 34,
+                                            "end": 54,
+                                            "callee": {
+                                                "type": "MemberExpression",
+                                                "start": 34,
+                                                "end": 45,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "start": 34,
+                                                    "end": 41,
+                                                    "name": "console"
+                                                },
+                                                "property": {
+                                                    "type": "Identifier",
+                                                    "start": 42,
+                                                    "end": 45,
+                                                    "name": "log"
+                                                },
+                                                "computed": false
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "StringLiteral",
+                                                    "start": 46,
+                                                    "end": 53,
+                                                    "value": "world",
+                                                    "raw": "'world'"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "computed": false,
+                            "static": false,
+                            "trailingComments": [],
+                            "leadingComments": [],
+                            "innerComments": [],
+                            "expression": false,
+                            "generator": false
+                        }
+                    ]
+                }
+            }
+        ],
+        "sourceType": "script"
+    },
+    "comments": []
+}
