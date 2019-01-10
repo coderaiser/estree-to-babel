@@ -1,3 +1,10 @@
+2019.01.10, v1.3.0
+
+feature:
+- (package) add putout
+- (estree-to-babel) add support of ClassMethod
+
+
 2019.01.08, v1.2.0
 
 feature:
