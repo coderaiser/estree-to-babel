@@ -1,3 +1,9 @@
+2019.01.11, v1.4.1
+
+fix:
+- (estree-to-babel) Literal in ObjectMmethod
+
+
 2019.01.10, v1.4.0
 
 feature:
