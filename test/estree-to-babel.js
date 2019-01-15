@@ -14,7 +14,7 @@ const estreeToBabel = require('..');
 const parse = (source) => {
     return espree.parse(source, {
         ecmaVersion: 2018,
-        loc: false,
+        loc: true,
         comment: true,
     });
 };
