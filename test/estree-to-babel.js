@@ -58,7 +58,7 @@ test('estree-to-babel: property', (t) => {
     
     update('property', result);
     
-    t.deepEqual(result, fixture.ast.property, 'should equal');
+    t.jsonEqual(result, fixture.ast.property, 'should equal');
     t.end();
 });
 
@@ -68,7 +68,7 @@ test('estree-to-babel: object-method', (t) => {
     
     update('object-method', result);
     
-    t.deepEqual(result, fixture.ast.objectMethod, 'should equal');
+    t.jsonEqual(result, fixture.ast.objectMethod, 'should equal');
     t.end();
 });
 
@@ -78,7 +78,7 @@ test('estree-to-babel: string-literal', (t) => {
     
     update('string-literal', result);
     
-    t.deepEqual(result, fixture.ast.stringLiteral, 'should equal');
+    t.jsonEqual(result, fixture.ast.stringLiteral, 'should equal');
     t.end();
 });
 
@@ -88,7 +88,7 @@ test('estree-to-babel: numeric-literal', (t) => {
     
     update('numeric-literal', result);
     
-    t.deepEqual(result, fixture.ast.numericLiteral, 'should equal');
+    t.jsonEqual(result, fixture.ast.numericLiteral, 'should equal');
     t.end();
 });
 
@@ -98,7 +98,7 @@ test('estree-to-babel: null literal', (t) => {
     
     update('null-literal', result);
     
-    t.deepEqual(result, fixture.ast.nullLiteral, 'should equal');
+    t.jsonEqual(result, fixture.ast.nullLiteral, 'should equal');
     t.end();
 });
 
@@ -108,7 +108,7 @@ test('estree-to-babel: comments', (t) => {
     
     update('comments', result);
     
-    t.deepEqual(result, fixture.ast.comments, 'should equal');
+    t.jsonEqual(result, fixture.ast.comments, 'should equal');
     t.end();
 });
 
@@ -118,7 +118,7 @@ test('estree-to-babel: class method', (t) => {
     
     update('class-method', result);
     
-    t.deepEqual(result, fixture.ast.classMethod, 'should equal');
+    t.jsonEqual(result, fixture.ast.classMethod, 'should equal');
     t.end();
 });
 
