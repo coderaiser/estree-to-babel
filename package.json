@@ -32,6 +32,7 @@
     "espree"
   ],
   "devDependencies": {
+    "@babel/parser": "^7.3.1",
     "coveralls": "^3.0.0",
     "eslint": "^5.6.0",
     "eslint-plugin-node": "^8.0.0",

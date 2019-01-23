@@ -8,6 +8,7 @@ const {
 
 const test = require('supertape');
 const espree = require('espree');
+const babel = require('@babel/parser');
 
 const estreeToBabel = require('..');
 
@@ -40,6 +41,7 @@ const fixture = {
         nullLiteral: readJSON('null-literal.json'),
         comments: readJSON('comments.json'),
         classMethod: readJSON('class-method.json'),
+        classMethodBabel: readJSON('class-method-babel.json'),
     },
     js: {
         property: readJS('property.js'),
@@ -122,3 +124,12 @@ test('estree-to-babel: class method', (t) => {
     t.end();
 });
 
+test('estree-to-babel: class method: babel.parse', (t) => {
+    const ast = babel.parse(fixture.js.classMethod);
+    const result = estreeToBabel(ast);
+    
+    update('class-method-babel', result);
+    
+    t.jsonEqual(result, fixture.ast.classMethodBabel, 'should equal');
+    t.end();
+});
