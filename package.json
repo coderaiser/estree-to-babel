@@ -10,15 +10,13 @@
     "url": "git://github.com/coderaiser/estree-to-babel.git"
   },
   "scripts": {
-    "test": "tape 'test/*.js'",
+    "test": "madrun test",
     "fixture": "UPDATE_FIXTURE=1 npm test",
     "watch:test": "nodemon -w lib -w test -x \"npm test\"",
-    "watch:example": "nodemon -w lib -w test -x \"node remove-unused\"",
-    "lint": "eslint lib test --ignore-pattern test/fixture",
-    "putout:fix": "redrun putout -- --fix",
-    "putout": "putout lib test",
-    "coverage": "nyc npm test",
-    "report": "nyc report --reporter=text-lcov | coveralls"
+    "lint": "madrun lint",
+    "fix:lint": "madrun fix:lint",
+    "coverage": "madrun coverage",
+    "report": "madrun report"
   },
   "dependencies": {
     "@babel/traverse": "^7.1.6",
@@ -38,10 +36,10 @@
     "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-tape": "^1.1.0",
     "espree": "^5.0.0",
+    "madrun": "^1.0.1",
     "nodemon": "^1.14.12",
     "nyc": "^13.0.1",
     "putout": "^3.0.0",
-    "redrun": "^7.0.2",
     "supertape": "^1.0.3"
   },
   "license": "MIT",

@@ -39,6 +39,8 @@ const fixture = {
         stringLiteral: readJSON('string-literal.json'),
         numericLiteral: readJSON('numeric-literal.json'),
         nullLiteral: readJSON('null-literal.json'),
+        boolLiteral: readJSON('bool-literal.json'),
+        regexpLiteral: readJSON('regexp-literal.json'),
         comments: readJSON('comments.json'),
         classMethod: readJSON('class-method.json'),
         classMethodBabel: readJSON('class-method-babel.json'),
@@ -49,6 +51,8 @@ const fixture = {
         stringLiteral: readJS('string-literal.js'),
         numericLiteral: readJS('numeric-literal.js'),
         nullLiteral: readJS('null-literal.js'),
+        boolLiteral: readJS('bool-literal.js'),
+        regexpLiteral: readJS('regexp-literal.js'),
         comments: readJS('comments.js'),
         classMethod: readJS('class-method.js'),
     },
@@ -84,6 +88,16 @@ test('estree-to-babel: string-literal', (t) => {
     t.end();
 });
 
+test('estree-to-babel: null-literal', (t) => {
+    const ast = parse(fixture.js.nullLiteral);
+    const result = estreeToBabel(ast);
+    
+    update('null-literal', result);
+    
+    t.jsonEqual(result, fixture.ast.nullLiteral, 'should equal');
+    t.end();
+});
+
 test('estree-to-babel: numeric-literal', (t) => {
     const ast = parse(fixture.js.numericLiteral);
     const result = estreeToBabel(ast);
@@ -94,13 +108,23 @@ test('estree-to-babel: numeric-literal', (t) => {
     t.end();
 });
 
-test('estree-to-babel: null literal', (t) => {
-    const ast = parse(fixture.js.nullLiteral);
+test('estree-to-babel: bool literal', (t) => {
+    const ast = parse(fixture.js.boolLiteral);
     const result = estreeToBabel(ast);
     
-    update('null-literal', result);
+    update('bool-literal', result);
     
-    t.jsonEqual(result, fixture.ast.nullLiteral, 'should equal');
+    t.jsonEqual(result, fixture.ast.boolLiteral, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: regexp literal', (t) => {
+    const ast = parse(fixture.js.regexpLiteral);
+    const result = estreeToBabel(ast);
+    
+    update('regexp-literal', result);
+    
+    t.jsonEqual(result, fixture.ast.regexpLiteral, 'should equal');
     t.end();
 });
 
@@ -133,3 +157,4 @@ test('estree-to-babel: class method: babel.parse', (t) => {
     t.jsonEqual(result, fixture.ast.classMethodBabel, 'should equal');
     t.end();
 });
+
