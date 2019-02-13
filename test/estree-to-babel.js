@@ -43,6 +43,7 @@ const fixture = {
         regexpLiteral: readJSON('regexp-literal.json'),
         comments: readJSON('comments.json'),
         classMethod: readJSON('class-method.json'),
+        classPrivateMethod: readJSON('class-private-method.json'),
         classMethodBabel: readJSON('class-method-babel.json'),
     },
     js: {
@@ -55,6 +56,7 @@ const fixture = {
         regexpLiteral: readJS('regexp-literal.js'),
         comments: readJS('comments.js'),
         classMethod: readJS('class-method.js'),
+        classPrivateMethod: readJS('class-private-method.js'),
     },
 };
 
@@ -155,6 +157,21 @@ test('estree-to-babel: class method: babel.parse', (t) => {
     update('class-method-babel', result);
     
     t.jsonEqual(result, fixture.ast.classMethodBabel, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: class private method: babel.parse', (t) => {
+    const ast = babel.parse(fixture.js.classPrivateMethod, {
+        plugins: [
+            'estree',
+            'classPrivateMethods',
+        ]
+    });
+    const result = estreeToBabel(ast);
+    
+    update('class-private-method', result);
+    
+    t.jsonEqual(result, fixture.ast.classPrivateMethod, 'should equal');
     t.end();
 });
 
