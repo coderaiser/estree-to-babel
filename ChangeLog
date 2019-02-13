@@ -1,3 +1,9 @@
+2019.02.13, v1.8.0
+
+feature:
+- (estree-to-babel) add support of ClassPrivateMethod
+
+
 2019.01.28, v1.7.0
 
 feature:
