@@ -229,21 +229,19 @@
                                     "trailingComments": [],
                                     "leadingComments": [],
                                     "innerComments": [],
-                                    "start": 26,
-                                    "end": 79,
+                                    "id": null,
+                                    "method": true,
+                                    "generator": false,
                                     "loc": {
                                         "start": {
                                             "line": 2,
-                                            "column": 9
+                                            "column": 4
                                         },
                                         "end": {
                                             "line": 4,
                                             "column": 5
                                         }
                                     },
-                                    "id": null,
-                                    "expression": false,
-                                    "generator": false,
                                     "async": false
                                 }
                             ]
@@ -353,21 +351,19 @@
                                     "trailingComments": [],
                                     "leadingComments": [],
                                     "innerComments": [],
-                                    "start": 116,
-                                    "end": 129,
+                                    "id": null,
+                                    "method": true,
+                                    "generator": false,
                                     "loc": {
                                         "start": {
                                             "line": 8,
-                                            "column": 13
+                                            "column": 4
                                         },
                                         "end": {
                                             "line": 8,
                                             "column": 26
                                         }
                                     },
-                                    "id": null,
-                                    "expression": false,
-                                    "generator": false,
                                     "async": false
                                 }
                             ]
