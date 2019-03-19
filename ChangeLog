@@ -1,3 +1,14 @@
+2019.03.19, v1.8.1
+
+fix:
+- (estree-to-babel) ObjectMethod
+- test(class-method-babel) fixture
+
+feature:
+- (package) madrun v2.0.1
+- (package) putout v4.0.1
+
+
 2019.02.13, v1.8.0
 
 feature:
