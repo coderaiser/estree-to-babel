@@ -13,6 +13,7 @@
 Convert [estree](https://github.com/estree/estree) compatable `JavaScript AST` to `babel AST`.
 
 To use parsers like:
+- [acorn](https://github.com/acornjs/acorn)
 - [cherow](https://github.com/cherow/cherow)
 - [espree](https://github.com/eslint/espree)
 - etc...
