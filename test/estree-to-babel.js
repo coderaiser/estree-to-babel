@@ -44,6 +44,7 @@ const fixture = {
         comments: readJSON('comments.json'),
         classMethod: readJSON('class-method.json'),
         classPrivateMethod: readJSON('class-private-method.json'),
+        strictMode: readJSON('strict-mode.json'),
         classMethodBabel: readJSON('class-method-babel.json'),
     },
     js: {
@@ -55,6 +56,7 @@ const fixture = {
         boolLiteral: readJS('bool-literal.js'),
         regexpLiteral: readJS('regexp-literal.js'),
         comments: readJS('comments.js'),
+        strictMode: readJS('strict-mode.js'),
         classMethod: readJS('class-method.js'),
         classPrivateMethod: readJS('class-private-method.js'),
     },
@@ -153,9 +155,9 @@ test('estree-to-babel: class method', (t) => {
 test('estree-to-babel: class method: babel.parse', (t) => {
     const ast = babel.parse(fixture.js.classMethod);
     const result = estreeToBabel(ast);
-    
+
     update('class-method-babel', result);
-    
+
     t.jsonEqual(result, fixture.ast.classMethodBabel, 'should equal');
     t.end();
 });
@@ -172,6 +174,21 @@ test('estree-to-babel: class private method: babel.parse', (t) => {
     update('class-private-method', result);
     
     t.jsonEqual(result, fixture.ast.classPrivateMethod, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: babel.parse: strict mode', (t) => {
+    const ast = babel.parse(fixture.js.strictMode, {
+        plugins: [
+            'estree',
+            'classPrivateMethods',
+        ]
+    });
+    const result = estreeToBabel(ast);
+    
+    update('strict-mode', result);
+    
+    t.jsonEqual(result, fixture.ast.strictMode, 'should equal');
     t.end();
 });
 
