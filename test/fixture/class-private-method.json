@@ -248,7 +248,8 @@
                     ]
                 }
             }
-        ]
+        ],
+        "directives": []
     },
     "comments": []
 }
