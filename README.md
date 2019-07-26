@@ -31,7 +31,6 @@ The thing is `@babel/parser` has a [little differences](https://babeljs.io/docs/
 - `StringLiteral`, `NumericLiteral`, `NullLiteral`, `RegExpLiteral`, `BooleanLiteral` instead of `Literal`;
 - `ClassMethod` instead of `MethodDefinition`;
 - `ClassPrivateMethod`
-- Convert `use strict` Literal into `Directive` and put it into `program.body.directives`
 - etc...
 
 `estree-to-babel` aims to smooth this differences.
