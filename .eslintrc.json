@@ -1,0 +1,13 @@
+{
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "extends": [
+        "plugin:node/recommended",
+        "plugin:putout/recommended"
+    ],
+    "plugins": [
+        "node",
+        "putout"
+    ]
+}

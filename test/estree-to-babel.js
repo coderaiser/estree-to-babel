@@ -155,9 +155,9 @@ test('estree-to-babel: class method', (t) => {
 test('estree-to-babel: class method: babel.parse', (t) => {
     const ast = babel.parse(fixture.js.classMethod);
     const result = estreeToBabel(ast);
-
+    
     update('class-method-babel', result);
-
+    
     t.jsonEqual(result, fixture.ast.classMethodBabel, 'should equal');
     t.end();
 });
@@ -167,7 +167,7 @@ test('estree-to-babel: class private method: babel.parse', (t) => {
         plugins: [
             'estree',
             'classPrivateMethods',
-        ]
+        ],
     });
     const result = estreeToBabel(ast);
     
@@ -182,7 +182,7 @@ test('estree-to-babel: babel.parse: strict mode', (t) => {
         plugins: [
             'estree',
             'classPrivateMethods',
-        ]
+        ],
     });
     const result = estreeToBabel(ast);
     

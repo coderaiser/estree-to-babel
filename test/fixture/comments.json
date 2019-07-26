@@ -14,75 +14,10 @@
                 "column": 18
             }
         },
-        "body": [
-            {
-                "type": "VariableDeclaration",
-                "start": 13,
-                "end": 31,
-                "loc": {
-                    "start": {
-                        "line": 2,
-                        "column": 0
-                    },
-                    "end": {
-                        "line": 2,
-                        "column": 18
-                    }
-                },
-                "declarations": [
-                    {
-                        "type": "VariableDeclarator",
-                        "start": 19,
-                        "end": 30,
-                        "loc": {
-                            "start": {
-                                "line": 2,
-                                "column": 6
-                            },
-                            "end": {
-                                "line": 2,
-                                "column": 17
-                            }
-                        },
-                        "id": {
-                            "type": "Identifier",
-                            "start": 19,
-                            "end": 20,
-                            "loc": {
-                                "start": {
-                                    "line": 2,
-                                    "column": 6
-                                },
-                                "end": {
-                                    "line": 2,
-                                    "column": 7
-                                }
-                            },
-                            "name": "t"
-                        },
-                        "init": {
-                            "type": "StringLiteral",
-                            "start": 23,
-                            "end": 30,
-                            "loc": {
-                                "start": {
-                                    "line": 2,
-                                    "column": 10
-                                },
-                                "end": {
-                                    "line": 2,
-                                    "column": 17
-                                }
-                            },
-                            "value": "hello",
-                            "raw": "'hello'"
-                        }
-                    }
-                ],
-                "kind": "const"
-            }
-        ],
-        "sourceType": "script"
+        "body": [],
+        "sourceType": "script",
+        "interpreter": null,
+        "directives": []
     },
     "comments": [
         {
