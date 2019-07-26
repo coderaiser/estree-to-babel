@@ -1,3 +1,9 @@
+2019.07.26, v2.0.1
+
+fix:
+- (estree-to-babel) always remove first expression
+
+
 2019.07.26, v2.0.0
 
 feature:
