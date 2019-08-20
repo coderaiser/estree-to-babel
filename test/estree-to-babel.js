@@ -14,9 +14,29 @@ const estreeToBabel = require('..');
 
 const parse = (source) => {
     return espree.parse(source, {
-        ecmaVersion: 2018,
+        ecmaVersion: 2020,
         loc: true,
         comment: true,
+    });
+};
+
+const acornParse = (source) => {
+    const acorn = require('acorn');
+    
+    // fix acorn plugins
+    // https://github.com/acornjs/acorn/issues/862
+    acorn.version = '6.3.0';
+    
+    const {Parser} = acorn;
+    const stage3 = require('acorn-stage3');
+    
+    const parser = Parser.extend(stage3);
+    
+    return parser.parse(source, {
+        locations: true,
+        comment: true,
+        ecmaVersion: 2020,
+        sourceType: 'module',
     });
 };
 
@@ -44,6 +64,7 @@ const fixture = {
         comments: readJSON('comments.json'),
         classMethod: readJSON('class-method.json'),
         classPrivateMethod: readJSON('class-private-method.json'),
+        classPrivateProperty: readJSON('class-private-property.json'),
         strictMode: readJSON('strict-mode.json'),
         classMethodBabel: readJSON('class-method-babel.json'),
     },
@@ -59,6 +80,7 @@ const fixture = {
         strictMode: readJS('strict-mode.js'),
         classMethod: readJS('class-method.js'),
         classPrivateMethod: readJS('class-private-method.js'),
+        classPrivateProperty: readJS('class-private-property.js'),
     },
 };
 
@@ -189,6 +211,16 @@ test('estree-to-babel: babel.parse: strict mode', (t) => {
     update('strict-mode', result);
     
     t.jsonEqual(result, fixture.ast.strictMode, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: acorn.parse: private property', (t) => {
+    const ast = acornParse(fixture.js.classPrivateProperty);
+    const result = estreeToBabel(ast);
+    
+    update('class-private-property', result);
+    
+    t.jsonEqual(result, fixture.ast.classPrivateProperty, 'should equal');
     t.end();
 });
 
