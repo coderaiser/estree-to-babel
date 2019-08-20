@@ -1,3 +1,11 @@
+2019.08.20, v2.1.0
+
+feature:
+- (package) eslint-plugin-putout v2.0.0
+- (package) putout v5.7.1
+- (estree-to-babel) add support of acorns FieldDefinition, ClassPrivateName
+
+
 2019.07.27, v2.0.5
 
 fix:
