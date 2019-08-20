@@ -41,7 +41,7 @@
     "madrun": "^2.0.1",
     "nodemon": "^1.14.12",
     "nyc": "^14.1.1",
-    "putout": "^4.0.1",
+    "putout": "^5.7.1",
     "supertape": "^1.0.3"
   },
   "license": "MIT",
