@@ -11,12 +11,12 @@
   },
   "scripts": {
     "test": "madrun test",
-    "fixture": "UPDATE_FIXTURE=1 npm test",
-    "watch:test": "nodemon -w lib -w test -x \"npm test\"",
+    "watch:test": "madrun watch:test",
     "lint": "madrun lint",
     "fix:lint": "madrun fix:lint",
     "coverage": "madrun coverage",
-    "report": "madrun report"
+    "report": "madrun report",
+    "fixture": "madrun fixture"
   },
   "dependencies": {
     "@babel/traverse": "^7.1.6",

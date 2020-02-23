@@ -226,12 +226,13 @@
                                         ]
                                     },
                                     "computed": false,
+                                    "generator": false,
+                                    "async": false,
                                     "trailingComments": [],
                                     "leadingComments": [],
                                     "innerComments": [],
                                     "id": null,
                                     "method": true,
-                                    "generator": false,
                                     "loc": {
                                         "start": {
                                             "line": 2,
@@ -241,8 +242,7 @@
                                             "line": 4,
                                             "column": 5
                                         }
-                                    },
-                                    "async": false
+                                    }
                                 }
                             ]
                         }
@@ -348,12 +348,13 @@
                                         "body": []
                                     },
                                     "computed": false,
+                                    "generator": false,
+                                    "async": false,
                                     "trailingComments": [],
                                     "leadingComments": [],
                                     "innerComments": [],
                                     "id": null,
                                     "method": true,
-                                    "generator": false,
                                     "loc": {
                                         "start": {
                                             "line": 8,
@@ -363,8 +364,7 @@
                                             "line": 8,
                                             "column": 26
                                         }
-                                    },
-                                    "async": false
+                                    }
                                 }
                             ]
                         }

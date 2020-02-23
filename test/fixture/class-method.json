@@ -197,6 +197,8 @@
                             },
                             "computed": false,
                             "static": false,
+                            "generator": false,
+                            "async": false,
                             "trailingComments": [],
                             "leadingComments": [],
                             "innerComments": [],
@@ -210,8 +212,7 @@
                                     "column": 5
                                 }
                             },
-                            "expression": false,
-                            "generator": false
+                            "expression": false
                         }
                     ]
                 }

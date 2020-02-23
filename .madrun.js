@@ -9,5 +9,6 @@ module.exports = {
     'fix:lint': () => run('lint', '--fix'),
     'coverage': () => `nyc ${run('test')}`,
     'report': () => `nyc report --reporter=text-lcov | coveralls || true`,
+    'fixture': () => `UPDATE_FIXTURE=1 ${run('test')}`,
 };
 
