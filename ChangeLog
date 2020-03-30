@@ -1,3 +1,21 @@
+2020.03.30, v3.0.0
+
+fix:
+- chore(estre-to-babel) update fixtures
+
+feature:
+- (estree-to-babel) avoid directives overwrite
+- (package) putout v7.10.1
+- (package) madrun v5.4.1
+- (package) eslint-plugin-putout v3.2.1
+- (package) eslint-plugin-node v11.0.0
+- (package) nodemon v2.0.2
+- (package) nyc v15.0.0
+- (package) madrun v3.0.6
+- (package) putout v6.15.1
+- (package) eslint-plugin-node v10.0.0
+
+
 2019.08.20, v2.1.0
 
 feature:
