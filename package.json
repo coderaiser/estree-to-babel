@@ -37,7 +37,7 @@
     "eslint": "^7.6.0",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-putout": "^3.2.1",
-    "espree": "^6.0.0",
+    "espree": "^7.2.0",
     "madrun": "^5.4.1",
     "nodemon": "^2.0.2",
     "nyc": "^15.0.0",
