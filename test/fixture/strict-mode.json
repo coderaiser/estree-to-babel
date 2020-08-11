@@ -220,6 +220,7 @@
                                                     },
                                                     "name": "console"
                                                 },
+                                                "computed": false,
                                                 "property": {
                                                     "type": "Identifier",
                                                     "start": 58,
@@ -237,7 +238,7 @@
                                                     },
                                                     "name": "log"
                                                 },
-                                                "computed": false
+                                                "optional": false
                                             },
                                             "arguments": [
                                                 {
@@ -257,7 +258,8 @@
                                                     "value": "world",
                                                     "raw": "'world'"
                                                 }
-                                            ]
+                                            ],
+                                            "optional": false
                                         }
                                     }
                                 ]

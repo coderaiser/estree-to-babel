@@ -170,7 +170,8 @@
                                                     },
                                                     "name": "log"
                                                 },
-                                                "computed": false
+                                                "computed": false,
+                                                "optional": false
                                             },
                                             "arguments": [
                                                 {
@@ -190,7 +191,8 @@
                                                     "value": "world",
                                                     "raw": "'world'"
                                                 }
-                                            ]
+                                            ],
+                                            "optional": false
                                         }
                                     }
                                 ]

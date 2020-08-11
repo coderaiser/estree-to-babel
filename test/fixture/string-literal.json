@@ -90,7 +90,8 @@
                             "value": "only",
                             "raw": "'only'"
                         },
-                        "computed": true
+                        "computed": true,
+                        "optional": false
                     },
                     "arguments": [
                         {
@@ -235,7 +236,8 @@
                                                     },
                                                     "name": "pass"
                                                 },
-                                                "computed": false
+                                                "computed": false,
+                                                "optional": false
                                             },
                                             "arguments": [
                                                 {
@@ -255,7 +257,8 @@
                                                     "value": "ok",
                                                     "raw": "'ok'"
                                                 }
-                                            ]
+                                            ],
+                                            "optional": false
                                         }
                                     },
                                     {
@@ -332,15 +335,18 @@
                                                     },
                                                     "name": "end"
                                                 },
-                                                "computed": false
+                                                "computed": false,
+                                                "optional": false
                                             },
-                                            "arguments": []
+                                            "arguments": [],
+                                            "optional": false
                                         }
                                     }
                                 ]
                             }
                         }
-                    ]
+                    ],
+                    "optional": false
                 }
             }
         ],

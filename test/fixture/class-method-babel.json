@@ -189,6 +189,7 @@
                                                     },
                                                     "name": "console"
                                                 },
+                                                "computed": false,
                                                 "property": {
                                                     "type": "Identifier",
                                                     "start": 42,
@@ -205,8 +206,7 @@
                                                         "identifierName": "log"
                                                     },
                                                     "name": "log"
-                                                },
-                                                "computed": false
+                                                }
                                             },
                                             "arguments": [
                                                 {

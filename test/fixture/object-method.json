@@ -201,7 +201,8 @@
                                                             },
                                                             "name": "parse"
                                                         },
-                                                        "computed": false
+                                                        "computed": false,
+                                                        "optional": false
                                                     },
                                                     "arguments": [
                                                         {
@@ -220,7 +221,8 @@
                                                             },
                                                             "name": "source"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "optional": false
                                                 }
                                             }
                                         ]
