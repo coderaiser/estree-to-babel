@@ -32,7 +32,7 @@
   "devDependencies": {
     "@babel/parser": "^7.3.1",
     "acorn": "^7.0.0",
-    "acorn-stage3": "^2.0.0",
+    "acorn-stage3": "^3.0.0",
     "coveralls": "^3.0.0",
     "eslint": "^7.6.0",
     "eslint-plugin-node": "^11.0.0",
