@@ -1,6 +1,6 @@
 'use strict';
 
-const cherow = require('cherow');
+const cherow = require('espree');
 const toBabel = require('.');
 const traverse = require('@babel/traverse').default;
 
@@ -14,6 +14,6 @@ traverse(ast, {
         console.log(`variable is "${path.node.value.name}"`);
         // output
         'a';
-    }
+    },
 });
 
