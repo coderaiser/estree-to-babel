@@ -6,11 +6,27 @@ const {
     writeFileSync,
 } = require('fs');
 
-const test = require('supertape');
+const {extend} = require('supertape');
 const espree = require('espree');
 const babel = require('@babel/parser');
 
 const estreeToBabel = require('..');
+
+const json = (a) => JSON.parse(JSON.stringify(a));
+
+const test = extend({
+    jsonEqual: (operator) => (actual, expected, message = 'should jsonEqual') => {
+        const {is, output} = operator.deepEqual(json(actual), json(actual));
+        
+        return {
+            is,
+            message,
+            actual,
+            expected,
+            output,
+        };
+    },
+});
 
 const parse = (source) => {
     return espree.parse(source, {
