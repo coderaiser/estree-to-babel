@@ -1,4 +1,5 @@
 const parser = {
+    x: 'string',
     parse(source) {
         return cherow.parse(source);
     },

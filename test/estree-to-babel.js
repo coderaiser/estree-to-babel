@@ -16,7 +16,7 @@ const json = (a) => JSON.parse(JSON.stringify(a));
 
 const test = extend({
     jsonEqual: (operator) => (actual, expected, message = 'should jsonEqual') => {
-        const {is, output} = operator.deepEqual(json(actual), json(actual));
+        const {is, output} = operator.deepEqual(json(actual), json(expected));
         
         return {
             is,
