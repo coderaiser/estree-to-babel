@@ -1,3 +1,26 @@
+2020.12.17, v3.0.1
+
+fix:
+- (estree-to-babel) Literals
+- test(estree-to-babel) update fixtures
+
+feature:
+- (package) eslint-plugin-putout v6.8.1
+- (package) putout v11.14.0
+- (package) madrun v8.0.1
+- (package) supertape v3.5.0
+- (package) putout v10.0.3
+- (package) acorn-stage3 v4.0.0
+- (package) acorn v8.0.1
+- (package) eslint-plugin-putout v5.0.1
+- (package) acorn-stage3 v3.0.0
+- (package) supertape v2.0.1
+- (package) putout v9.11.3
+- (package) madrun v7.0.2
+- (package) espree v7.2.0
+- (package) eslint v7.6.0
+
+
 2020.03.30, v3.0.0
 
 fix:
