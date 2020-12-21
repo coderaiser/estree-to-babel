@@ -1,0 +1,301 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "start": 0,
+        "end": 66,
+        "loc": {
+            "start": {
+                "line": 2,
+                "column": 0
+            },
+            "end": {
+                "line": 4,
+                "column": 24
+            }
+        },
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "start": 5,
+                "end": 39,
+                "loc": {
+                    "start": {
+                        "line": 2,
+                        "column": 0
+                    },
+                    "end": {
+                        "line": 2,
+                        "column": 34
+                    }
+                },
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "start": 19,
+                        "end": 38,
+                        "loc": {
+                            "start": {
+                                "line": 2,
+                                "column": 14
+                            },
+                            "end": {
+                                "line": 2,
+                                "column": 33
+                            }
+                        },
+                        "id": {
+                            "type": "Identifier",
+                            "start": 19,
+                            "end": 20,
+                            "loc": {
+                                "start": {
+                                    "line": 2,
+                                    "column": 14
+                                },
+                                "end": {
+                                    "line": 2,
+                                    "column": 15
+                                }
+                            },
+                            "name": "t"
+                        },
+                        "init": {
+                            "type": "StringLiteral",
+                            "start": 31,
+                            "end": 38,
+                            "loc": {
+                                "start": {
+                                    "line": 2,
+                                    "column": 26
+                                },
+                                "end": {
+                                    "line": 2,
+                                    "column": 33
+                                }
+                            },
+                            "value": "hello",
+                            "raw": "'hello'",
+                            "leadingComments": [
+                                {
+                                    "type": "CommentBlock",
+                                    "value": " c ",
+                                    "start": 23,
+                                    "end": 30,
+                                    "range": [
+                                        23,
+                                        30
+                                    ],
+                                    "loc": {
+                                        "start": {
+                                            "line": 2,
+                                            "column": 18
+                                        },
+                                        "end": {
+                                            "line": 2,
+                                            "column": 25
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "leadingComments": [
+                            {
+                                "type": "CommentBlock",
+                                "value": " b ",
+                                "start": 11,
+                                "end": 18,
+                                "range": [
+                                    11,
+                                    18
+                                ],
+                                "loc": {
+                                    "start": {
+                                        "line": 2,
+                                        "column": 6
+                                    },
+                                    "end": {
+                                        "line": 2,
+                                        "column": 13
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "kind": "const"
+            },
+            {
+                "type": "VariableDeclaration",
+                "start": 41,
+                "end": 65,
+                "loc": {
+                    "start": {
+                        "line": 4,
+                        "column": 0
+                    },
+                    "end": {
+                        "line": 4,
+                        "column": 24
+                    }
+                },
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "start": 47,
+                        "end": 64,
+                        "loc": {
+                            "start": {
+                                "line": 4,
+                                "column": 6
+                            },
+                            "end": {
+                                "line": 4,
+                                "column": 23
+                            }
+                        },
+                        "id": {
+                            "type": "Identifier",
+                            "start": 47,
+                            "end": 52,
+                            "loc": {
+                                "start": {
+                                    "line": 4,
+                                    "column": 6
+                                },
+                                "end": {
+                                    "line": 4,
+                                    "column": 11
+                                }
+                            },
+                            "name": "thing"
+                        },
+                        "init": {
+                            "type": "ArrayExpression",
+                            "start": 55,
+                            "end": 64,
+                            "loc": {
+                                "start": {
+                                    "line": 4,
+                                    "column": 14
+                                },
+                                "end": {
+                                    "line": 4,
+                                    "column": 23
+                                }
+                            },
+                            "elements": [],
+                            "innerComments": [
+                                {
+                                    "type": "CommentBlock",
+                                    "value": " d ",
+                                    "start": 56,
+                                    "end": 63,
+                                    "range": [
+                                        56,
+                                        63
+                                    ],
+                                    "loc": {
+                                        "start": {
+                                            "line": 4,
+                                            "column": 15
+                                        },
+                                        "end": {
+                                            "line": 4,
+                                            "column": 22
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "kind": "const"
+            }
+        ],
+        "sourceType": "script",
+        "directives": []
+    },
+    "comments": [
+        {
+            "type": "CommentLine",
+            "value": " a",
+            "start": 0,
+            "end": 4,
+            "range": [
+                0,
+                4
+            ],
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 4
+                }
+            }
+        },
+        {
+            "type": "CommentBlock",
+            "value": " b ",
+            "start": 11,
+            "end": 18,
+            "range": [
+                11,
+                18
+            ],
+            "loc": {
+                "start": {
+                    "line": 2,
+                    "column": 6
+                },
+                "end": {
+                    "line": 2,
+                    "column": 13
+                }
+            }
+        },
+        {
+            "type": "CommentBlock",
+            "value": " c ",
+            "start": 23,
+            "end": 30,
+            "range": [
+                23,
+                30
+            ],
+            "loc": {
+                "start": {
+                    "line": 2,
+                    "column": 18
+                },
+                "end": {
+                    "line": 2,
+                    "column": 25
+                }
+            }
+        },
+        {
+            "type": "CommentBlock",
+            "value": " d ",
+            "start": 56,
+            "end": 63,
+            "range": [
+                56,
+                63
+            ],
+            "loc": {
+                "start": {
+                    "line": 4,
+                    "column": 15
+                },
+                "end": {
+                    "line": 4,
+                    "column": 22
+                }
+            }
+        }
+    ]
+}

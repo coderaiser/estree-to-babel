@@ -9,6 +9,7 @@ const {
 const {extend} = require('supertape');
 const espree = require('espree');
 const babel = require('@babel/parser');
+const attachComments = require('estree-util-attach-comments');
 
 const estreeToBabel = require('..');
 
@@ -78,6 +79,7 @@ const fixture = {
         boolLiteral: readJSON('bool-literal.json'),
         regexpLiteral: readJSON('regexp-literal.json'),
         comments: readJSON('comments.json'),
+        commentsAttached: readJSON('comments-attached.json'),
         classMethod: readJSON('class-method.json'),
         classPrivateMethod: readJSON('class-private-method.json'),
         classPrivateProperty: readJSON('class-private-property.json'),
@@ -93,6 +95,7 @@ const fixture = {
         boolLiteral: readJS('bool-literal.js'),
         regexpLiteral: readJS('regexp-literal.js'),
         comments: readJS('comments.js'),
+        commentsAttached: readJS('comments-attached.js'),
         strictMode: readJS('strict-mode.js'),
         classMethod: readJS('class-method.js'),
         classPrivateMethod: readJS('class-private-method.js'),
@@ -177,6 +180,24 @@ test('estree-to-babel: comments', (t) => {
     update('comments', result);
     
     t.jsonEqual(result, fixture.ast.comments, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: attached comments', (t) => {
+    const ast = parse(fixture.js.commentsAttached);
+    const {comments} = ast;
+    
+    // Some estree parsers support only a top-level `comments` array.
+    // Others support only attached comment nodes.
+    // Babel has both.
+    attachComments(ast, comments);
+    ast.comments = comments;
+    
+    const result = estreeToBabel(ast);
+    
+    update('comments-attached', result);
+    
+    t.jsonEqual(result, fixture.ast.commentsAttached, 'should equal');
     t.end();
 });
 

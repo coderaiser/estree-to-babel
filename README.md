@@ -9,7 +9,7 @@
 [CoverageURL]: https://coveralls.io/github/coderaiser/estree-to-babel?branch=master
 [CoverageIMGURL]: https://coveralls.io/repos/coderaiser/estree-to-babel/badge.svg?branch=master&service=github
 
-Convert [estree](https://github.com/estree/estree) compatable `JavaScript AST` to `babel AST`.
+Convert [estree](https://github.com/estree/estree) compatible `JavaScript AST` to `babel AST`.
 
 To use parsers like:
 
