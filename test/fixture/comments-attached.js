@@ -1,4 +1,6 @@
 // a
-const /* b */ t = /* c */ 'hello';
+/* b */ const /* c */ t = /* d */ 'hello' /* e */; // f
 
-const thing = [/* d */];
+const thing = [/* g */];
+
+const other = {/* h */};
