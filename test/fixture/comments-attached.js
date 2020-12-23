@@ -3,4 +3,4 @@
 
 const thing = [/* g */];
 
-const other = {/* h */};
+const other = {/* h *//* i */};
