@@ -1,3 +1,10 @@
+2020.12.23, v3.1.0
+
+feature:
+- (estree-to-babel) add support for attached comments (#4)
+- (package) putout v12.5.1
+
+
 2020.12.17, v3.0.1
 
 fix:
