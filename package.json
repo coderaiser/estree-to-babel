@@ -9,20 +9,6 @@
     "type": "git",
     "url": "git://github.com/coderaiser/estree-to-babel.git"
   },
-  "nyc": {
-    "check-coverage": true,
-    "all": true,
-    "exclude": [
-      "**/*.spec.js",
-      "example.js",
-      ".*.js",
-      "test"
-    ],
-    "branches": 100,
-    "lines": 100,
-    "functions": 100,
-    "statements": 100
-  },
   "scripts": {
     "test": "madrun test",
     "watch:test": "madrun watch:test",
