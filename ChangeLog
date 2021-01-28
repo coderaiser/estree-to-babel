@@ -1,3 +1,14 @@
+2021.01.28, v3.1.1
+
+fix:
+- (estree-to-babel) translation to RegExpLiteral (#5)
+
+feature:
+- (package) supertape v4.8.1
+- (package) eslint-plugin-putout v7.0.0
+- (package) putout v14.0.1
+
+
 2020.12.23, v3.1.0
 
 feature:
