@@ -20,7 +20,8 @@
   },
   "dependencies": {
     "@babel/traverse": "^7.1.6",
-    "@babel/types": "^7.2.0"
+    "@babel/types": "^7.2.0",
+    "c8": "^7.6.0"
   },
   "keywords": [
     "ast",
@@ -41,7 +42,6 @@
     "estree-util-attach-comments": "^1.0.0",
     "madrun": "^8.0.1",
     "nodemon": "^2.0.2",
-    "nyc": "^15.0.0",
     "putout": "^15.4.3",
     "supertape": "^5.0.0"
   },
