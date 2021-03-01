@@ -38,13 +38,7 @@ const parse = (source) => {
 };
 
 const acornParse = (source) => {
-    const acorn = require('acorn');
-    
-    // fix acorn plugins
-    // https://github.com/acornjs/acorn/issues/862
-    acorn.version = '6.3.0';
-    
-    const {Parser} = acorn;
+    const {Parser} = require('acorn');
     const stage3 = require('acorn-stage3');
     
     const parser = Parser.extend(stage3);
@@ -241,6 +235,7 @@ test('estree-to-babel: babel.parse: strict mode', (t) => {
         plugins: [
             'estree',
             'classPrivateMethods',
+            'classPrivateProperties',
         ],
     });
     const result = estreeToBabel(ast);
