@@ -31,7 +31,7 @@ The thing is `@babel/parser` has a [little differences](https://babeljs.io/docs/
 - `File` node;
 - `StringLiteral`, `NumericLiteral`, `NullLiteral`, `RegExpLiteral`, `BooleanLiteral` instead of `Literal`;
 - `ClassMethod` instead of `MethodDefinition`;
-- `ClassPrivateMethod`
+- `ClassPrivateMethod`;
 - `ClassPrivateName` stores name as `Identifier` in `id` field;
 - `ClassPrivateProperty` instead of `FieldDefinition`;
 - etc...
