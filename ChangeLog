@@ -1,3 +1,12 @@
+2021.03.01, v3.2.0
+
+feature:
+- feature(estree-to-babel) rm useless classPrivateMethod, which is not part of estree
+- feature(package) putout v15.4.3
+- feature(package) supertape v5.0.0
+
+
+
 2021.01.28, v3.1.1
 
 fix:
