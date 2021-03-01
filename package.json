@@ -1,6 +1,6 @@
 {
   "name": "estree-to-babel",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "convert estree ast to babel",
   "homepage": "http://github.com/coderaiser/estree-to-babel",
