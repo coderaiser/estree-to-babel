@@ -1,7 +1,8 @@
 # Estree-to-babel [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
 [NPMIMGURL]: https://img.shields.io/npm/v/estree-to-babel.svg?style=flat&longCache=true
-[BuildStatusIMGURL]: https://img.shields.io/travis/coderaiser/estree-to-babel/master.svg?style=flat&longCache=true
+[BuildStatusURL]: https://github.com/coderaiser/estree-to-babel/actions?query=workflow%3A%22Node+CI%22 "Build Status"
+[BuildStatusIMGURL]: https://github.com/coderaiser/estree-to-babel/workflows/Node%20CI/badge.svg
 [DependencyStatusIMGURL]: https://img.shields.io/david/coderaiser/estree-to-babel.svg?style=flat&longCache=true
 [NPMURL]: https://npmjs.org/package/estree-to-babel "npm"
 [BuildStatusURL]: https://travis-ci.org/coderaiser/estree-to-babel "Build Status"
