@@ -9,7 +9,6 @@ const {
 const {extend} = require('supertape');
 const espree = require('espree');
 const babel = require('@babel/parser');
-const attachComments = require('estree-util-attach-comments');
 
 const estreeToBabel = require('..');
 
@@ -177,13 +176,14 @@ test('estree-to-babel: comments', (t) => {
     t.end();
 });
 
-test('estree-to-babel: attached comments', (t) => {
+test('estree-to-babel: attached comments', async (t) => {
     const ast = parse(fixture.js.commentsAttached);
     const {comments} = ast;
     
     // Some estree parsers support only a top-level `comments` array.
     // Others support only attached comment nodes.
     // Babel has both.
+    const {attachComments} = await import('estree-util-attach-comments');
     attachComments(ast, comments);
     ast.comments = comments;
     

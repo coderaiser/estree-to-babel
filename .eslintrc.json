@@ -1,4 +1,10 @@
 {
+    "overrides": [{
+        "files": "test",
+        "rules": {
+            "node/no-unsupported-features/es-syntax": "off"
+        }
+    }],
     "rules": {
         "no-useless-return": "off"
     },
