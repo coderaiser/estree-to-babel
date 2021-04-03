@@ -42,7 +42,7 @@
     "estree-util-attach-comments": "^2.0.0",
     "madrun": "^8.0.1",
     "nodemon": "^2.0.2",
-    "putout": "^15.4.3",
+    "putout": "^16.1.1",
     "supertape": "^5.0.0"
   },
   "license": "MIT",
