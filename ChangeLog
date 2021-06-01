@@ -1,3 +1,15 @@
+2021.06.01, v4.0.1
+
+fix:
+- (package) move c8 from `dependencies` to `devDependencies` (#9)
+
+
+feature:
+- (package) putout v18.0.0
+- (package) eslint-plugin-putout v8.0.1
+
+
+
 2021.04.04, v4.0.0
 feature:
 - (package) putout v16.1.1
