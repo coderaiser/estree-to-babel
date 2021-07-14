@@ -3,7 +3,7 @@
     "program": {
         "type": "Program",
         "start": 0,
-        "end": 73,
+        "end": 71,
         "loc": {
             "start": {
                 "line": 1,
