@@ -77,7 +77,10 @@
                             "value": {},
                             "raw": "/h/",
                             "pattern": "h",
-                            "flags": ""
+                            "flags": "",
+                            "extra": {
+                                "raw": "/h/"
+                            }
                         }
                     }
                 ],

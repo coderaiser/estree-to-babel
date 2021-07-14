@@ -58,6 +58,9 @@
                             "column": 12
                         }
                     },
+                    "extra": {
+                        "raw": "'use strict'"
+                    },
                     "value": "use strict",
                     "raw": "'use strict'"
                 },
@@ -256,7 +259,10 @@
                                                         }
                                                     },
                                                     "value": "world",
-                                                    "raw": "'world'"
+                                                    "raw": "'world'",
+                                                    "extra": {
+                                                        "raw": "'world'"
+                                                    }
                                                 }
                                             ],
                                             "optional": false

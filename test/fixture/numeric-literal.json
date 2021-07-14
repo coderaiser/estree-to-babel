@@ -154,7 +154,10 @@
                                 }
                             },
                             "value": 0,
-                            "raw": "0"
+                            "raw": "0",
+                            "extra": {
+                                "raw": "0"
+                            }
                         },
                         "computed": true,
                         "optional": false
@@ -174,7 +177,10 @@
                             }
                         },
                         "value": "hello",
-                        "raw": "'hello'"
+                        "raw": "'hello'",
+                        "extra": {
+                            "raw": "'hello'"
+                        }
                     }
                 }
             }

@@ -76,6 +76,9 @@
                             },
                             "value": "hello",
                             "raw": "'hello'",
+                            "extra": {
+                                "raw": "'hello'"
+                            },
                             "leadingComments": [
                                 {
                                     "type": "CommentBlock",

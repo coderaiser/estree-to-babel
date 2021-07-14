@@ -123,7 +123,10 @@
                                             }
                                         },
                                         "value": "string",
-                                        "raw": "'string'"
+                                        "raw": "'string'",
+                                        "extra": {
+                                            "raw": "'string'"
+                                        }
                                     },
                                     "kind": "init"
                                 },
@@ -382,7 +385,10 @@
                                             }
                                         },
                                         "value": "parse",
-                                        "raw": "'parse'"
+                                        "raw": "'parse'",
+                                        "extra": {
+                                            "raw": "'parse'"
+                                        }
                                     },
                                     "params": [],
                                     "body": {

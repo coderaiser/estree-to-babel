@@ -88,7 +88,10 @@
                                 }
                             },
                             "value": "only",
-                            "raw": "'only'"
+                            "raw": "'only'",
+                            "extra": {
+                                "raw": "'only'"
+                            }
                         },
                         "computed": true,
                         "optional": false
@@ -109,7 +112,10 @@
                                 }
                             },
                             "value": "should pass",
-                            "raw": "'should pass'"
+                            "raw": "'should pass'",
+                            "extra": {
+                                "raw": "'should pass'"
+                            }
                         },
                         {
                             "type": "ArrowFunctionExpression",
@@ -255,7 +261,10 @@
                                                         }
                                                     },
                                                     "value": "ok",
-                                                    "raw": "'ok'"
+                                                    "raw": "'ok'",
+                                                    "extra": {
+                                                        "raw": "'ok'"
+                                                    }
                                                 }
                                             ],
                                             "optional": false

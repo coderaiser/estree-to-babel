@@ -223,7 +223,10 @@
                                                         }
                                                     },
                                                     "value": "world",
-                                                    "raw": "'world'"
+                                                    "raw": "'world'",
+                                                    "extra": {
+                                                        "raw": "'world'"
+                                                    }
                                                 }
                                             ],
                                             "optional": false

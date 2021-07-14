@@ -75,7 +75,10 @@
                                 }
                             },
                             "value": null,
-                            "raw": "null"
+                            "raw": "null",
+                            "extra": {
+                                "raw": "null"
+                            }
                         }
                     }
                 ],
