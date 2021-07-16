@@ -45,7 +45,7 @@ const acornParse = (source) => {
     return parser.parse(source, {
         locations: true,
         comment: true,
-        ecmaVersion: 2020,
+        ecmaVersion: 2021,
         sourceType: 'module',
     });
 };
@@ -79,6 +79,7 @@ const fixture = {
         strictMode: readJSON('strict-mode.json'),
         classMethodBabel: readJSON('class-method-babel.json'),
         importExpression: readJSON('import-expression.json'),
+        bigInt: readJSON('big-int.json'),
     },
     js: {
         property: readJS('property.js'),
@@ -95,6 +96,7 @@ const fixture = {
         classPrivateMethod: readJS('class-private-method.js'),
         classPrivateProperty: readJS('class-private-property.js'),
         importExpression: readJS('import-expression.js'),
+        bigInt: readJS('big-int.js'),
     },
 };
 
@@ -265,6 +267,16 @@ test('estree-to-babel: espree.parse: ImportExpression', (t) => {
     update('import-expression', result);
     
     t.jsonEqual(result, fixture.ast.importExpression, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: parse: BigIntLiteral', (t) => {
+    const ast = babel.parse(fixture.js.bigInt);
+    const result = estreeToBabel(ast);
+    
+    update('big-int', result);
+    
+    t.jsonEqual(result, fixture.ast.bigInt, 'should equal');
     t.end();
 });
 
