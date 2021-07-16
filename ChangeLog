@@ -1,3 +1,10 @@
+2021.07.17, v4.1.1
+
+fix:
+- (estree-to-babel) wrong convertion BigIntLiteral to StringLiteral
+
+
+
 2021.07.16, v4.1.0
 
 feature:
