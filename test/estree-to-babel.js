@@ -78,6 +78,7 @@ const fixture = {
         classPrivateProperty: readJSON('class-private-property.json'),
         strictMode: readJSON('strict-mode.json'),
         classMethodBabel: readJSON('class-method-babel.json'),
+        importExpression: readJSON('import-expression.json'),
     },
     js: {
         property: readJS('property.js'),
@@ -93,6 +94,7 @@ const fixture = {
         classMethod: readJS('class-method.js'),
         classPrivateMethod: readJS('class-private-method.js'),
         classPrivateProperty: readJS('class-private-property.js'),
+        importExpression: readJS('import-expression.js'),
     },
 };
 
@@ -253,6 +255,16 @@ test('estree-to-babel: acorn.parse: private property', (t) => {
     update('class-private-property', result);
     
     t.jsonEqual(result, fixture.ast.classPrivateProperty, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: espree.parse: ImportExpression', (t) => {
+    const ast = acornParse(fixture.js.importExpression);
+    const result = estreeToBabel(ast);
+    
+    update('import-expression', result);
+    
+    t.jsonEqual(result, fixture.ast.importExpression, 'should equal');
     t.end();
 });
 

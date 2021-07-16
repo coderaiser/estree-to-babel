@@ -35,6 +35,7 @@ The thing is `@babel/parser` has a [little differences](https://babeljs.io/docs/
 - `ClassPrivateMethod`;
 - `ClassPrivateName` stores name as `Identifier` in `id` field;
 - `ClassPrivateProperty` instead of `FieldDefinition`;
+- `CallExpression` instead of `ImportExpression`;
 - etc...
 
 `estree-to-babel` aims to smooth this differences.
