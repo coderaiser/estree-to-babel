@@ -80,6 +80,7 @@ const fixture = {
         classMethodBabel: readJSON('class-method-babel.json'),
         importExpression: readJSON('import-expression.json'),
         bigInt: readJSON('big-int.json'),
+        chainExpression: readJSON('chain-expression.json'),
     },
     js: {
         property: readJS('property.js'),
@@ -97,6 +98,7 @@ const fixture = {
         classPrivateProperty: readJS('class-private-property.js'),
         importExpression: readJS('import-expression.js'),
         bigInt: readJS('big-int.js'),
+        chainExpression: readJS('chain-expression.js'),
     },
 };
 
@@ -277,6 +279,16 @@ test('estree-to-babel: parse: BigIntLiteral', (t) => {
     update('big-int', result);
     
     t.jsonEqual(result, fixture.ast.bigInt, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: parse: ChainExpression', (t) => {
+    const ast = acornParse(fixture.js.chainExpression);
+    const result = estreeToBabel(ast);
+    
+    update('chain-expression', result);
+    
+    t.jsonEqual(result, fixture.ast.chainExpression, 'should equal');
     t.end();
 });
 
