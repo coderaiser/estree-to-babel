@@ -38,7 +38,7 @@
     "eslint": "^8.0.0-beta.1",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-putout": "^10.3.0",
-    "espree": "^8.0.0",
+    "espree": "^9.0.0",
     "estree-util-attach-comments": "^2.0.0",
     "madrun": "^8.0.1",
     "nodemon": "^2.0.2",
