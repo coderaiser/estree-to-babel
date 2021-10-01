@@ -58,11 +58,11 @@
                             "column": 12
                         }
                     },
+                    "value": "use strict",
+                    "raw": "'use strict'",
                     "extra": {
                         "raw": "'use strict'"
-                    },
-                    "value": "use strict",
-                    "raw": "'use strict'"
+                    }
                 },
                 "directive": "use strict"
             },

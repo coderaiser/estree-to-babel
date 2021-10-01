@@ -30,7 +30,7 @@ const test = extend({
 
 const parse = (source) => {
     return espree.parse(source, {
-        ecmaVersion: 2020,
+        ecmaVersion: 2021,
         loc: true,
         comment: true,
     });
@@ -79,6 +79,7 @@ const fixture = {
         strictMode: readJSON('strict-mode.json'),
         classMethodBabel: readJSON('class-method-babel.json'),
         importExpression: readJSON('import-expression.json'),
+        importDeclaration: readJSON('import-declaration.json'),
         bigInt: readJSON('big-int.json'),
         chainExpression: readJSON('chain-expression.json'),
     },
@@ -97,6 +98,7 @@ const fixture = {
         classPrivateMethod: readJS('class-private-method.js'),
         classPrivateProperty: readJS('class-private-property.js'),
         importExpression: readJS('import-expression.js'),
+        importDeclaration: readJS('import-declaration.js'),
         bigInt: readJS('big-int.js'),
         chainExpression: readJS('chain-expression.js'),
     },
@@ -289,6 +291,16 @@ test('estree-to-babel: parse: ChainExpression', (t) => {
     update('chain-expression', result);
     
     t.jsonEqual(result, fixture.ast.chainExpression, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: parse: ImportDeclaration: assertions', (t) => {
+    const ast = acornParse(fixture.js.importDeclaration);
+    const result = estreeToBabel(ast);
+    
+    update('import-declaration', result);
+    
+    t.jsonEqual(result, fixture.ast.importDeclaration, 'should equal');
     t.end();
 });
 
