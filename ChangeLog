@@ -1,3 +1,11 @@
+2021.11.22, v4.4.0
+
+feature:
+- (estree-to-babel) add support of TSClassImplements (coderaiser/putout#90)
+- (package) putout v22.1.1
+- (package) eslint-plugin-putout v11.11.0
+
+
 2021.10.01, v4.3.0
 
 feature:
