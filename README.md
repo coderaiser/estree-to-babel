@@ -12,18 +12,18 @@ Convert [estree](https://github.com/estree/estree) compatible `JavaScript AST` t
 
 To use parsers like:
 
-- [acorn](https://github.com/acornjs/acorn)
-- [cherow](https://github.com/cherow/cherow)
-- [espree](https://github.com/eslint/espree)
+- [`acorn`](https://github.com/acornjs/acorn)
+- [`cherow`](https://github.com/cherow/cherow)
+- [`espree`](https://github.com/eslint/espree)
 - etc...
 
 With `babel` tools like:
 
-- [@babel/traverse](https://babeljs.io/docs/en/babel-traverse)
-- [@babel/types](https://babeljs.io/docs/en/babel-types)
+- [`@babel/traverse`](https://babeljs.io/docs/en/babel-traverse)
+- [`@babel/types`](https://babeljs.io/docs/en/babel-types)
 - etc...
 
-The thing is `@babel/parser` has a [little differences](https://babeljs.io/docs/en/babel-parser#output) with `estree` standard:
+The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a [little differences](https://babeljs.io/docs/en/babel-parser#output) with `estree` standard:
 
 - `Property` of `ObjectExpression` called `ObjectProperty`;
 - `FunctionExpression` of a `Property` located in `ObjectMethod` node;
