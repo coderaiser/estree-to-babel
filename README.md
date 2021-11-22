@@ -40,7 +40,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a [l
 
 Also [typescript-estree](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/typescript-estree) has differenceswith `@babel/parser`:
 
--`TSClassImplements` used instead of `TSExpressionWithTypeArguments 
+-`TSClassImplements` used instead of `TSExpressionWithTypeArguments`
 - etc...
 
 `estree-to-babel` aims to smooth this differences.
