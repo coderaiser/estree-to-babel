@@ -9,6 +9,7 @@ const {
 const {extend} = require('supertape');
 const espree = require('espree');
 const babel = require('@babel/parser');
+const tsEstree = require('@typescript-eslint/typescript-estree');
 
 const estreeToBabel = require('..');
 
@@ -45,7 +46,7 @@ const acornParse = (source) => {
     return parser.parse(source, {
         locations: true,
         comment: true,
-        ecmaVersion: 2021,
+        ecmaVersion: 2022,
         sourceType: 'module',
     });
 };
@@ -82,6 +83,7 @@ const fixture = {
         importDeclaration: readJSON('import-declaration.json'),
         bigInt: readJSON('big-int.json'),
         chainExpression: readJSON('chain-expression.json'),
+        tsClassImplements: readJSON('ts-class-implements.json'),
     },
     js: {
         property: readJS('property.js'),
@@ -101,6 +103,7 @@ const fixture = {
         importDeclaration: readJS('import-declaration.js'),
         bigInt: readJS('big-int.js'),
         chainExpression: readJS('chain-expression.js'),
+        tsClassImplements: readJS('ts-class-implements.ts'),
     },
 };
 
@@ -301,6 +304,16 @@ test('estree-to-babel: parse: ImportDeclaration: assertions', (t) => {
     update('import-declaration', result);
     
     t.jsonEqual(result, fixture.ast.importDeclaration, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: parse: TSClassImplements', (t) => {
+    const ast = tsEstree.parse(fixture.js.tsClassImplements);
+    const result = estreeToBabel(ast);
+    
+    update('ts-class-implements', result);
+    
+    t.jsonEqual(result, fixture.ast.tsClassImplements, 'should equal');
     t.end();
 });
 

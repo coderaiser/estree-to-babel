@@ -1,12 +1,10 @@
-# Estree-to-babel [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
+# Estree-to-babel [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
 [NPMIMGURL]: https://img.shields.io/npm/v/estree-to-babel.svg?style=flat&longCache=true
 [BuildStatusURL]: https://github.com/coderaiser/estree-to-babel/actions?query=workflow%3A%22Node+CI%22 "Build Status"
 [BuildStatusIMGURL]: https://github.com/coderaiser/estree-to-babel/workflows/Node%20CI/badge.svg
-[DependencyStatusIMGURL]: https://img.shields.io/david/coderaiser/estree-to-babel.svg?style=flat&longCache=true
 [NPMURL]: https://npmjs.org/package/estree-to-babel "npm"
 [BuildStatusURL]: https://travis-ci.org/coderaiser/estree-to-babel "Build Status"
-[DependencyStatusURL]: https://david-dm.org/coderaiser/estree-to-babel "Dependency Status"
 [CoverageURL]: https://coveralls.io/github/coderaiser/estree-to-babel?branch=master
 [CoverageIMGURL]: https://coveralls.io/repos/coderaiser/estree-to-babel/badge.svg?branch=master&service=github
 
@@ -38,6 +36,11 @@ The thing is `@babel/parser` has a [little differences](https://babeljs.io/docs/
 - `CallExpression` instead of `ImportExpression`;
 - `OptionalMemberExpression` and `OptionalCallExpression` instead of `ChainExpression`;
 - `ImportDeclaration` has `assertions`;
+- etc...
+
+Also ([typescript-estree](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/typescript-estree) has differenceswith `@babel/parser`:
+
+-`TSClassImplements` used instead of `TSExpressionWithTypeArguments 
 - etc...
 
 `estree-to-babel` aims to smooth this differences.

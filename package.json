@@ -31,6 +31,7 @@
   ],
   "devDependencies": {
     "@babel/parser": "^7.3.1",
+    "@typescript-eslint/typescript-estree": "^5.4.0",
     "acorn": "^8.0.1",
     "acorn-stage3": "^4.0.0",
     "c8": "^7.6.0",
@@ -43,7 +44,8 @@
     "madrun": "^8.0.1",
     "nodemon": "^2.0.2",
     "putout": "^22.1.1",
-    "supertape": "^6.0.5"
+    "supertape": "^6.0.5",
+    "typescript": "^4.5.2"
   },
   "license": "MIT",
   "engines": {
