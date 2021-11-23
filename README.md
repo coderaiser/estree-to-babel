@@ -38,7 +38,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a [l
 - `ImportDeclaration` has `assertions`;
 - etc...
 
-Also [typescript-estree](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/typescript-estree) has differenceswith `@babel/parser`:
+Also [typescript-estree](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/typescript-estree) has differences with `@babel/parser`:
 
 - `TSClassImplements` used instead of `TSExpressionWithTypeArguments`
 - etc...
