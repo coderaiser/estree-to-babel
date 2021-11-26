@@ -31,7 +31,7 @@ const test = extend({
 
 const parse = (source) => {
     return espree.parse(source, {
-        ecmaVersion: 2021,
+        ecmaVersion: 2022,
         loc: true,
         comment: true,
     });
@@ -85,6 +85,7 @@ const fixture = {
         chainExpression: readJSON('chain-expression.json'),
         tsClassImplements: readJSON('ts-class-implements.json'),
         tsPropertyDefinition: readJSON('ts-property-definition.json'),
+        tsPrivateIdentifier: readJSON('ts-private-identifier.json'),
     },
     js: {
         property: readJS('property.js'),
@@ -106,6 +107,7 @@ const fixture = {
         chainExpression: readJS('chain-expression.js'),
         tsClassImplements: readJS('ts-class-implements.ts'),
         tsPropertyDefinition: readJS('ts-property-definition.ts'),
+        tsPrivateIdentifier: readJS('ts-private-identifier.ts'),
     },
 };
 
@@ -115,7 +117,7 @@ test('estree-to-babel: property', (t) => {
     
     update('property', result);
     
-    t.jsonEqual(result, fixture.ast.property, 'should equal');
+    t.jsonEqual(result, fixture.ast.property);
     t.end();
 });
 
@@ -125,7 +127,7 @@ test('estree-to-babel: object-method', (t) => {
     
     update('object-method', result);
     
-    t.jsonEqual(result, fixture.ast.objectMethod, 'should equal');
+    t.jsonEqual(result, fixture.ast.objectMethod);
     t.end();
 });
 
@@ -135,7 +137,7 @@ test('estree-to-babel: string-literal', (t) => {
     
     update('string-literal', result);
     
-    t.jsonEqual(result, fixture.ast.stringLiteral, 'should equal');
+    t.jsonEqual(result, fixture.ast.stringLiteral);
     t.end();
 });
 
@@ -145,7 +147,7 @@ test('estree-to-babel: null-literal', (t) => {
     
     update('null-literal', result);
     
-    t.jsonEqual(result, fixture.ast.nullLiteral, 'should equal');
+    t.jsonEqual(result, fixture.ast.nullLiteral);
     t.end();
 });
 
@@ -155,7 +157,7 @@ test('estree-to-babel: numeric-literal', (t) => {
     
     update('numeric-literal', result);
     
-    t.jsonEqual(result, fixture.ast.numericLiteral, 'should equal');
+    t.jsonEqual(result, fixture.ast.numericLiteral);
     t.end();
 });
 
@@ -165,7 +167,7 @@ test('estree-to-babel: bool literal', (t) => {
     
     update('bool-literal', result);
     
-    t.jsonEqual(result, fixture.ast.boolLiteral, 'should equal');
+    t.jsonEqual(result, fixture.ast.boolLiteral);
     t.end();
 });
 
@@ -175,7 +177,7 @@ test('estree-to-babel: regexp literal', (t) => {
     
     update('regexp-literal', result);
     
-    t.jsonEqual(result, fixture.ast.regexpLiteral, 'should equal');
+    t.jsonEqual(result, fixture.ast.regexpLiteral);
     t.end();
 });
 
@@ -185,7 +187,7 @@ test('estree-to-babel: comments', (t) => {
     
     update('comments', result);
     
-    t.jsonEqual(result, fixture.ast.comments, 'should equal');
+    t.jsonEqual(result, fixture.ast.comments);
     t.end();
 });
 
@@ -205,7 +207,7 @@ test('estree-to-babel: attached comments', async (t) => {
     
     update('comments-attached', result);
     
-    t.jsonEqual(result, fixture.ast.commentsAttached, 'should equal');
+    t.jsonEqual(result, fixture.ast.commentsAttached);
     t.end();
 });
 
@@ -215,7 +217,7 @@ test('estree-to-babel: class method', (t) => {
     
     update('class-method', result);
     
-    t.jsonEqual(result, fixture.ast.classMethod, 'should equal');
+    t.jsonEqual(result, fixture.ast.classMethod);
     t.end();
 });
 
@@ -225,7 +227,7 @@ test('estree-to-babel: class method: babel.parse', (t) => {
     
     update('class-method-babel', result);
     
-    t.jsonEqual(result, fixture.ast.classMethodBabel, 'should equal');
+    t.jsonEqual(result, fixture.ast.classMethodBabel);
     t.end();
 });
 
@@ -240,7 +242,7 @@ test('estree-to-babel: class private method: babel.parse', (t) => {
     
     update('class-private-method', result);
     
-    t.jsonEqual(result, fixture.ast.classPrivateMethod, 'should equal');
+    t.jsonEqual(result, fixture.ast.classPrivateMethod);
     t.end();
 });
 
@@ -256,7 +258,7 @@ test('estree-to-babel: babel.parse: strict mode', (t) => {
     
     update('strict-mode', result);
     
-    t.jsonEqual(result, fixture.ast.strictMode, 'should equal');
+    t.jsonEqual(result, fixture.ast.strictMode);
     t.end();
 });
 
@@ -266,7 +268,7 @@ test('estree-to-babel: acorn.parse: private property', (t) => {
     
     update('class-private-property', result);
     
-    t.jsonEqual(result, fixture.ast.classPrivateProperty, 'should equal');
+    t.jsonEqual(result, fixture.ast.classPrivateProperty);
     t.end();
 });
 
@@ -276,7 +278,7 @@ test('estree-to-babel: espree.parse: ImportExpression', (t) => {
     
     update('import-expression', result);
     
-    t.jsonEqual(result, fixture.ast.importExpression, 'should equal');
+    t.jsonEqual(result, fixture.ast.importExpression);
     t.end();
 });
 
@@ -286,7 +288,7 @@ test('estree-to-babel: parse: BigIntLiteral', (t) => {
     
     update('big-int', result);
     
-    t.jsonEqual(result, fixture.ast.bigInt, 'should equal');
+    t.jsonEqual(result, fixture.ast.bigInt);
     t.end();
 });
 
@@ -296,7 +298,7 @@ test('estree-to-babel: parse: ChainExpression', (t) => {
     
     update('chain-expression', result);
     
-    t.jsonEqual(result, fixture.ast.chainExpression, 'should equal');
+    t.jsonEqual(result, fixture.ast.chainExpression);
     t.end();
 });
 
@@ -306,7 +308,7 @@ test('estree-to-babel: parse: ImportDeclaration: assertions', (t) => {
     
     update('import-declaration', result);
     
-    t.jsonEqual(result, fixture.ast.importDeclaration, 'should equal');
+    t.jsonEqual(result, fixture.ast.importDeclaration);
     t.end();
 });
 
@@ -316,7 +318,7 @@ test('estree-to-babel: parse: TSClassImplements', (t) => {
     
     update('ts-class-implements', result);
     
-    t.jsonEqual(result, fixture.ast.tsClassImplements, 'should equal');
+    t.jsonEqual(result, fixture.ast.tsClassImplements);
     t.end();
 });
 
@@ -326,7 +328,17 @@ test('estree-to-babel: parse: PropertyDefinition', (t) => {
     
     update('ts-property-definition', result);
     
-    t.jsonEqual(result, fixture.ast.tsPropertyDefinition, 'should equal');
+    t.jsonEqual(result, fixture.ast.tsPropertyDefinition);
+    t.end();
+});
+
+test('estree-to-babel: parse: PrivateIdentifier', (t) => {
+    const ast = tsEstree.parse(fixture.js.tsPrivateIdentifier);
+    const result = estreeToBabel(ast);
+    
+    update('ts-private-identifier', result);
+    
+    t.jsonEqual(result, fixture.ast.tsPrivateIdentifier);
     t.end();
 });
 

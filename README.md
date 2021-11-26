@@ -42,8 +42,8 @@ Also [typescript-estree](https://github.com/typescript-eslint/typescript-eslint/
 
 - `TSClassImplements` used instead of `TSExpressionWithTypeArguments`
 - `ClassPrivateProperty` instead of `PropertyDefinition` when `key.type=PrivateName`;
-- `ClasseProperty` instead of `PropertyDefinition` when `key.type=TSPrivateIdentifier`;
-- 'PrivateName` instead of `TSPrivateIdentifier`;
+- `ClasseProperty` instead of `PropertyDefinition` when `key.type=PrivateIdentifier`;
+- `PrivateName` instead of `PrivateIdentifier`;
 - etc...
 
 `estree-to-babel` aims to smooth this differences.
