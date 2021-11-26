@@ -42,7 +42,7 @@ Also [typescript-estree](https://github.com/typescript-eslint/typescript-eslint/
 
 - `TSClassImplements` used instead of `TSExpressionWithTypeArguments`
 - `ClassPrivateProperty` instead of `PropertyDefinition` when `key.type=PrivateName`;
-- `ClasseProperty` instead of `PropertyDefinition` when `key.type=PrivateIdentifier`;
+- `ClasseProperty` instead of `PropertyDefinition` when `key.type=Identifier`;
 - `PrivateName` instead of `PrivateIdentifier`;
 - etc...
 
