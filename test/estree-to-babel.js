@@ -86,6 +86,7 @@ const fixture = {
         tsClassImplements: readJSON('ts-class-implements.json'),
         tsPropertyDefinition: readJSON('ts-property-definition.json'),
         tsPrivateIdentifier: readJSON('ts-private-identifier.json'),
+        tsInterfaceHeritage: readJSON('ts-interface-heritage.json'),
     },
     js: {
         property: readJS('property.js'),
@@ -108,6 +109,7 @@ const fixture = {
         tsClassImplements: readJS('ts-class-implements.ts'),
         tsPropertyDefinition: readJS('ts-property-definition.ts'),
         tsPrivateIdentifier: readJS('ts-private-identifier.ts'),
+        tsInterfaceHeritage: readJS('ts-interface-heritage.ts'),
     },
 };
 
@@ -336,9 +338,19 @@ test('estree-to-babel: parse: PrivateIdentifier', (t) => {
     const ast = tsEstree.parse(fixture.js.tsPrivateIdentifier);
     const result = estreeToBabel(ast);
     
-    update('ts-private-identifier', result);
+    update('ts-property-definition', result);
     
     t.jsonEqual(result, fixture.ast.tsPrivateIdentifier);
+    t.end();
+});
+
+test('estree-to-babel: parse: InterfaceHeritage', (t) => {
+    const ast = tsEstree.parse(fixture.js.tsInterfaceHeritage);
+    const result = estreeToBabel(ast);
+    
+    update('ts-interface-heritage', result);
+    
+    t.jsonEqual(result, fixture.ast.tsInterfaceHeritage);
     t.end();
 });
 

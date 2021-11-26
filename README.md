@@ -44,6 +44,9 @@ Also `@babel/parser` has differences with [typescript-estree](https://github.com
 - `ClassPrivateProperty` instead of `PropertyDefinition` when `key.type=PrivateName`;
 - `ClasseProperty` instead of `PropertyDefinition` when `key.type=Identifier`;
 - `PrivateName` instead of `PrivateIdentifier`;
+- `TSInterfaceHeritage` instead of `TSExpressionWithTypeArguments`;
+- `MemberExpression` instead of `TSQualifiedName` in `TSInterfaceHeritage`;
+
 - etc...
 
 `estree-to-babel` aims to smooth this differences.
