@@ -41,6 +41,9 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a [l
 Also [typescript-estree](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/typescript-estree) has differences with `@babel/parser`:
 
 - `TSClassImplements` used instead of `TSExpressionWithTypeArguments`
+- `ClassPrivateProperty` instead of `PropertyDefinition` when `key.type=PrivateName`;
+- `ClasseProperty` instead of `PropertyDefinition` when `key.type=TSPrivateIdentifier`;
+- 'PrivateName` instead of `TSPrivateIdentifier`;
 - etc...
 
 `estree-to-babel` aims to smooth this differences.

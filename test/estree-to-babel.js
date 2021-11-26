@@ -84,6 +84,7 @@ const fixture = {
         bigInt: readJSON('big-int.json'),
         chainExpression: readJSON('chain-expression.json'),
         tsClassImplements: readJSON('ts-class-implements.json'),
+        tsPropertyDefinition: readJSON('ts-property-definition.json'),
     },
     js: {
         property: readJS('property.js'),
@@ -104,6 +105,7 @@ const fixture = {
         bigInt: readJS('big-int.js'),
         chainExpression: readJS('chain-expression.js'),
         tsClassImplements: readJS('ts-class-implements.ts'),
+        tsPropertyDefinition: readJS('ts-property-definition.ts'),
     },
 };
 
@@ -195,6 +197,7 @@ test('estree-to-babel: attached comments', async (t) => {
     // Others support only attached comment nodes.
     // Babel has both.
     const {attachComments} = await import('estree-util-attach-comments');
+    
     attachComments(ast, comments);
     ast.comments = comments;
     
@@ -314,6 +317,16 @@ test('estree-to-babel: parse: TSClassImplements', (t) => {
     update('ts-class-implements', result);
     
     t.jsonEqual(result, fixture.ast.tsClassImplements, 'should equal');
+    t.end();
+});
+
+test('estree-to-babel: parse: PropertyDefinition', (t) => {
+    const ast = tsEstree.parse(fixture.js.tsPropertyDefinition);
+    const result = estreeToBabel(ast);
+    
+    update('ts-property-definition', result);
+    
+    t.jsonEqual(result, fixture.ast.tsPropertyDefinition, 'should equal');
     t.end();
 });
 
