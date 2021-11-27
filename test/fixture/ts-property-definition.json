@@ -31,9 +31,16 @@
                             "type": "ClassProperty",
                             "key": {
                                 "type": "Identifier",
-                                "name": "publicField"
+                                "name": "pubplicField"
                             },
-                            "value": null,
+                            "value": {
+                                "type": "NumericLiteral",
+                                "value": 5,
+                                "raw": "5",
+                                "extra": {
+                                    "raw": "5"
+                                }
+                            },
                             "computed": false,
                             "static": false,
                             "declare": false,

@@ -87,6 +87,7 @@ const fixture = {
         tsPropertyDefinition: readJSON('ts-property-definition.json'),
         tsPrivateIdentifier: readJSON('ts-private-identifier.json'),
         tsInterfaceHeritage: readJSON('ts-interface-heritage.json'),
+        tsAbstractMethodDefinition: readJSON('ts-abstract-method-definition.json'),
     },
     js: {
         property: readJS('property.js'),
@@ -110,6 +111,7 @@ const fixture = {
         tsPropertyDefinition: readJS('ts-property-definition.ts'),
         tsPrivateIdentifier: readJS('ts-private-identifier.ts'),
         tsInterfaceHeritage: readJS('ts-interface-heritage.ts'),
+        tsAbstractMethodDefinition: readJS('ts-abstract-method-definition.ts'),
     },
 };
 
@@ -338,7 +340,7 @@ test('estree-to-babel: parse: PrivateIdentifier', (t) => {
     const ast = tsEstree.parse(fixture.js.tsPrivateIdentifier);
     const result = estreeToBabel(ast);
     
-    update('ts-property-definition', result);
+    update('ts-private-identifier', result);
     
     t.jsonEqual(result, fixture.ast.tsPrivateIdentifier);
     t.end();
@@ -351,6 +353,16 @@ test('estree-to-babel: parse: InterfaceHeritage', (t) => {
     update('ts-interface-heritage', result);
     
     t.jsonEqual(result, fixture.ast.tsInterfaceHeritage);
+    t.end();
+});
+
+test('estree-to-babel: parse: TSAbstractMethodDefinition', (t) => {
+    const ast = tsEstree.parse(fixture.js.tsAbstractMethodDefinition);
+    const result = estreeToBabel(ast);
+    
+    update('ts-abstract-method-definition', result);
+    
+    t.jsonEqual(result, fixture.ast.tsAbstractMethodDefinition);
     t.end();
 });
 
