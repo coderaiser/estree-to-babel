@@ -40,15 +40,13 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a [l
 
 Also `@babel/parser` has differences with [typescript-estree](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/typescript-estree):
 
-- `TSExpressionWithTypeArguments` instead of `TSClassImplements`;
+- `TSExpressionWithTypeArguments` instead of `TSClassImplements` and `TSInterfaceHeritage`;
 
 - `ClassPrivateProperty` instead of `PropertyDefinition` when `key.type=PrivateName`;
 
 - `ClasseProperty` instead of `PropertyDefinition` when `key.type=Identifier`;
 
 - `PrivateName` instead of `PrivateIdentifier`;
-
-- `TSInterfaceHeritage` instead of `TSExpressionWithTypeArguments`;
 
 - `TSQualifiedName` instead of `MemberExpression`  in `TSInterfaceHeritage`;
 
