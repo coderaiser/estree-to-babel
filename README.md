@@ -8,7 +8,7 @@
 [CoverageURL]: https://coveralls.io/github/coderaiser/estree-to-babel?branch=master
 [CoverageIMGURL]: https://coveralls.io/repos/coderaiser/estree-to-babel/badge.svg?branch=master&service=github
 
-Convert [`ESTree`](https://github.com/estree/estree) compatible `JavaScript AST` to [`Babel AST`](https://github.com/babel/babel/blob/main/packages/babel-parser/ast/spec.md).
+Convert [`ESTree`](https://github.com/estree/estree)-compatible `JavaScript AST` to [`Babel AST`](https://github.com/babel/babel/blob/main/packages/babel-parser/ast/spec.md).
 
 To use parsers like:
 
@@ -25,7 +25,7 @@ With `babel` tools like:
 
 The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a [little differences](https://babeljs.io/docs/en/babel-parser#output) with `estree` standard:
 
-- `Property` of `ObjectExpression` called `ObjectProperty`;
+- `Property` of `ObjectExpression` and `ObjectPattern` called `ObjectProperty`;
 - `FunctionExpression` of a `Property` located in `ObjectMethod` node;
 - `File` node;
 - `StringLiteral`, `NumericLiteral`, `NullLiteral`, `RegExpLiteral`, `BooleanLiteral` instead of `Literal`;
@@ -38,7 +38,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a [l
 - `ImportDeclaration` has `assertions`;
 - etc...
 
-Also `@babel/parser` has differences with [`typescript-estree`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/typescript-estree):
+Also [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has differences with [`typescript-estree`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/typescript-estree):
 
 - `TSExpressionWithTypeArguments` instead of `TSClassImplements` and `TSInterfaceHeritage`;
 - `ClassPrivateProperty` instead of `PropertyDefinition` when `key.type=PrivateName`;
