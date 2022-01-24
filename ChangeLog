@@ -1,3 +1,11 @@
+2022.01.24, v4.9.0
+
+feature:
+- (estree-to-babel) add support of assertions in ExportNamedDeclaration
+- (package) putout v24.2.2
+- (package) eslint-plugin-putout v13.6.0
+
+
 2021.11.27, v4.8.0
 
 feature:
