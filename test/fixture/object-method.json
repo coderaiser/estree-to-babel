@@ -433,7 +433,7 @@
                 "kind": "const"
             }
         ],
-        "sourceType": "script",
+        "sourceType": "module",
         "directives": []
     },
     "comments": []

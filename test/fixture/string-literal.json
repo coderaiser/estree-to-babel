@@ -359,7 +359,7 @@
                 }
             }
         ],
-        "sourceType": "script",
+        "sourceType": "module",
         "directives": []
     },
     "comments": []

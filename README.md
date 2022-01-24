@@ -35,15 +35,16 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a [l
 - `ClassPrivateProperty` instead of `FieldDefinition`;
 - `CallExpression` instead of `ImportExpression`;
 - `OptionalMemberExpression` and `OptionalCallExpression` instead of `ChainExpression`;
-- `ImportDeclaration` has `assertions`;
+- `ImportDeclaration` and `ExportNamedDeclaration` has `assertions`;
 - etc...
 
 Also [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has differences with [`typescript-estree`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/typescript-estree):
 
-- `TSExpressionWithTypeArguments` instead of `TSClassImplements` and `TSInterfaceHeritage`;
+- `TSExpressionWithTypeArguments` instead of `TSClassImplements`;
 - `ClassPrivateProperty` instead of `PropertyDefinition` when `key.type=PrivateName`;
 - `ClasseProperty` instead of `PropertyDefinition` when `key.type=Identifier`;
 - `PrivateName` instead of `PrivateIdentifier`;
+- `TSInterfaceHeritage` instead of `TSExpressionWithTypeArguments`;
 - `TSQualifiedName` instead of `MemberExpression`  in `TSInterfaceHeritage`;
 - `TSDeclaredMethod` with `abstract=true` instead of `TSAbstractMethodDefinition`;
 - etc...

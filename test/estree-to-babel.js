@@ -31,6 +31,7 @@ const test = extend({
 
 const parse = (source) => {
     return espree.parse(source, {
+        sourceType: 'module',
         ecmaVersion: 2022,
         loc: true,
         comment: true,
@@ -80,6 +81,7 @@ const fixture = {
         strictMode: readJSON('strict-mode.json'),
         classMethodBabel: readJSON('class-method-babel.json'),
         importExpression: readJSON('import-expression.json'),
+        exportDeclaration: readJSON('export-declaration.json'),
         importDeclaration: readJSON('import-declaration.json'),
         bigInt: readJSON('big-int.json'),
         chainExpression: readJSON('chain-expression.json'),
@@ -105,6 +107,7 @@ const fixture = {
         classPrivateProperty: readJS('class-private-property.js'),
         importExpression: readJS('import-expression.js'),
         importDeclaration: readJS('import-declaration.js'),
+        exportDeclaration: readJS('export-declaration.js'),
         bigInt: readJS('big-int.js'),
         chainExpression: readJS('chain-expression.js'),
         tsClassImplements: readJS('ts-class-implements.ts'),
@@ -283,6 +286,16 @@ test('estree-to-babel: espree.parse: ImportExpression', (t) => {
     update('import-expression', result);
     
     t.jsonEqual(result, fixture.ast.importExpression);
+    t.end();
+});
+
+test('estree-to-babel: espree.parse: ExportNamedDeclaration', (t) => {
+    const ast = parse(fixture.js.exportDeclaration);
+    const result = estreeToBabel(ast);
+    
+    update('export-declaration', result);
+    
+    t.jsonEqual(result, fixture.ast.exportDeclaration);
     t.end();
 });
 
