@@ -10,6 +10,6 @@ export default {
     'fix:lint': () => run('lint', '--fix'),
     'coverage': async () => `c8 ${await run('test')}`,
     'report': () => 'c8 report --reporter=lcov',
-    'fixture': async () => `UPDATE_FIXTURE=1 ${await run('test')}`,
+    'fixture': async () => `UPDATE=1 ${await run('test')}`,
 };
 

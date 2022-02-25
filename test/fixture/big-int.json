@@ -5,11 +5,13 @@
     "loc": {
         "start": {
             "line": 1,
-            "column": 0
+            "column": 0,
+            "index": 0
         },
         "end": {
             "line": 2,
-            "column": 0
+            "column": 0,
+            "index": 15
         }
     },
     "errors": [],
@@ -20,11 +22,13 @@
         "loc": {
             "start": {
                 "line": 1,
-                "column": 0
+                "column": 0,
+                "index": 0
             },
             "end": {
                 "line": 2,
-                "column": 0
+                "column": 0,
+                "index": 15
             }
         },
         "sourceType": "script",
@@ -37,11 +41,13 @@
                 "loc": {
                     "start": {
                         "line": 1,
-                        "column": 0
+                        "column": 0,
+                        "index": 0
                     },
                     "end": {
                         "line": 1,
-                        "column": 14
+                        "column": 14,
+                        "index": 14
                     }
                 },
                 "declarations": [
@@ -52,11 +58,13 @@
                         "loc": {
                             "start": {
                                 "line": 1,
-                                "column": 6
+                                "column": 6,
+                                "index": 6
                             },
                             "end": {
                                 "line": 1,
-                                "column": 13
+                                "column": 13,
+                                "index": 13
                             }
                         },
                         "id": {
@@ -66,11 +74,13 @@
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 6
+                                    "column": 6,
+                                    "index": 6
                                 },
                                 "end": {
                                     "line": 1,
-                                    "column": 7
+                                    "column": 7,
+                                    "index": 7
                                 },
                                 "identifierName": "a"
                             },
@@ -83,11 +93,13 @@
                             "loc": {
                                 "start": {
                                     "line": 1,
-                                    "column": 10
+                                    "column": 10,
+                                    "index": 10
                                 },
                                 "end": {
                                     "line": 1,
-                                    "column": 13
+                                    "column": 13,
+                                    "index": 13
                                 }
                             },
                             "extra": {

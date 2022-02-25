@@ -54,7 +54,7 @@ const acornParse = (source) => {
 
 const fixtureDir = join(__dirname, 'fixture');
 
-const isUpdate = process.env.UPDATE_FIXTURE;
+const isUpdate = process.env.UPDATE;
 const update = (a, json) => {
     if (!isUpdate)
         return;
