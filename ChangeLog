@@ -1,3 +1,10 @@
+2022.09.08, v5.0.1
+
+feature:
+- (package) eslint-plugin-putout v16.2.1
+- (package) putout v27.7.0
+- (package) supertape v8.0.1
+
 2022.02.25, v5.0.0
 
 feature:
