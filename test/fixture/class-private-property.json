@@ -93,7 +93,16 @@
                                 "id": {
                                     "type": "Identifier",
                                     "name": "hello",
-                                    "loc": null
+                                    "loc": {
+                                        "start": {
+                                            "line": 2,
+                                            "column": 5
+                                        },
+                                        "end": {
+                                            "line": 2,
+                                            "column": 10
+                                        }
+                                    }
                                 }
                             },
                             "value": {
