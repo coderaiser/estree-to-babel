@@ -280,7 +280,8 @@
                                                     "optional": false
                                                 }
                                             }
-                                        ]
+                                        ],
+                                        "directives": []
                                     },
                                     "computed": false,
                                     "generator": false,
@@ -405,7 +406,8 @@
                                                 "column": 26
                                             }
                                         },
-                                        "body": []
+                                        "body": [],
+                                        "directives": []
                                     },
                                     "computed": false,
                                     "generator": false,

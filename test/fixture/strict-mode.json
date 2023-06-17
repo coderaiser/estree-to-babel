@@ -268,7 +268,8 @@
                                             "optional": false
                                         }
                                     }
-                                ]
+                                ],
+                                "directives": []
                             },
                             "static": false,
                             "trailingComments": [],
