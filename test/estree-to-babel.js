@@ -52,6 +52,12 @@ const acornParse = (source, locations = true) => {
     });
 };
 
+const tsParse = (source, locations = true) => {
+    return tsEstree.parse(source, {
+        loc: locations,
+    });
+};
+
 const fixtureDir = join(__dirname, 'fixture');
 
 const isUpdate = process.env.UPDATE;
@@ -341,7 +347,7 @@ test('estree-to-babel: parse: ImportDeclaration: assertions', (t) => {
 });
 
 test('estree-to-babel: parse: TSClassImplements', (t) => {
-    const ast = tsEstree.parse(fixture.js.tsClassImplements);
+    const ast = tsParse(fixture.js.tsClassImplements);
     const result = estreeToBabel(ast);
     
     update('ts-class-implements', result);
@@ -351,7 +357,7 @@ test('estree-to-babel: parse: TSClassImplements', (t) => {
 });
 
 test('estree-to-babel: parse: PropertyDefinition', (t) => {
-    const ast = tsEstree.parse(fixture.js.tsPropertyDefinition);
+    const ast = tsParse(fixture.js.tsPropertyDefinition);
     const result = estreeToBabel(ast);
     
     update('ts-property-definition', result);
@@ -361,7 +367,7 @@ test('estree-to-babel: parse: PropertyDefinition', (t) => {
 });
 
 test('estree-to-babel: parse: PrivateIdentifier', (t) => {
-    const ast = tsEstree.parse(fixture.js.tsPrivateIdentifier);
+    const ast = tsParse(fixture.js.tsPrivateIdentifier);
     const result = estreeToBabel(ast);
     
     update('ts-private-identifier', result);
@@ -371,7 +377,7 @@ test('estree-to-babel: parse: PrivateIdentifier', (t) => {
 });
 
 test('estree-to-babel: parse: InterfaceHeritage', (t) => {
-    const ast = tsEstree.parse(fixture.js.tsInterfaceHeritage);
+    const ast = tsParse(fixture.js.tsInterfaceHeritage);
     const result = estreeToBabel(ast);
     
     update('ts-interface-heritage', result);
@@ -381,7 +387,7 @@ test('estree-to-babel: parse: InterfaceHeritage', (t) => {
 });
 
 test('estree-to-babel: parse: TSAbstractMethodDefinition', (t) => {
-    const ast = tsEstree.parse(fixture.js.tsAbstractMethodDefinition);
+    const ast = tsParse(fixture.js.tsAbstractMethodDefinition);
     const result = estreeToBabel(ast);
     
     update('ts-abstract-method-definition', result);

@@ -8,7 +8,16 @@
                 "id": {
                     "type": "Identifier",
                     "name": "Base",
-                    "loc": null
+                    "loc": {
+                        "start": {
+                            "line": 1,
+                            "column": 6
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 10
+                        }
+                    }
                 },
                 "body": {
                     "type": "ClassBody",
@@ -18,12 +27,31 @@
                             "key": {
                                 "type": "Identifier",
                                 "name": "getName",
-                                "loc": null
+                                "loc": {
+                                    "start": {
+                                        "line": 2,
+                                        "column": 11
+                                    },
+                                    "end": {
+                                        "line": 2,
+                                        "column": 18
+                                    }
+                                }
                             },
                             "computed": false,
                             "static": false,
                             "kind": "method",
                             "override": false,
+                            "loc": {
+                                "start": {
+                                    "line": 2,
+                                    "column": 2
+                                },
+                                "end": {
+                                    "line": 2,
+                                    "column": 29
+                                }
+                            },
                             "abstract": true,
                             "generator": false,
                             "async": false,
@@ -31,27 +59,71 @@
                             "id": null,
                             "returnType": {
                                 "type": "TSTypeAnnotation",
+                                "loc": {
+                                    "start": {
+                                        "line": 2,
+                                        "column": 20
+                                    },
+                                    "end": {
+                                        "line": 2,
+                                        "column": 28
+                                    }
+                                },
                                 "typeAnnotation": {
                                     "type": "TSStringKeyword",
-                                    "loc": null
-                                },
-                                "loc": null
+                                    "loc": {
+                                        "start": {
+                                            "line": 2,
+                                            "column": 22
+                                        },
+                                        "end": {
+                                            "line": 2,
+                                            "column": 28
+                                        }
+                                    }
+                                }
                             },
                             "trailingComments": [],
                             "leadingComments": [],
-                            "innerComments": [],
-                            "loc": null
+                            "innerComments": []
                         }
                     ],
-                    "loc": null
+                    "loc": {
+                        "start": {
+                            "line": 1,
+                            "column": 11
+                        },
+                        "end": {
+                            "line": 3,
+                            "column": 1
+                        }
+                    }
                 },
                 "superClass": null,
-                "loc": null
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 0
+                    },
+                    "end": {
+                        "line": 3,
+                        "column": 1
+                    }
+                }
             }
         ],
         "sourceType": "script",
-        "directives": [],
-        "loc": null
+        "loc": {
+            "start": {
+                "line": 1,
+                "column": 0
+            },
+            "end": {
+                "line": 4,
+                "column": 0
+            }
+        },
+        "directives": []
     },
     "comments": []
 }
