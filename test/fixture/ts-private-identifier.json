@@ -74,10 +74,10 @@
                                                 "type": "NumericLiteral",
                                                 "value": 5,
                                                 "raw": "5",
-                                                "loc": null,
                                                 "extra": {
                                                     "raw": "5"
-                                                }
+                                                },
+                                                "loc": null
                                             },
                                             "loc": null
                                         },
@@ -93,7 +93,6 @@
                             "trailingComments": [],
                             "leadingComments": [],
                             "innerComments": [],
-                            "loc": null,
                             "expression": false
                         }
                     ],

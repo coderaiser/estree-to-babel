@@ -46,10 +46,10 @@
                                         "end": 32,
                                         "value": "string",
                                         "raw": "'string'",
-                                        "loc": null,
                                         "extra": {
                                             "raw": "'string'"
-                                        }
+                                        },
+                                        "loc": null
                                     },
                                     "kind": "init",
                                     "loc": null
@@ -174,10 +174,10 @@
                                         "end": 131,
                                         "value": "parse",
                                         "raw": "'parse'",
-                                        "loc": null,
                                         "extra": {
                                             "raw": "'parse'"
-                                        }
+                                        },
+                                        "loc": null
                                     },
                                     "params": [],
                                     "body": {

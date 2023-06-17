@@ -42,10 +42,10 @@
                                 "type": "NumericLiteral",
                                 "value": 5,
                                 "raw": "5",
-                                "loc": null,
                                 "extra": {
                                     "raw": "5"
-                                }
+                                },
+                                "loc": null
                             },
                             "computed": false,
                             "static": false,

@@ -24,7 +24,6 @@
                             "static": false,
                             "kind": "method",
                             "override": false,
-                            "loc": null,
                             "abstract": true,
                             "generator": false,
                             "async": false,
@@ -40,7 +39,8 @@
                             },
                             "trailingComments": [],
                             "leadingComments": [],
-                            "innerComments": []
+                            "innerComments": [],
+                            "loc": null
                         }
                     ],
                     "loc": null
