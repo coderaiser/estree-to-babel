@@ -18,8 +18,7 @@
                             "type": "Identifier",
                             "start": 6,
                             "end": 12,
-                            "name": "parser",
-                            "loc": null
+                            "name": "parser"
                         },
                         "init": {
                             "type": "ObjectExpression",
@@ -37,8 +36,7 @@
                                         "type": "Identifier",
                                         "start": 21,
                                         "end": 22,
-                                        "name": "x",
-                                        "loc": null
+                                        "name": "x"
                                     },
                                     "value": {
                                         "type": "StringLiteral",
@@ -48,11 +46,9 @@
                                         "raw": "'string'",
                                         "extra": {
                                             "raw": "'string'"
-                                        },
-                                        "loc": null
+                                        }
                                     },
-                                    "kind": "init",
-                                    "loc": null
+                                    "kind": "init"
                                 },
                                 {
                                     "type": "ObjectMethod",
@@ -61,16 +57,14 @@
                                         "type": "Identifier",
                                         "start": 38,
                                         "end": 43,
-                                        "name": "parse",
-                                        "loc": null
+                                        "name": "parse"
                                     },
                                     "params": [
                                         {
                                             "type": "Identifier",
                                             "start": 44,
                                             "end": 50,
-                                            "name": "source",
-                                            "loc": null
+                                            "name": "source"
                                         }
                                     ],
                                     "body": {
@@ -94,36 +88,29 @@
                                                             "type": "Identifier",
                                                             "start": 69,
                                                             "end": 75,
-                                                            "name": "cherow",
-                                                            "loc": null
+                                                            "name": "cherow"
                                                         },
                                                         "property": {
                                                             "type": "Identifier",
                                                             "start": 76,
                                                             "end": 81,
-                                                            "name": "parse",
-                                                            "loc": null
+                                                            "name": "parse"
                                                         },
                                                         "computed": false,
-                                                        "optional": false,
-                                                        "loc": null
+                                                        "optional": false
                                                     },
                                                     "arguments": [
                                                         {
                                                             "type": "Identifier",
                                                             "start": 82,
                                                             "end": 88,
-                                                            "name": "source",
-                                                            "loc": null
+                                                            "name": "source"
                                                         }
                                                     ],
-                                                    "optional": false,
-                                                    "loc": null
-                                                },
-                                                "loc": null
+                                                    "optional": false
+                                                }
                                             }
-                                        ],
-                                        "loc": null
+                                        ]
                                     },
                                     "computed": false,
                                     "generator": false,
@@ -135,14 +122,11 @@
                                     "method": true,
                                     "loc": null
                                 }
-                            ],
-                            "loc": null
-                        },
-                        "loc": null
+                            ]
+                        }
                     }
                 ],
-                "kind": "const",
-                "loc": null
+                "kind": "const"
             },
             {
                 "type": "VariableDeclaration",
@@ -157,8 +141,7 @@
                             "type": "Identifier",
                             "start": 108,
                             "end": 115,
-                            "name": "parser2",
-                            "loc": null
+                            "name": "parser2"
                         },
                         "init": {
                             "type": "ObjectExpression",
@@ -176,16 +159,14 @@
                                         "raw": "'parse'",
                                         "extra": {
                                             "raw": "'parse'"
-                                        },
-                                        "loc": null
+                                        }
                                     },
                                     "params": [],
                                     "body": {
                                         "type": "BlockStatement",
                                         "start": 144,
                                         "end": 146,
-                                        "body": [],
-                                        "loc": null
+                                        "body": []
                                     },
                                     "computed": false,
                                     "generator": false,
@@ -197,19 +178,15 @@
                                     "method": true,
                                     "loc": null
                                 }
-                            ],
-                            "loc": null
-                        },
-                        "loc": null
+                            ]
+                        }
                     }
                 ],
-                "kind": "const",
-                "loc": null
+                "kind": "const"
             }
         ],
         "sourceType": "module",
-        "directives": [],
-        "loc": null
+        "directives": []
     },
     "comments": []
 }
