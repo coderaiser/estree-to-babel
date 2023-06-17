@@ -7,11 +7,13 @@
                 "type": "ClassDeclaration",
                 "id": {
                     "type": "Identifier",
-                    "name": "A"
+                    "name": "A",
+                    "loc": null
                 },
                 "body": {
                     "type": "ClassBody",
-                    "body": []
+                    "body": [],
+                    "loc": null
                 },
                 "superClass": null,
                 "implements": [
@@ -19,14 +21,18 @@
                         "type": "TSExpressionWithTypeArguments",
                         "expression": {
                             "type": "Identifier",
-                            "name": "B"
-                        }
+                            "name": "B",
+                            "loc": null
+                        },
+                        "loc": null
                     }
-                ]
+                ],
+                "loc": null
             }
         ],
         "sourceType": "script",
-        "directives": []
+        "directives": [],
+        "loc": null
     },
     "comments": []
 }

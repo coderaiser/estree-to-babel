@@ -7,11 +7,13 @@
                 "type": "TSInterfaceDeclaration",
                 "body": {
                     "type": "TSInterfaceBody",
-                    "body": []
+                    "body": [],
+                    "loc": null
                 },
                 "id": {
                     "type": "Identifier",
-                    "name": "x"
+                    "name": "x",
+                    "loc": null
                 },
                 "extends": [
                     {
@@ -26,24 +28,32 @@
                                 "optional": false,
                                 "left": {
                                     "type": "Identifier",
-                                    "name": "y"
+                                    "name": "y",
+                                    "loc": null
                                 },
                                 "right": {
                                     "type": "Identifier",
-                                    "name": "z"
-                                }
+                                    "name": "z",
+                                    "loc": null
+                                },
+                                "loc": null
                             },
                             "right": {
                                 "type": "Identifier",
-                                "name": "m"
-                            }
-                        }
+                                "name": "m",
+                                "loc": null
+                            },
+                            "loc": null
+                        },
+                        "loc": null
                     }
-                ]
+                ],
+                "loc": null
             }
         ],
         "sourceType": "script",
-        "directives": []
+        "directives": [],
+        "loc": null
     },
     "comments": []
 }

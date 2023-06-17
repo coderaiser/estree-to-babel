@@ -1,0 +1,215 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "start": 0,
+        "end": 149,
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "start": 0,
+                "end": 100,
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "start": 6,
+                        "end": 99,
+                        "id": {
+                            "type": "Identifier",
+                            "start": 6,
+                            "end": 12,
+                            "name": "parser",
+                            "loc": null
+                        },
+                        "init": {
+                            "type": "ObjectExpression",
+                            "start": 15,
+                            "end": 99,
+                            "properties": [
+                                {
+                                    "type": "ObjectProperty",
+                                    "start": 21,
+                                    "end": 32,
+                                    "method": false,
+                                    "shorthand": false,
+                                    "computed": false,
+                                    "key": {
+                                        "type": "Identifier",
+                                        "start": 21,
+                                        "end": 22,
+                                        "name": "x",
+                                        "loc": null
+                                    },
+                                    "value": {
+                                        "type": "StringLiteral",
+                                        "start": 24,
+                                        "end": 32,
+                                        "value": "string",
+                                        "raw": "'string'",
+                                        "loc": null,
+                                        "extra": {
+                                            "raw": "'string'"
+                                        }
+                                    },
+                                    "kind": "init",
+                                    "loc": null
+                                },
+                                {
+                                    "type": "ObjectMethod",
+                                    "kind": "method",
+                                    "key": {
+                                        "type": "Identifier",
+                                        "start": 38,
+                                        "end": 43,
+                                        "name": "parse",
+                                        "loc": null
+                                    },
+                                    "params": [
+                                        {
+                                            "type": "Identifier",
+                                            "start": 44,
+                                            "end": 50,
+                                            "name": "source",
+                                            "loc": null
+                                        }
+                                    ],
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "start": 52,
+                                        "end": 96,
+                                        "body": [
+                                            {
+                                                "type": "ReturnStatement",
+                                                "start": 62,
+                                                "end": 90,
+                                                "argument": {
+                                                    "type": "CallExpression",
+                                                    "start": 69,
+                                                    "end": 89,
+                                                    "callee": {
+                                                        "type": "MemberExpression",
+                                                        "start": 69,
+                                                        "end": 81,
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "start": 69,
+                                                            "end": 75,
+                                                            "name": "cherow",
+                                                            "loc": null
+                                                        },
+                                                        "property": {
+                                                            "type": "Identifier",
+                                                            "start": 76,
+                                                            "end": 81,
+                                                            "name": "parse",
+                                                            "loc": null
+                                                        },
+                                                        "computed": false,
+                                                        "optional": false,
+                                                        "loc": null
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "Identifier",
+                                                            "start": 82,
+                                                            "end": 88,
+                                                            "name": "source",
+                                                            "loc": null
+                                                        }
+                                                    ],
+                                                    "optional": false,
+                                                    "loc": null
+                                                },
+                                                "loc": null
+                                            }
+                                        ],
+                                        "loc": null
+                                    },
+                                    "computed": false,
+                                    "generator": false,
+                                    "async": false,
+                                    "trailingComments": [],
+                                    "leadingComments": [],
+                                    "innerComments": [],
+                                    "id": null,
+                                    "method": true,
+                                    "loc": null
+                                }
+                            ],
+                            "loc": null
+                        },
+                        "loc": null
+                    }
+                ],
+                "kind": "const",
+                "loc": null
+            },
+            {
+                "type": "VariableDeclaration",
+                "start": 102,
+                "end": 149,
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "start": 108,
+                        "end": 148,
+                        "id": {
+                            "type": "Identifier",
+                            "start": 108,
+                            "end": 115,
+                            "name": "parser2",
+                            "loc": null
+                        },
+                        "init": {
+                            "type": "ObjectExpression",
+                            "start": 118,
+                            "end": 148,
+                            "properties": [
+                                {
+                                    "type": "ObjectMethod",
+                                    "kind": "method",
+                                    "key": {
+                                        "type": "StringLiteral",
+                                        "start": 124,
+                                        "end": 131,
+                                        "value": "parse",
+                                        "raw": "'parse'",
+                                        "loc": null,
+                                        "extra": {
+                                            "raw": "'parse'"
+                                        }
+                                    },
+                                    "params": [],
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "start": 144,
+                                        "end": 146,
+                                        "body": [],
+                                        "loc": null
+                                    },
+                                    "computed": false,
+                                    "generator": false,
+                                    "async": false,
+                                    "trailingComments": [],
+                                    "leadingComments": [],
+                                    "innerComments": [],
+                                    "id": null,
+                                    "method": true,
+                                    "loc": null
+                                }
+                            ],
+                            "loc": null
+                        },
+                        "loc": null
+                    }
+                ],
+                "kind": "const",
+                "loc": null
+            }
+        ],
+        "sourceType": "module",
+        "directives": [],
+        "loc": null
+    },
+    "comments": []
+}

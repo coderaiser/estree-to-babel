@@ -7,7 +7,8 @@
                 "type": "ClassDeclaration",
                 "id": {
                     "type": "Identifier",
-                    "name": "ClassWithPrivateField"
+                    "name": "ClassWithPrivateField",
+                    "loc": null
                 },
                 "body": {
                     "type": "ClassBody",
@@ -18,21 +19,25 @@
                                 "type": "PrivateName",
                                 "id": {
                                     "type": "Identifier",
-                                    "name": "privateField"
-                                }
+                                    "name": "privateField",
+                                    "loc": null
+                                },
+                                "loc": null
                             },
                             "value": null,
                             "computed": false,
                             "static": false,
                             "declare": false,
-                            "override": false
+                            "override": false,
+                            "loc": null
                         },
                         {
                             "type": "ClassMethod",
                             "kind": "constructor",
                             "key": {
                                 "type": "Identifier",
-                                "name": "constructor"
+                                "name": "constructor",
+                                "loc": null
                             },
                             "params": [],
                             "body": {
@@ -46,32 +51,40 @@
                                             "left": {
                                                 "type": "MemberExpression",
                                                 "object": {
-                                                    "type": "ThisExpression"
+                                                    "type": "ThisExpression",
+                                                    "loc": null
                                                 },
                                                 "property": {
                                                     "type": "PrivateName",
                                                     "id": {
                                                         "type": "Identifier",
-                                                        "name": "privateField"
+                                                        "name": "privateField",
+                                                        "loc": null
                                                     },
                                                     "trailingComments": [],
                                                     "leadingComments": [],
-                                                    "innerComments": []
+                                                    "innerComments": [],
+                                                    "loc": null
                                                 },
                                                 "computed": false,
-                                                "optional": false
+                                                "optional": false,
+                                                "loc": null
                                             },
                                             "right": {
                                                 "type": "NumericLiteral",
                                                 "value": 5,
                                                 "raw": "5",
+                                                "loc": null,
                                                 "extra": {
                                                     "raw": "5"
                                                 }
-                                            }
-                                        }
+                                            },
+                                            "loc": null
+                                        },
+                                        "loc": null
                                     }
-                                ]
+                                ],
+                                "loc": null
                             },
                             "computed": false,
                             "static": false,
@@ -80,9 +93,11 @@
                             "trailingComments": [],
                             "leadingComments": [],
                             "innerComments": [],
+                            "loc": null,
                             "expression": false
                         }
-                    ]
+                    ],
+                    "loc": null
                 },
                 "superClass": null,
                 "implements": [
@@ -90,14 +105,18 @@
                         "type": "TSExpressionWithTypeArguments",
                         "expression": {
                             "type": "Identifier",
-                            "name": "B"
-                        }
+                            "name": "B",
+                            "loc": null
+                        },
+                        "loc": null
                     }
-                ]
+                ],
+                "loc": null
             }
         ],
         "sourceType": "script",
-        "directives": []
+        "directives": [],
+        "loc": null
     },
     "comments": []
 }

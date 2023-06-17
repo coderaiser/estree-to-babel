@@ -92,7 +92,8 @@
                                 },
                                 "id": {
                                     "type": "Identifier",
-                                    "name": "hello"
+                                    "name": "hello",
+                                    "loc": null
                                 }
                             },
                             "value": {

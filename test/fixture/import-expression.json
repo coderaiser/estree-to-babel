@@ -33,7 +33,8 @@
                     "type": "CallExpression",
                     "callee": {
                         "type": "Identifier",
-                        "name": "import"
+                        "name": "import",
+                        "loc": null
                     },
                     "arguments": [
                         {
@@ -59,7 +60,8 @@
                     ],
                     "trailingComments": [],
                     "leadingComments": [],
-                    "innerComments": []
+                    "innerComments": [],
+                    "loc": null
                 }
             }
         ],

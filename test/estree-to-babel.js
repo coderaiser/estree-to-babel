@@ -29,23 +29,23 @@ const test = extend({
     },
 });
 
-const parse = (source) => {
+const parse = (source, locations = true) => {
     return espree.parse(source, {
         sourceType: 'module',
         ecmaVersion: 2022,
-        loc: true,
+        loc: locations,
         comment: true,
     });
 };
 
-const acornParse = (source) => {
+const acornParse = (source, locations = true) => {
     const {Parser} = require('acorn');
     const stage3 = require('acorn-stage3');
     
     const parser = Parser.extend(stage3);
     
     return parser.parse(source, {
-        locations: true,
+        locations,
         comment: true,
         ecmaVersion: 2022,
         sourceType: 'module',
@@ -68,6 +68,7 @@ const fixture = {
     ast: {
         property: readJSON('property.json'),
         objectMethod: readJSON('object-method.json'),
+        objectMethodNoLoc: readJSON('object-method-no-loc.json'),
         stringLiteral: readJSON('string-literal.json'),
         numericLiteral: readJSON('numeric-literal.json'),
         nullLiteral: readJSON('null-literal.json'),
@@ -135,6 +136,16 @@ test('estree-to-babel: object-method', (t) => {
     update('object-method', result);
     
     t.jsonEqual(result, fixture.ast.objectMethod);
+    t.end();
+});
+
+test('estree-to-babel: object-method without loc', (t) => {
+    const ast = parse(fixture.js.objectMethod, false);
+    const result = estreeToBabel(ast);
+    
+    update('object-method-no-loc', result);
+    
+    t.jsonEqual(result, fixture.ast.objectMethodNoLoc);
     t.end();
 });
 

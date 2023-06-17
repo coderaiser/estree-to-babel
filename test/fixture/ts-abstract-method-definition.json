@@ -7,7 +7,8 @@
                 "type": "ClassDeclaration",
                 "id": {
                     "type": "Identifier",
-                    "name": "Base"
+                    "name": "Base",
+                    "loc": null
                 },
                 "body": {
                     "type": "ClassBody",
@@ -16,12 +17,14 @@
                             "type": "TSDeclareMethod",
                             "key": {
                                 "type": "Identifier",
-                                "name": "getName"
+                                "name": "getName",
+                                "loc": null
                             },
                             "computed": false,
                             "static": false,
                             "kind": "method",
                             "override": false,
+                            "loc": null,
                             "abstract": true,
                             "generator": false,
                             "async": false,
@@ -30,20 +33,25 @@
                             "returnType": {
                                 "type": "TSTypeAnnotation",
                                 "typeAnnotation": {
-                                    "type": "TSStringKeyword"
-                                }
+                                    "type": "TSStringKeyword",
+                                    "loc": null
+                                },
+                                "loc": null
                             },
                             "trailingComments": [],
                             "leadingComments": [],
                             "innerComments": []
                         }
-                    ]
+                    ],
+                    "loc": null
                 },
-                "superClass": null
+                "superClass": null,
+                "loc": null
             }
         ],
         "sourceType": "script",
-        "directives": []
+        "directives": [],
+        "loc": null
     },
     "comments": []
 }

@@ -7,7 +7,8 @@
                 "type": "ClassDeclaration",
                 "id": {
                     "type": "Identifier",
-                    "name": "ClassWithPrivateField"
+                    "name": "ClassWithPrivateField",
+                    "loc": null
                 },
                 "body": {
                     "type": "ClassBody",
@@ -18,25 +19,30 @@
                                 "type": "PrivateName",
                                 "id": {
                                     "type": "Identifier",
-                                    "name": "privateField"
-                                }
+                                    "name": "privateField",
+                                    "loc": null
+                                },
+                                "loc": null
                             },
                             "value": null,
                             "computed": false,
                             "static": false,
                             "declare": false,
-                            "override": false
+                            "override": false,
+                            "loc": null
                         },
                         {
                             "type": "ClassProperty",
                             "key": {
                                 "type": "Identifier",
-                                "name": "pubplicField"
+                                "name": "pubplicField",
+                                "loc": null
                             },
                             "value": {
                                 "type": "NumericLiteral",
                                 "value": 5,
                                 "raw": "5",
+                                "loc": null,
                                 "extra": {
                                     "raw": "5"
                                 }
@@ -44,9 +50,11 @@
                             "computed": false,
                             "static": false,
                             "declare": false,
-                            "override": false
+                            "override": false,
+                            "loc": null
                         }
-                    ]
+                    ],
+                    "loc": null
                 },
                 "superClass": null,
                 "implements": [
@@ -54,14 +62,18 @@
                         "type": "TSExpressionWithTypeArguments",
                         "expression": {
                             "type": "Identifier",
-                            "name": "B"
-                        }
+                            "name": "B",
+                            "loc": null
+                        },
+                        "loc": null
                     }
-                ]
+                ],
+                "loc": null
             }
         ],
         "sourceType": "script",
-        "directives": []
+        "directives": [],
+        "loc": null
     },
     "comments": []
 }
