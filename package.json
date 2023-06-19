@@ -41,7 +41,7 @@
     "c8": "^7.6.0",
     "coveralls": "^3.0.0",
     "eslint": "^8.0.0-beta.1",
-    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-n": "^16.0.0",
     "eslint-plugin-putout": "^17.7.0",
     "espree": "^9.0.0",
     "estree-util-attach-comments": "^2.0.0",
