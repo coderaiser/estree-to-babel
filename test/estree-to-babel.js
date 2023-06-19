@@ -1,10 +1,7 @@
 'use strict';
 
 const {join} = require('path');
-const {
-    readFileSync,
-    writeFileSync,
-} = require('fs');
+const {readFileSync, writeFileSync} = require('fs');
 
 const {extend} = require('supertape');
 const espree = require('espree');
@@ -70,6 +67,7 @@ const update = (a, json) => {
 
 const readJS = (a) => readFileSync(join(`${fixtureDir}/${a}`), 'utf8');
 const readJSON = (a) => require(`${fixtureDir}/${a}`);
+
 const fixture = {
     ast: {
         property: readJSON('property.json'),
@@ -257,11 +255,9 @@ test('estree-to-babel: class method: babel.parse', (t) => {
 
 test('estree-to-babel: class private method: babel.parse', (t) => {
     const ast = babel.parse(fixture.js.classPrivateMethod, {
-        plugins: [
-            'estree',
-            'classPrivateMethods',
-        ],
+        plugins: ['estree', 'classPrivateMethods'],
     });
+    
     const result = estreeToBabel(ast);
     
     update('class-private-method', result);
@@ -278,6 +274,7 @@ test('estree-to-babel: babel.parse: strict mode', (t) => {
             'classPrivateProperties',
         ],
     });
+    
     const result = estreeToBabel(ast);
     
     update('strict-mode', result);
@@ -395,4 +392,3 @@ test('estree-to-babel: parse: TSAbstractMethodDefinition', (t) => {
     t.jsonEqual(result, fixture.ast.tsAbstractMethodDefinition);
     t.end();
 });
-
