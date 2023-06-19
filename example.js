@@ -16,4 +16,3 @@ traverse(ast, {
         'a';
     },
 });
-

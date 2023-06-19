@@ -12,4 +12,3 @@ export default {
     'report': () => 'c8 report --reporter=lcov',
     'fixture': async () => `UPDATE=1 ${await run('test')}`,
 };
-
