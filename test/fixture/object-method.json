@@ -368,8 +368,22 @@
                             },
                             "properties": [
                                 {
-                                    "type": "ObjectMethod",
-                                    "kind": "method",
+                                    "type": "ObjectProperty",
+                                    "start": 124,
+                                    "end": 146,
+                                    "loc": {
+                                        "start": {
+                                            "line": 9,
+                                            "column": 4
+                                        },
+                                        "end": {
+                                            "line": 9,
+                                            "column": 26
+                                        }
+                                    },
+                                    "method": false,
+                                    "shorthand": false,
+                                    "computed": false,
                                     "key": {
                                         "type": "StringLiteral",
                                         "start": 124,
@@ -390,41 +404,43 @@
                                             "raw": "'parse'"
                                         }
                                     },
-                                    "params": [],
-                                    "body": {
-                                        "type": "BlockStatement",
-                                        "start": 144,
+                                    "value": {
+                                        "type": "FunctionExpression",
+                                        "start": 133,
                                         "end": 146,
                                         "loc": {
                                             "start": {
                                                 "line": 9,
-                                                "column": 24
+                                                "column": 13
                                             },
                                             "end": {
                                                 "line": 9,
                                                 "column": 26
                                             }
                                         },
-                                        "body": []
-                                    },
-                                    "computed": false,
-                                    "generator": false,
-                                    "async": false,
-                                    "trailingComments": [],
-                                    "leadingComments": [],
-                                    "innerComments": [],
-                                    "id": null,
-                                    "method": true,
-                                    "loc": {
-                                        "start": {
-                                            "line": 9,
-                                            "column": 4
-                                        },
-                                        "end": {
-                                            "line": 9,
-                                            "column": 26
+                                        "id": null,
+                                        "expression": false,
+                                        "generator": false,
+                                        "async": false,
+                                        "params": [],
+                                        "body": {
+                                            "type": "BlockStatement",
+                                            "start": 144,
+                                            "end": 146,
+                                            "loc": {
+                                                "start": {
+                                                    "line": 9,
+                                                    "column": 24
+                                                },
+                                                "end": {
+                                                    "line": 9,
+                                                    "column": 26
+                                                }
+                                            },
+                                            "body": []
                                         }
-                                    }
+                                    },
+                                    "kind": "init"
                                 }
                             ]
                         }
