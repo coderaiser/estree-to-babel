@@ -2,112 +2,75 @@
     "type": "File",
     "program": {
         "type": "Program",
-        "start": 0,
-        "end": 149,
+        "sourceType": "script",
         "body": [
             {
                 "type": "VariableDeclaration",
-                "start": 0,
-                "end": 100,
+                "kind": "const",
                 "declarations": [
                     {
                         "type": "VariableDeclarator",
-                        "start": 6,
-                        "end": 99,
                         "id": {
                             "type": "Identifier",
-                            "start": 6,
-                            "end": 12,
                             "name": "parser"
                         },
                         "init": {
                             "type": "ObjectExpression",
-                            "start": 15,
-                            "end": 99,
                             "properties": [
                                 {
                                     "type": "ObjectProperty",
-                                    "start": 21,
-                                    "end": 32,
-                                    "method": false,
-                                    "shorthand": false,
-                                    "computed": false,
                                     "key": {
                                         "type": "Identifier",
-                                        "start": 21,
-                                        "end": 22,
                                         "name": "x"
                                     },
                                     "value": {
                                         "type": "StringLiteral",
-                                        "start": 24,
-                                        "end": 32,
                                         "value": "string",
-                                        "raw": "'string'",
-                                        "extra": {
-                                            "raw": "'string'"
-                                        }
+                                        "extra": {}
                                     },
-                                    "kind": "init"
+                                    "kind": "init",
+                                    "computed": false,
+                                    "method": false,
+                                    "shorthand": false
                                 },
                                 {
                                     "type": "ObjectMethod",
                                     "kind": "method",
                                     "key": {
                                         "type": "Identifier",
-                                        "start": 38,
-                                        "end": 43,
                                         "name": "parse"
                                     },
                                     "params": [
                                         {
                                             "type": "Identifier",
-                                            "start": 44,
-                                            "end": 50,
                                             "name": "source"
                                         }
                                     ],
                                     "body": {
                                         "type": "BlockStatement",
-                                        "start": 52,
-                                        "end": 96,
                                         "body": [
                                             {
                                                 "type": "ReturnStatement",
-                                                "start": 62,
-                                                "end": 90,
                                                 "argument": {
                                                     "type": "CallExpression",
-                                                    "start": 69,
-                                                    "end": 89,
                                                     "callee": {
                                                         "type": "MemberExpression",
-                                                        "start": 69,
-                                                        "end": 81,
                                                         "object": {
                                                             "type": "Identifier",
-                                                            "start": 69,
-                                                            "end": 75,
                                                             "name": "cherow"
                                                         },
+                                                        "computed": false,
                                                         "property": {
                                                             "type": "Identifier",
-                                                            "start": 76,
-                                                            "end": 81,
                                                             "name": "parse"
-                                                        },
-                                                        "computed": false,
-                                                        "optional": false
+                                                        }
                                                     },
                                                     "arguments": [
                                                         {
                                                             "type": "Identifier",
-                                                            "start": 82,
-                                                            "end": 88,
                                                             "name": "source"
                                                         }
-                                                    ],
-                                                    "optional": false
+                                                    ]
                                                 }
                                             }
                                         ]
@@ -125,67 +88,50 @@
                             ]
                         }
                     }
-                ],
-                "kind": "const"
+                ]
             },
             {
                 "type": "VariableDeclaration",
-                "start": 102,
-                "end": 149,
+                "kind": "const",
                 "declarations": [
                     {
                         "type": "VariableDeclarator",
-                        "start": 108,
-                        "end": 148,
                         "id": {
                             "type": "Identifier",
-                            "start": 108,
-                            "end": 115,
                             "name": "parser2"
                         },
                         "init": {
                             "type": "ObjectExpression",
-                            "start": 118,
-                            "end": 148,
                             "properties": [
                                 {
-                                    "type": "ObjectMethod",
-                                    "kind": "method",
+                                    "type": "ObjectProperty",
                                     "key": {
                                         "type": "StringLiteral",
-                                        "start": 124,
-                                        "end": 131,
                                         "value": "parse",
-                                        "raw": "'parse'",
-                                        "extra": {
-                                            "raw": "'parse'"
-                                        }
+                                        "extra": {}
                                     },
-                                    "params": [],
-                                    "body": {
-                                        "type": "BlockStatement",
-                                        "start": 144,
-                                        "end": 146,
-                                        "body": []
+                                    "value": {
+                                        "type": "FunctionExpression",
+                                        "id": null,
+                                        "params": [],
+                                        "body": {
+                                            "type": "BlockStatement",
+                                            "body": []
+                                        },
+                                        "async": false,
+                                        "generator": false
                                     },
+                                    "kind": "init",
                                     "computed": false,
-                                    "generator": false,
-                                    "async": false,
-                                    "trailingComments": [],
-                                    "leadingComments": [],
-                                    "innerComments": [],
-                                    "id": null,
-                                    "method": true,
-                                    "loc": null
+                                    "method": false,
+                                    "shorthand": false
                                 }
                             ]
                         }
                     }
-                ],
-                "kind": "const"
+                ]
             }
         ],
-        "sourceType": "module",
         "directives": []
     },
     "comments": []

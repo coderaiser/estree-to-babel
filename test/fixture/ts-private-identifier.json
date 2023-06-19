@@ -7,17 +7,7 @@
                 "type": "ClassDeclaration",
                 "id": {
                     "type": "Identifier",
-                    "name": "ClassWithPrivateField",
-                    "loc": {
-                        "start": {
-                            "line": 1,
-                            "column": 6
-                        },
-                        "end": {
-                            "line": 1,
-                            "column": 27
-                        }
-                    }
+                    "name": "ClassWithPrivateField"
                 },
                 "body": {
                     "type": "ClassBody",
@@ -28,61 +18,21 @@
                                 "type": "PrivateName",
                                 "id": {
                                     "type": "Identifier",
-                                    "name": "privateField",
-                                    "loc": {
-                                        "start": {
-                                            "line": 2,
-                                            "column": 2
-                                        },
-                                        "end": {
-                                            "line": 2,
-                                            "column": 15
-                                        }
-                                    }
-                                },
-                                "loc": {
-                                    "start": {
-                                        "line": 2,
-                                        "column": 2
-                                    },
-                                    "end": {
-                                        "line": 2,
-                                        "column": 15
-                                    }
+                                    "name": "privateField"
                                 }
                             },
                             "value": null,
                             "computed": false,
                             "static": false,
                             "declare": false,
-                            "override": false,
-                            "loc": {
-                                "start": {
-                                    "line": 2,
-                                    "column": 2
-                                },
-                                "end": {
-                                    "line": 2,
-                                    "column": 16
-                                }
-                            }
+                            "override": false
                         },
                         {
                             "type": "ClassMethod",
                             "kind": "constructor",
                             "key": {
                                 "type": "Identifier",
-                                "name": "constructor",
-                                "loc": {
-                                    "start": {
-                                        "line": 3,
-                                        "column": 2
-                                    },
-                                    "end": {
-                                        "line": 3,
-                                        "column": 13
-                                    }
-                                }
+                                "name": "constructor"
                             },
                             "params": [],
                             "body": {
@@ -96,112 +46,32 @@
                                             "left": {
                                                 "type": "MemberExpression",
                                                 "object": {
-                                                    "type": "ThisExpression",
-                                                    "loc": {
-                                                        "start": {
-                                                            "line": 4,
-                                                            "column": 4
-                                                        },
-                                                        "end": {
-                                                            "line": 4,
-                                                            "column": 8
-                                                        }
-                                                    }
+                                                    "type": "ThisExpression"
                                                 },
                                                 "property": {
                                                     "type": "PrivateName",
                                                     "id": {
                                                         "type": "Identifier",
-                                                        "name": "privateField",
-                                                        "loc": {
-                                                            "start": {
-                                                                "line": 4,
-                                                                "column": 9
-                                                            },
-                                                            "end": {
-                                                                "line": 4,
-                                                                "column": 22
-                                                            }
-                                                        }
-                                                    },
-                                                    "loc": {
-                                                        "start": {
-                                                            "line": 4,
-                                                            "column": 9
-                                                        },
-                                                        "end": {
-                                                            "line": 4,
-                                                            "column": 22
-                                                        }
+                                                        "name": "privateField"
                                                     },
                                                     "trailingComments": [],
                                                     "leadingComments": [],
                                                     "innerComments": []
                                                 },
                                                 "computed": false,
-                                                "optional": false,
-                                                "loc": {
-                                                    "start": {
-                                                        "line": 4,
-                                                        "column": 4
-                                                    },
-                                                    "end": {
-                                                        "line": 4,
-                                                        "column": 22
-                                                    }
-                                                }
+                                                "optional": false
                                             },
                                             "right": {
                                                 "type": "NumericLiteral",
                                                 "value": 5,
                                                 "raw": "5",
-                                                "loc": {
-                                                    "start": {
-                                                        "line": 4,
-                                                        "column": 25
-                                                    },
-                                                    "end": {
-                                                        "line": 4,
-                                                        "column": 26
-                                                    }
-                                                },
                                                 "extra": {
                                                     "raw": "5"
                                                 }
-                                            },
-                                            "loc": {
-                                                "start": {
-                                                    "line": 4,
-                                                    "column": 4
-                                                },
-                                                "end": {
-                                                    "line": 4,
-                                                    "column": 26
-                                                }
-                                            }
-                                        },
-                                        "loc": {
-                                            "start": {
-                                                "line": 4,
-                                                "column": 4
-                                            },
-                                            "end": {
-                                                "line": 4,
-                                                "column": 27
                                             }
                                         }
                                     }
-                                ],
-                                "loc": {
-                                    "start": {
-                                        "line": 3,
-                                        "column": 16
-                                    },
-                                    "end": {
-                                        "line": 5,
-                                        "column": 3
-                                    }
-                                }
+                                ]
                             },
                             "computed": false,
                             "static": false,
@@ -210,83 +80,23 @@
                             "trailingComments": [],
                             "leadingComments": [],
                             "innerComments": [],
-                            "loc": {
-                                "start": {
-                                    "line": 3,
-                                    "column": 2
-                                },
-                                "end": {
-                                    "line": 5,
-                                    "column": 3
-                                }
-                            },
                             "expression": false
                         }
-                    ],
-                    "loc": {
-                        "start": {
-                            "line": 1,
-                            "column": 40
-                        },
-                        "end": {
-                            "line": 6,
-                            "column": 1
-                        }
-                    }
+                    ]
                 },
                 "superClass": null,
-                "loc": {
-                    "start": {
-                        "line": 1,
-                        "column": 0
-                    },
-                    "end": {
-                        "line": 6,
-                        "column": 1
-                    }
-                },
                 "implements": [
                     {
                         "type": "TSExpressionWithTypeArguments",
                         "expression": {
                             "type": "Identifier",
-                            "name": "B",
-                            "loc": {
-                                "start": {
-                                    "line": 1,
-                                    "column": 39
-                                },
-                                "end": {
-                                    "line": 1,
-                                    "column": 40
-                                }
-                            }
-                        },
-                        "loc": {
-                            "start": {
-                                "line": 1,
-                                "column": 39
-                            },
-                            "end": {
-                                "line": 1,
-                                "column": 40
-                            }
+                            "name": "B"
                         }
                     }
                 ]
             }
         ],
         "sourceType": "script",
-        "loc": {
-            "start": {
-                "line": 1,
-                "column": 0
-            },
-            "end": {
-                "line": 7,
-                "column": 0
-            }
-        },
         "directives": []
     },
     "comments": []

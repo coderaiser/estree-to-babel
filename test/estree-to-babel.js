@@ -6,6 +6,7 @@ const {readFileSync, writeFileSync} = require('fs');
 const {extend} = require('supertape');
 const espree = require('espree');
 const babel = require('@babel/parser');
+const meriyah = require('meriyah');
 const tsEstree = require('@typescript-eslint/typescript-estree');
 
 const estreeToBabel = require('..');
@@ -26,32 +27,26 @@ const test = extend({
     },
 });
 
-const parse = (source, locations = true) => {
+const parse = (source) => {
     return espree.parse(source, {
         sourceType: 'module',
         ecmaVersion: 2022,
-        loc: locations,
+        loc: true,
         comment: true,
     });
 };
 
-const acornParse = (source, locations = true) => {
+const acornParse = (source) => {
     const {Parser} = require('acorn');
     const stage3 = require('acorn-stage3');
     
     const parser = Parser.extend(stage3);
     
     return parser.parse(source, {
-        locations,
+        locations: true,
         comment: true,
         ecmaVersion: 2022,
         sourceType: 'module',
-    });
-};
-
-const tsParse = (source, locations = true) => {
-    return tsEstree.parse(source, {
-        loc: locations,
     });
 };
 
@@ -143,8 +138,8 @@ test('estree-to-babel: object-method', (t) => {
     t.end();
 });
 
-test('estree-to-babel: object-method without loc', (t) => {
-    const ast = parse(fixture.js.objectMethod, false);
+test('estree-to-babel: meriyah.parse: object-method without loc', (t) => {
+    const ast = meriyah.parse(fixture.js.objectMethod);
     const result = estreeToBabel(ast);
     
     update('object-method-no-loc', result);
@@ -344,7 +339,7 @@ test('estree-to-babel: parse: ImportDeclaration: assertions', (t) => {
 });
 
 test('estree-to-babel: parse: TSClassImplements', (t) => {
-    const ast = tsParse(fixture.js.tsClassImplements);
+    const ast = tsEstree.parse(fixture.js.tsClassImplements);
     const result = estreeToBabel(ast);
     
     update('ts-class-implements', result);
@@ -354,7 +349,7 @@ test('estree-to-babel: parse: TSClassImplements', (t) => {
 });
 
 test('estree-to-babel: parse: PropertyDefinition', (t) => {
-    const ast = tsParse(fixture.js.tsPropertyDefinition);
+    const ast = tsEstree.parse(fixture.js.tsPropertyDefinition);
     const result = estreeToBabel(ast);
     
     update('ts-property-definition', result);
@@ -364,7 +359,7 @@ test('estree-to-babel: parse: PropertyDefinition', (t) => {
 });
 
 test('estree-to-babel: parse: PrivateIdentifier', (t) => {
-    const ast = tsParse(fixture.js.tsPrivateIdentifier);
+    const ast = tsEstree.parse(fixture.js.tsPrivateIdentifier);
     const result = estreeToBabel(ast);
     
     update('ts-private-identifier', result);
@@ -374,7 +369,7 @@ test('estree-to-babel: parse: PrivateIdentifier', (t) => {
 });
 
 test('estree-to-babel: parse: InterfaceHeritage', (t) => {
-    const ast = tsParse(fixture.js.tsInterfaceHeritage);
+    const ast = tsEstree.parse(fixture.js.tsInterfaceHeritage);
     const result = estreeToBabel(ast);
     
     update('ts-interface-heritage', result);
@@ -384,7 +379,7 @@ test('estree-to-babel: parse: InterfaceHeritage', (t) => {
 });
 
 test('estree-to-babel: parse: TSAbstractMethodDefinition', (t) => {
-    const ast = tsParse(fixture.js.tsAbstractMethodDefinition);
+    const ast = tsEstree.parse(fixture.js.tsAbstractMethodDefinition);
     const result = estreeToBabel(ast);
     
     update('ts-abstract-method-definition', result);

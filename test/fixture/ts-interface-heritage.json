@@ -7,41 +7,11 @@
                 "type": "TSInterfaceDeclaration",
                 "body": {
                     "type": "TSInterfaceBody",
-                    "body": [],
-                    "loc": {
-                        "start": {
-                            "line": 1,
-                            "column": 26
-                        },
-                        "end": {
-                            "line": 2,
-                            "column": 1
-                        }
-                    }
+                    "body": []
                 },
                 "id": {
                     "type": "Identifier",
-                    "name": "x",
-                    "loc": {
-                        "start": {
-                            "line": 1,
-                            "column": 10
-                        },
-                        "end": {
-                            "line": 1,
-                            "column": 11
-                        }
-                    }
-                },
-                "loc": {
-                    "start": {
-                        "line": 1,
-                        "column": 0
-                    },
-                    "end": {
-                        "line": 2,
-                        "column": 1
-                    }
+                    "name": "x"
                 },
                 "extends": [
                     {
@@ -50,82 +20,22 @@
                             "type": "TSQualifiedName",
                             "computed": false,
                             "optional": false,
-                            "loc": {
-                                "start": {
-                                    "line": 1,
-                                    "column": 20
-                                },
-                                "end": {
-                                    "line": 1,
-                                    "column": 25
-                                }
-                            },
                             "left": {
                                 "type": "TSQualifiedName",
                                 "computed": false,
                                 "optional": false,
-                                "loc": {
-                                    "start": {
-                                        "line": 1,
-                                        "column": 20
-                                    },
-                                    "end": {
-                                        "line": 1,
-                                        "column": 23
-                                    }
-                                },
                                 "left": {
                                     "type": "Identifier",
-                                    "name": "y",
-                                    "loc": {
-                                        "start": {
-                                            "line": 1,
-                                            "column": 20
-                                        },
-                                        "end": {
-                                            "line": 1,
-                                            "column": 21
-                                        }
-                                    }
+                                    "name": "y"
                                 },
                                 "right": {
                                     "type": "Identifier",
-                                    "name": "z",
-                                    "loc": {
-                                        "start": {
-                                            "line": 1,
-                                            "column": 22
-                                        },
-                                        "end": {
-                                            "line": 1,
-                                            "column": 23
-                                        }
-                                    }
+                                    "name": "z"
                                 }
                             },
                             "right": {
                                 "type": "Identifier",
-                                "name": "m",
-                                "loc": {
-                                    "start": {
-                                        "line": 1,
-                                        "column": 24
-                                    },
-                                    "end": {
-                                        "line": 1,
-                                        "column": 25
-                                    }
-                                }
-                            }
-                        },
-                        "loc": {
-                            "start": {
-                                "line": 1,
-                                "column": 20
-                            },
-                            "end": {
-                                "line": 1,
-                                "column": 25
+                                "name": "m"
                             }
                         }
                     }
@@ -133,16 +43,6 @@
             }
         ],
         "sourceType": "script",
-        "loc": {
-            "start": {
-                "line": 1,
-                "column": 0
-            },
-            "end": {
-                "line": 3,
-                "column": 0
-            }
-        },
         "directives": []
     },
     "comments": []
