@@ -32,8 +32,7 @@
                 "expression": {
                     "type": "CallExpression",
                     "callee": {
-                        "type": "Identifier",
-                        "name": "import"
+                        "type": "Import"
                     },
                     "arguments": [
                         {
