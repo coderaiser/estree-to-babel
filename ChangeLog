@@ -1,3 +1,17 @@
+2023.06.19, v5.1.0
+
+fix:
+- 2416323 only convert object methods instead of all function expressions (#13)
+- a1858c4 rename stype to type (#11)
+
+feature:
+- 95c2fb1 estree-to-babel: Import instead of Identifier in CallExpression used instead of ImportExpression
+- 53d28c7 package: @typescript-eslint/typescript-estree v5.59.11
+- b92be36 package: typescript v5.1.3
+- 1a7ace0 package: eslint-plugin-n v16.0.0
+- 7641e41 package: putout v29.15.0
+- a65526b package: eslint-plugin-putout v17.7.0
+
 2022.09.08, v5.0.1
 
 feature:
