@@ -1,3 +1,11 @@
+2023.06.20, v5.2.0
+
+fix:
+- 4761331 missing loc (#14)
+
+feature:
+- 04f7587 convert-import-to-call: add loc
+
 2023.06.19, v5.1.0
 
 fix:
