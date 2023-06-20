@@ -1,4 +1,5 @@
 {
+    "printer": "putout",
     "match": {
         "example.js": {
             "remove-console": "off",
@@ -9,4 +10,3 @@
         "test/fixture"
     ]
 }
-

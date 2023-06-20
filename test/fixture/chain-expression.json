@@ -162,7 +162,7 @@
                             "name": "baz"
                         },
                         "init": {
-                            "type": "CallExpression",
+                            "type": "OptionalCallExpression",
                             "start": 34,
                             "end": 41,
                             "loc": {
@@ -193,7 +193,6 @@
                             },
                             "arguments": [],
                             "optional": true,
-                            "stype": "OptionalCallExpression",
                             "trailingComments": [],
                             "leadingComments": [],
                             "innerComments": []

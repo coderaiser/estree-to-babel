@@ -33,7 +33,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a [l
 - `ClassPrivateMethod`;
 - `ClassPrivateName` stores name as `Identifier` in `id` field;
 - `ClassPrivateProperty` instead of `FieldDefinition`;
-- `CallExpression` instead of `ImportExpression`;
+- `CallExpression` whose callee is an `Import` node instead of `ImportExpression`;
 - `OptionalMemberExpression` and `OptionalCallExpression` instead of `ChainExpression`;
 - `ImportDeclaration` and `ExportNamedDeclaration` has `assertions`;
 - etc...

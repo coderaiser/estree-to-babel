@@ -1,0 +1,140 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "sourceType": "script",
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "kind": "const",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "parser"
+                        },
+                        "init": {
+                            "type": "ObjectExpression",
+                            "properties": [
+                                {
+                                    "type": "ObjectProperty",
+                                    "key": {
+                                        "type": "Identifier",
+                                        "name": "x"
+                                    },
+                                    "value": {
+                                        "type": "StringLiteral",
+                                        "value": "string",
+                                        "extra": {}
+                                    },
+                                    "kind": "init",
+                                    "computed": false,
+                                    "method": false,
+                                    "shorthand": false
+                                },
+                                {
+                                    "type": "ObjectMethod",
+                                    "kind": "method",
+                                    "key": {
+                                        "type": "Identifier",
+                                        "name": "parse"
+                                    },
+                                    "params": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "source"
+                                        }
+                                    ],
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "ReturnStatement",
+                                                "argument": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "MemberExpression",
+                                                        "object": {
+                                                            "type": "Identifier",
+                                                            "name": "cherow"
+                                                        },
+                                                        "computed": false,
+                                                        "property": {
+                                                            "type": "Identifier",
+                                                            "name": "parse"
+                                                        }
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "Identifier",
+                                                            "name": "source"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ],
+                                        "directives": []
+                                    },
+                                    "computed": false,
+                                    "generator": false,
+                                    "async": false,
+                                    "trailingComments": [],
+                                    "leadingComments": [],
+                                    "innerComments": [],
+                                    "id": null,
+                                    "method": true,
+                                    "loc": null
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "VariableDeclaration",
+                "kind": "const",
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "id": {
+                            "type": "Identifier",
+                            "name": "parser2"
+                        },
+                        "init": {
+                            "type": "ObjectExpression",
+                            "properties": [
+                                {
+                                    "type": "ObjectProperty",
+                                    "key": {
+                                        "type": "StringLiteral",
+                                        "value": "parse",
+                                        "extra": {}
+                                    },
+                                    "value": {
+                                        "type": "FunctionExpression",
+                                        "id": null,
+                                        "params": [],
+                                        "body": {
+                                            "type": "BlockStatement",
+                                            "body": [],
+                                            "directives": []
+                                        },
+                                        "async": false,
+                                        "generator": false
+                                    },
+                                    "kind": "init",
+                                    "computed": false,
+                                    "method": false,
+                                    "shorthand": false
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "directives": []
+    },
+    "comments": []
+}

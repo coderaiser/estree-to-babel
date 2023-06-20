@@ -1,14 +1,12 @@
 'use strict';
 
 const {join} = require('path');
-const {
-    readFileSync,
-    writeFileSync,
-} = require('fs');
+const {readFileSync, writeFileSync} = require('fs');
 
 const {extend} = require('supertape');
 const espree = require('espree');
 const babel = require('@babel/parser');
+const meriyah = require('meriyah');
 const tsEstree = require('@typescript-eslint/typescript-estree');
 
 const estreeToBabel = require('..');
@@ -64,10 +62,12 @@ const update = (a, json) => {
 
 const readJS = (a) => readFileSync(join(`${fixtureDir}/${a}`), 'utf8');
 const readJSON = (a) => require(`${fixtureDir}/${a}`);
+
 const fixture = {
     ast: {
         property: readJSON('property.json'),
         objectMethod: readJSON('object-method.json'),
+        objectMethodNoLoc: readJSON('object-method-no-loc.json'),
         stringLiteral: readJSON('string-literal.json'),
         numericLiteral: readJSON('numeric-literal.json'),
         nullLiteral: readJSON('null-literal.json'),
@@ -135,6 +135,16 @@ test('estree-to-babel: object-method', (t) => {
     update('object-method', result);
     
     t.jsonEqual(result, fixture.ast.objectMethod);
+    t.end();
+});
+
+test('estree-to-babel: meriyah.parse: object-method without loc', (t) => {
+    const ast = meriyah.parse(fixture.js.objectMethod);
+    const result = estreeToBabel(ast);
+    
+    update('object-method-no-loc', result);
+    
+    t.jsonEqual(result, fixture.ast.objectMethodNoLoc);
     t.end();
 });
 
@@ -240,11 +250,9 @@ test('estree-to-babel: class method: babel.parse', (t) => {
 
 test('estree-to-babel: class private method: babel.parse', (t) => {
     const ast = babel.parse(fixture.js.classPrivateMethod, {
-        plugins: [
-            'estree',
-            'classPrivateMethods',
-        ],
+        plugins: ['estree', 'classPrivateMethods'],
     });
+    
     const result = estreeToBabel(ast);
     
     update('class-private-method', result);
@@ -261,6 +269,7 @@ test('estree-to-babel: babel.parse: strict mode', (t) => {
             'classPrivateProperties',
         ],
     });
+    
     const result = estreeToBabel(ast);
     
     update('strict-mode', result);
@@ -378,4 +387,3 @@ test('estree-to-babel: parse: TSAbstractMethodDefinition', (t) => {
     t.jsonEqual(result, fixture.ast.tsAbstractMethodDefinition);
     t.end();
 });
-

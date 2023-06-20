@@ -32,8 +32,17 @@
                 "expression": {
                     "type": "CallExpression",
                     "callee": {
-                        "type": "Identifier",
-                        "name": "import"
+                        "type": "Import",
+                        "loc": {
+                            "start": {
+                                "line": 1,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 6
+                            }
+                        }
                     },
                     "arguments": [
                         {
@@ -57,6 +66,16 @@
                             }
                         }
                     ],
+                    "loc": {
+                        "start": {
+                            "line": 1,
+                            "column": 0
+                        },
+                        "end": {
+                            "line": 1,
+                            "column": 11
+                        }
+                    },
                     "trailingComments": [],
                     "leadingComments": [],
                     "innerComments": []
