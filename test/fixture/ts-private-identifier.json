@@ -71,7 +71,8 @@
                                             }
                                         }
                                     }
-                                ]
+                                ],
+                                "directives": []
                             },
                             "computed": false,
                             "static": false,

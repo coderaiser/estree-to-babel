@@ -73,7 +73,8 @@
                                                     ]
                                                 }
                                             }
-                                        ]
+                                        ],
+                                        "directives": []
                                     },
                                     "computed": false,
                                     "generator": false,
@@ -116,7 +117,8 @@
                                         "params": [],
                                         "body": {
                                             "type": "BlockStatement",
-                                            "body": []
+                                            "body": [],
+                                            "directives": []
                                         },
                                         "async": false,
                                         "generator": false
