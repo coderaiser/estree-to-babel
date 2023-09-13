@@ -1,11 +1,12 @@
 'use strict';
 
+const process = require('process');
 const {join} = require('path');
 const {readFileSync, writeFileSync} = require('fs');
 
 const {extend} = require('supertape');
 const espree = require('espree');
-const babel = require('@babel/parser');
+const babel = require('@putout/babel');
 const meriyah = require('meriyah');
 const tsEstree = require('@typescript-eslint/typescript-estree');
 

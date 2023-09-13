@@ -2,7 +2,7 @@
 
 const cherow = require('espree');
 const toBabel = require('.');
-const traverse = require('@babel/traverse').default;
+const {traverse} = require('@putout/babel');
 
 const ast = toBabel(cherow.parse(`
     const f = ({a}) => a;

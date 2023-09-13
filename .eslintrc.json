@@ -4,7 +4,7 @@
     },
     "extends": [
         "plugin:n/recommended",
-        "plugin:putout/recommended"
+        "plugin:putout/safe+align"
     ],
     "plugins": [
         "n",

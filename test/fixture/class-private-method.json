@@ -82,33 +82,8 @@
                             "kind": "method",
                             "key": {
                                 "type": "PrivateName",
-                                "start": 18,
-                                "end": 22,
-                                "loc": {
-                                    "start": {
-                                        "line": 2,
-                                        "column": 4
-                                    },
-                                    "end": {
-                                        "line": 2,
-                                        "column": 8
-                                    }
-                                },
                                 "id": {
                                     "type": "Identifier",
-                                    "start": 19,
-                                    "end": 22,
-                                    "loc": {
-                                        "start": {
-                                            "line": 2,
-                                            "column": 5
-                                        },
-                                        "end": {
-                                            "line": 2,
-                                            "column": 8
-                                        },
-                                        "identifierName": "log"
-                                    },
                                     "name": "log"
                                 }
                             },
