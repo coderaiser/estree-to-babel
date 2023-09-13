@@ -33,7 +33,7 @@
     "espree"
   ],
   "devDependencies": {
-    "@typescript-eslint/typescript-estree": "^5.59.11",
+    "@typescript-eslint/typescript-estree": "^6.7.0",
     "acorn": "^8.0.1",
     "acorn-stage3": "^4.0.0",
     "c8": "^8.0.0",
