@@ -1,3 +1,15 @@
+2023.09.13, v7.0.0
+
+feature:
+- 6401ca6 set-directives
+- 75a7650 package: @typescript-eslint/typescript-estree v6.7.0
+- 67c5c4d estree-to-babel: drop support of Babel < 8
+- 1a13346 package: eslint-plugin-putout v19.6.0
+- 8ae6b3f package: putout v31.8.5
+- 79fe1aa package: nodemon v3.0.1
+- 2cffcc3 package: estree-util-attach-comments v3.0.0
+- 4a63c63 use babel 8
+
 2023.07.08, v6.0.0
 
 feature:
