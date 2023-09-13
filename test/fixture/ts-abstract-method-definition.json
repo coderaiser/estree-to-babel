@@ -5,23 +5,24 @@
         "body": [
             {
                 "type": "ClassDeclaration",
-                "id": {
-                    "type": "Identifier",
-                    "name": "Base"
-                },
+                "abstract": false,
                 "body": {
                     "type": "ClassBody",
                     "body": [
                         {
                             "type": "TSDeclareMethod",
+                            "computed": false,
+                            "decorators": [],
                             "key": {
                                 "type": "Identifier",
-                                "name": "getName"
+                                "decorators": [],
+                                "name": "getName",
+                                "optional": false
                             },
-                            "computed": false,
-                            "static": false,
                             "kind": "method",
+                            "optional": false,
                             "override": false,
+                            "static": false,
                             "abstract": true,
                             "generator": false,
                             "async": false,
@@ -39,6 +40,15 @@
                         }
                     ]
                 },
+                "declare": false,
+                "decorators": [],
+                "id": {
+                    "type": "Identifier",
+                    "decorators": [],
+                    "name": "Base",
+                    "optional": false
+                },
+                "implements": [],
                 "superClass": null
             }
         ],

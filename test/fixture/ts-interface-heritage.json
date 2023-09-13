@@ -9,10 +9,7 @@
                     "type": "TSInterfaceBody",
                     "body": []
                 },
-                "id": {
-                    "type": "Identifier",
-                    "name": "x"
-                },
+                "declare": false,
                 "extends": [
                     {
                         "type": "TSExpressionWithTypeArguments",
@@ -26,20 +23,32 @@
                                 "optional": false,
                                 "left": {
                                     "type": "Identifier",
-                                    "name": "y"
+                                    "decorators": [],
+                                    "name": "y",
+                                    "optional": false
                                 },
                                 "right": {
                                     "type": "Identifier",
-                                    "name": "z"
+                                    "decorators": [],
+                                    "name": "z",
+                                    "optional": false
                                 }
                             },
                             "right": {
                                 "type": "Identifier",
-                                "name": "m"
+                                "decorators": [],
+                                "name": "m",
+                                "optional": false
                             }
                         }
                     }
-                ]
+                ],
+                "id": {
+                    "type": "Identifier",
+                    "decorators": [],
+                    "name": "x",
+                    "optional": false
+                }
             }
         ],
         "sourceType": "script",

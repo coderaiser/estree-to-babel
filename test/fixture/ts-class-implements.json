@@ -5,24 +5,31 @@
         "body": [
             {
                 "type": "ClassDeclaration",
-                "id": {
-                    "type": "Identifier",
-                    "name": "A"
-                },
+                "abstract": false,
                 "body": {
                     "type": "ClassBody",
                     "body": []
                 },
-                "superClass": null,
+                "declare": false,
+                "decorators": [],
+                "id": {
+                    "type": "Identifier",
+                    "decorators": [],
+                    "name": "A",
+                    "optional": false
+                },
                 "implements": [
                     {
                         "type": "TSExpressionWithTypeArguments",
                         "expression": {
                             "type": "Identifier",
-                            "name": "B"
+                            "decorators": [],
+                            "name": "B",
+                            "optional": false
                         }
                     }
-                ]
+                ],
+                "superClass": null
             }
         ],
         "sourceType": "script",

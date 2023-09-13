@@ -5,10 +5,7 @@
         "body": [
             {
                 "type": "ClassDeclaration",
-                "id": {
-                    "type": "Identifier",
-                    "name": "ClassWithPrivateField"
-                },
+                "abstract": false,
                 "body": {
                     "type": "ClassBody",
                     "body": [
@@ -24,14 +21,20 @@
                             "value": null,
                             "computed": false,
                             "static": false,
+                            "readonly": false,
+                            "decorators": [],
                             "declare": false,
-                            "override": false
+                            "override": false,
+                            "optional": false,
+                            "definite": false
                         },
                         {
                             "type": "ClassProperty",
                             "key": {
                                 "type": "Identifier",
-                                "name": "pubplicField"
+                                "decorators": [],
+                                "name": "pubplicField",
+                                "optional": false
                             },
                             "value": {
                                 "type": "NumericLiteral",
@@ -43,21 +46,35 @@
                             },
                             "computed": false,
                             "static": false,
+                            "readonly": false,
+                            "decorators": [],
                             "declare": false,
-                            "override": false
+                            "override": false,
+                            "optional": false,
+                            "definite": false
                         }
                     ]
                 },
-                "superClass": null,
+                "declare": false,
+                "decorators": [],
+                "id": {
+                    "type": "Identifier",
+                    "decorators": [],
+                    "name": "ClassWithPrivateField",
+                    "optional": false
+                },
                 "implements": [
                     {
                         "type": "TSExpressionWithTypeArguments",
                         "expression": {
                             "type": "Identifier",
-                            "name": "B"
+                            "decorators": [],
+                            "name": "B",
+                            "optional": false
                         }
                     }
-                ]
+                ],
+                "superClass": null
             }
         ],
         "sourceType": "script",
