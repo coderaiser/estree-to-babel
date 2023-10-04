@@ -35,7 +35,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a [l
 - `ClassPrivateProperty` instead of `FieldDefinition`;
 - `CallExpression` whose callee is an `Import` node instead of `ImportExpression`;
 - `OptionalMemberExpression` and `OptionalCallExpression` instead of `ChainExpression`;
-- `ImportDeclaration` and `ExportNamedDeclaration` has `attributes and `phase`;
+- `ImportDeclaration` and `ExportNamedDeclaration` has `attributes`;
 - etc...
 
 Also [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has differences with [`typescript-estree`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/typescript-estree):
