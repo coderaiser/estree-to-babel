@@ -329,7 +329,7 @@ test('estree-to-babel: parse: ChainExpression', (t) => {
     t.end();
 });
 
-test('estree-to-babel: parse: ImportDeclaration: assertions', (t) => {
+test('estree-to-babel: parse: ImportDeclaration: attributes', (t) => {
     const ast = acornParse(fixture.js.importDeclaration);
     const result = estreeToBabel(ast);
     

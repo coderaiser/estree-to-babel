@@ -82,7 +82,7 @@
                         "raw": "'a'"
                     }
                 },
-                "assertions": []
+                "attributes": []
             }
         ],
         "sourceType": "module",

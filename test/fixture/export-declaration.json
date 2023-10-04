@@ -96,7 +96,7 @@
                 },
                 "specifiers": [],
                 "source": null,
-                "assertions": []
+                "attributes": []
             }
         ],
         "sourceType": "module",
