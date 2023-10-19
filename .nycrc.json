@@ -5,6 +5,7 @@
         "example.js",
         "**/*.spec.js",
         "**/fixture",
+        "**/*.d.ts",
         "test",
         ".*.{js,mjs}"
     ],
