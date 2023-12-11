@@ -30,42 +30,9 @@
                     }
                 },
                 "expression": {
-                    "type": "CallExpression",
-                    "callee": {
-                        "type": "Import",
-                        "loc": {
-                            "start": {
-                                "line": 1,
-                                "column": 0
-                            },
-                            "end": {
-                                "line": 1,
-                                "column": 6
-                            }
-                        }
-                    },
-                    "arguments": [
-                        {
-                            "type": "StringLiteral",
-                            "start": 7,
-                            "end": 10,
-                            "loc": {
-                                "start": {
-                                    "line": 1,
-                                    "column": 7
-                                },
-                                "end": {
-                                    "line": 1,
-                                    "column": 10
-                                }
-                            },
-                            "value": "x",
-                            "raw": "'x'",
-                            "extra": {
-                                "raw": "'x'"
-                            }
-                        }
-                    ],
+                    "type": "ImportExpression",
+                    "start": 0,
+                    "end": 11,
                     "loc": {
                         "start": {
                             "line": 1,
@@ -76,9 +43,26 @@
                             "column": 11
                         }
                     },
-                    "trailingComments": [],
-                    "leadingComments": [],
-                    "innerComments": []
+                    "source": {
+                        "type": "StringLiteral",
+                        "start": 7,
+                        "end": 10,
+                        "loc": {
+                            "start": {
+                                "line": 1,
+                                "column": 7
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 10
+                            }
+                        },
+                        "value": "x",
+                        "raw": "'x'",
+                        "extra": {
+                            "raw": "'x'"
+                        }
+                    }
                 }
             }
         ],
