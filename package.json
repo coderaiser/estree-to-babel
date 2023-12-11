@@ -49,7 +49,7 @@
     "meriyah": "^4.3.7",
     "nodemon": "^3.0.1",
     "putout": "^32.2.0",
-    "supertape": "^8.0.1",
+    "supertape": "^9.0.0",
     "typescript": "^5.1.3"
   },
   "license": "MIT",
