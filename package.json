@@ -48,7 +48,7 @@
     "madrun": "^9.0.0",
     "meriyah": "^4.3.7",
     "nodemon": "^3.0.1",
-    "putout": "^32.2.0",
+    "putout": "^34.0.6",
     "supertape": "^9.0.0",
     "typescript": "^5.1.3"
   },
