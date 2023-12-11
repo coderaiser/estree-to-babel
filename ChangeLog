@@ -1,3 +1,14 @@
+2023.12.11, v9.0.0
+
+feature:
+- c275cb3 do not convert ImportExpression since Babel 8 supports it (https://github.com/babel/babel/releases/tag/v8.0.0-alpha.5)
+- fb2d4f5 estree-to-babel: madrun v10.0.0
+- 91834e6 estree-to-babel: eslint-plugin-putout v22.0.0
+- 7b3f321 estree-to-babel: @putout/babel v2.0.0
+- 945de59 estree-to-babel: putout v34.0.6
+- 195dafb estree-to-babel: supertape v9.0.0
+- 5aeba80 drop support of node < 18
+
 2023.10.19, v8.1.1
 
 fix:
