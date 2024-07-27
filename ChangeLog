@@ -1,3 +1,18 @@
+2024.07.27, v9.1.0
+
+feature:
+- 0719881 estree-to-babel: add support of JSXText
+- 718c2c3 estree-to-babel: check-dts v0.8.0
+- 292119c estree-to-babel: eslint v9.8.0
+- a75bbcd estree-to-babel: meriyah v5.0.0
+- b089c37 estree-to-babel: putout v36.0.3
+- 4088742 estree-to-babel: c8 v10.1.2
+- a920a1a estree-to-babel: @typescript-eslint/typescript-estree v7.0.2
+- 71b70e0 estree-to-babel: putout v35.4.2
+- a1ee0a9 estree-to-babel: supertape v10.1.0
+- 2c8fb85 estree-to-babel: c8 v9.1.0
+- 06b65bc estree-to-babel: espree v10.0.1
+
 2023.12.11, v9.0.0
 
 feature:
