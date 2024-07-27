@@ -1,8 +1,8 @@
 'use strict';
 
-const process = require('process');
-const {join} = require('path');
-const {readFileSync, writeFileSync} = require('fs');
+const process = require('node:process');
+const {join} = require('node:path');
+const {readFileSync, writeFileSync} = require('node:fs');
 
 const {extend} = require('supertape');
 const espree = require('espree');
