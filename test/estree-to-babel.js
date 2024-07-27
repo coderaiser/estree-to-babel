@@ -16,6 +16,9 @@ const json = (a) => JSON.parse(JSON.stringify(a));
 
 const test = extend({
     jsonEqual: (operator) => (actual, expected, message = 'should jsonEqual') => {
+        if (isUpdate)
+            return operator.pass('fixturues updated');
+        
         const {is, output} = operator.deepEqual(json(actual), json(expected));
         
         return {
@@ -28,12 +31,13 @@ const test = extend({
     },
 });
 
-const parse = (source) => {
+const parse = (source, options) => {
     return espree.parse(source, {
         sourceType: 'module',
         ecmaVersion: 2022,
         loc: true,
         comment: true,
+        ...options,
     });
 };
 
@@ -66,6 +70,7 @@ const readJSON = (a) => require(`${fixtureDir}/${a}`);
 
 const fixture = {
     ast: {
+        jsx: readJSON('jsx.json'),
         property: readJSON('property.json'),
         objectMethod: readJSON('object-method.json'),
         objectMethodNoLoc: readJSON('object-method-no-loc.json'),
@@ -93,6 +98,7 @@ const fixture = {
         tsAbstractMethodDefinition: readJSON('ts-abstract-method-definition.json'),
     },
     js: {
+        jsx: readJS('jsx.js'),
         property: readJS('property.js'),
         objectMethod: readJS('object-method.js'),
         stringLiteral: readJS('string-literal.js'),
@@ -386,5 +392,20 @@ test('estree-to-babel: parse: TSAbstractMethodDefinition', (t) => {
     update('ts-abstract-method-definition', result);
     
     t.jsonEqual(result, fixture.ast.tsAbstractMethodDefinition);
+    t.end();
+});
+
+test('estree-to-babel: parse: JSXText', (t) => {
+    const ast = parse(fixture.js.jsx, {
+        ecmaFeatures: {
+            jsx: true,
+        },
+    });
+    
+    const result = estreeToBabel(ast);
+    
+    update('jsx', result);
+    
+    t.jsonEqual(result, fixture.ast.jsx);
     t.end();
 });
