@@ -39,7 +39,7 @@
     "c8": "^10.1.2",
     "check-dts": "^0.8.0",
     "eslint": "^9.8.0",
-    "eslint-plugin-putout": "^22.0.0",
+    "eslint-plugin-putout": "^23.1.0",
     "espree": "^10.0.1",
     "estree-util-attach-comments": "^3.0.0",
     "madrun": "^10.0.0",
