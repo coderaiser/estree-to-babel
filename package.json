@@ -43,7 +43,7 @@
     "espree": "^10.0.1",
     "estree-util-attach-comments": "^3.0.0",
     "madrun": "^10.0.0",
-    "meriyah": "^5.0.0",
+    "meriyah": "^6.0.2",
     "nodemon": "^3.0.1",
     "putout": "^36.0.3",
     "supertape": "^10.1.0",
