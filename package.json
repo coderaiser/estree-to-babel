@@ -8,7 +8,7 @@
   "main": "lib/estree-to-babel.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/coderaiser/estree-to-babel.git"
+    "url": "git+https://github.com/coderaiser/estree-to-babel.git"
   },
   "scripts": {
     "test": "madrun test",
