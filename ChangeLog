@@ -1,3 +1,11 @@
+2024.10.26, v10.0.0
+
+feature:
+- bca2f3b estree-to-babel: align with Babel v8
+- 8f79b86 estree-to-babel: @typescript-eslint/typescript-estree v8.11.0
+- 9cdd290 estree-to-babel: eslint-plugin-putout v23.1.0
+- 531eb70 estree-to-babel: meriyah v6.0.2
+
 2024.07.27, v9.1.0
 
 feature:
