@@ -11,6 +11,10 @@
                     "body": [
                         {
                             "type": "ClassPrivateProperty",
+                            "computed": false,
+                            "declare": false,
+                            "decorators": [],
+                            "definite": false,
                             "key": {
                                 "type": "PrivateName",
                                 "id": {
@@ -18,15 +22,11 @@
                                     "name": "privateField"
                                 }
                             },
-                            "value": null,
-                            "computed": false,
-                            "static": false,
-                            "readonly": false,
-                            "decorators": [],
-                            "declare": false,
-                            "override": false,
                             "optional": false,
-                            "definite": false
+                            "override": false,
+                            "readonly": false,
+                            "static": false,
+                            "value": null
                         },
                         {
                             "type": "ClassMethod",
@@ -48,9 +48,11 @@
                                             "operator": "=",
                                             "left": {
                                                 "type": "MemberExpression",
+                                                "computed": false,
                                                 "object": {
                                                     "type": "ThisExpression"
                                                 },
+                                                "optional": false,
                                                 "property": {
                                                     "type": "PrivateName",
                                                     "id": {
@@ -60,14 +62,12 @@
                                                     "trailingComments": [],
                                                     "leadingComments": [],
                                                     "innerComments": []
-                                                },
-                                                "computed": false,
-                                                "optional": false
+                                                }
                                             },
                                             "right": {
                                                 "type": "NumericLiteral",
-                                                "value": 5,
                                                 "raw": "5",
+                                                "value": 5,
                                                 "extra": {
                                                     "raw": "5"
                                                 }
@@ -98,7 +98,7 @@
                 },
                 "implements": [
                     {
-                        "type": "TSExpressionWithTypeArguments",
+                        "type": "TSClassImplements",
                         "expression": {
                             "type": "Identifier",
                             "decorators": [],

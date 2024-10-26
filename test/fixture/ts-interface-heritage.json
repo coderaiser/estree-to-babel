@@ -12,7 +12,7 @@
                 "declare": false,
                 "extends": [
                     {
-                        "type": "TSExpressionWithTypeArguments",
+                        "type": "TSInterfaceHeritage",
                         "expression": {
                             "type": "TSQualifiedName",
                             "computed": false,

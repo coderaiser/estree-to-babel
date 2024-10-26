@@ -20,7 +20,7 @@
                 },
                 "implements": [
                     {
-                        "type": "TSExpressionWithTypeArguments",
+                        "type": "TSClassImplements",
                         "expression": {
                             "type": "Identifier",
                             "decorators": [],
