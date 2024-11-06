@@ -1,4 +1,4 @@
-import toBabel from '..';
+import toBabel = require('..');
 
 // THROWS Expected 1-2 arguments, but got 0.
 toBabel();
