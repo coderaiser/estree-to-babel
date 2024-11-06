@@ -5,6 +5,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NAME: estree-to-babel
     strategy:
       matrix:
         node-version:
@@ -26,7 +28,14 @@ jobs:
       - name: Install
         run: bun i -f --no-save
       - name: Lint
-        run: redrun lint
+        run: redrun fix:lint
+      - name: Commit fixes
+        continue-on-error: true
+        uses: EndBug/add-and-commit@v9
+        with:
+          fetch: --force
+          message: "chore: ${{ env.NAME }}: actions: lint ☘️"
+          pull: --rebase --autostash
       - name: Coverage
         run: redrun coverage report
       - name: Coveralls
