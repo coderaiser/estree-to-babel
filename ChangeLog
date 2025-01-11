@@ -1,3 +1,9 @@
+2025.01.12, v10.1.0
+
+feature:
+- 006983f estree-to-babel: @putout/babel v3.0.0
+- ac3aaf2 estree-to-babel: putout v37.13.0
+
 2024.11.06, v10.0.1
 
 fix:
