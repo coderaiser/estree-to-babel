@@ -23,7 +23,7 @@
     "fixture": "madrun fixture"
   },
   "dependencies": {
-    "@putout/babel": "^2.0.0"
+    "@putout/babel": "^3.0.0"
   },
   "keywords": [
     "ast",
