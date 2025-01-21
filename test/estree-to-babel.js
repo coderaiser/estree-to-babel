@@ -34,7 +34,7 @@ const test = extend({
 const parse = (source, options) => {
     return espree.parse(source, {
         sourceType: 'module',
-        ecmaVersion: 2022,
+        ecmaVersion: 2024,
         loc: true,
         comment: true,
         ...options,
@@ -50,8 +50,9 @@ const acornParse = (source) => {
     return parser.parse(source, {
         locations: true,
         comment: true,
-        ecmaVersion: 2022,
+        ecmaVersion: 2024,
         sourceType: 'module',
+        preserveParens: true,
     });
 };
 
@@ -70,10 +71,12 @@ const readJSON = (a) => require(`${fixtureDir}/${a}`);
 
 const fixture = {
     ast: {
+        bigInt: readJSON('big-int.json'),
         jsx: readJSON('jsx.json'),
         property: readJSON('property.json'),
         objectMethod: readJSON('object-method.json'),
         objectMethodNoLoc: readJSON('object-method-no-loc.json'),
+        parens: readJSON('parens.json'),
         stringLiteral: readJSON('string-literal.json'),
         numericLiteral: readJSON('numeric-literal.json'),
         nullLiteral: readJSON('null-literal.json'),
@@ -89,7 +92,6 @@ const fixture = {
         importExpression: readJSON('import-expression.json'),
         exportDeclaration: readJSON('export-declaration.json'),
         importDeclaration: readJSON('import-declaration.json'),
-        bigInt: readJSON('big-int.json'),
         chainExpression: readJSON('chain-expression.json'),
         tsClassImplements: readJSON('ts-class-implements.json'),
         tsPropertyDefinition: readJSON('ts-property-definition.json'),
@@ -98,9 +100,11 @@ const fixture = {
         tsAbstractMethodDefinition: readJSON('ts-abstract-method-definition.json'),
     },
     js: {
+        bigInt: readJS('big-int.js'),
         jsx: readJS('jsx.js'),
         property: readJS('property.js'),
         objectMethod: readJS('object-method.js'),
+        parens: readJS('parens.js'),
         stringLiteral: readJS('string-literal.js'),
         numericLiteral: readJS('numeric-literal.js'),
         nullLiteral: readJS('null-literal.js'),
@@ -115,7 +119,6 @@ const fixture = {
         importExpression: readJS('import-expression.js'),
         importDeclaration: readJS('import-declaration.js'),
         exportDeclaration: readJS('export-declaration.js'),
-        bigInt: readJS('big-int.js'),
         chainExpression: readJS('chain-expression.js'),
         tsClassImplements: readJS('ts-class-implements.ts'),
         tsPropertyDefinition: readJS('ts-property-definition.ts'),
@@ -407,5 +410,15 @@ test('estree-to-babel: parse: JSXText', (t) => {
     update('jsx', result);
     
     t.jsonEqual(result, fixture.ast.jsx);
+    t.end();
+});
+
+test('estree-to-babel: parse: ParenthesizedExpression', (t) => {
+    const ast = acornParse(fixture.js.parens);
+    const result = estreeToBabel(ast);
+    
+    update('parens', result);
+    
+    t.jsonEqual(result, fixture.ast.parens);
     t.end();
 });

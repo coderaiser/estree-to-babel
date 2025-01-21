@@ -36,6 +36,7 @@ The thing is [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has a [l
 - `OptionalMemberExpression` and `OptionalCallExpression` instead of `ChainExpression`;
 - `ImportDeclaration` and `ExportNamedDeclaration` has `attributes`;
 - `JSXText` has `extra` field;
+- `extra.parenthesized=true` instead of `ParenthesizedExpression`;
 - etc...
 
 Also [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has differences with [`typescript-estree`](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/typescript-estree):
