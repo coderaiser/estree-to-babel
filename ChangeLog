@@ -1,3 +1,8 @@
+2025.01.21, v10.2.0
+
+feature:
+- d7f348a estree-to-babel: ParenthesizedExpression
+
 2025.01.12, v10.1.0
 
 feature:
