@@ -62,7 +62,8 @@
                         "extra": {
                             "raw": "'x'"
                         }
-                    }
+                    },
+                    "options": null
                 }
             }
         ],

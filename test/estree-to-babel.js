@@ -34,7 +34,7 @@ const test = extend({
 const parse = (source, options) => {
     return espree.parse(source, {
         sourceType: 'module',
-        ecmaVersion: 2024,
+        ecmaVersion: 2025,
         loc: true,
         comment: true,
         ...options,
@@ -50,7 +50,7 @@ const acornParse = (source) => {
     return parser.parse(source, {
         locations: true,
         comment: true,
-        ecmaVersion: 2024,
+        ecmaVersion: 2025,
         sourceType: 'module',
         preserveParens: true,
     });
@@ -93,6 +93,7 @@ const fixture = {
         exportDeclaration: readJSON('export-declaration.json'),
         importDeclaration: readJSON('import-declaration.json'),
         chainExpression: readJSON('chain-expression.json'),
+        optionalCallExpression: readJSON('optional-call-expression.json'),
         tsClassImplements: readJSON('ts-class-implements.json'),
         tsPropertyDefinition: readJSON('ts-property-definition.json'),
         tsPrivateIdentifier: readJSON('ts-private-identifier.json'),
@@ -120,6 +121,7 @@ const fixture = {
         importDeclaration: readJS('import-declaration.js'),
         exportDeclaration: readJS('export-declaration.js'),
         chainExpression: readJS('chain-expression.js'),
+        optionalCallExpression: readJS('optional-call-expression.js'),
         tsClassImplements: readJS('ts-class-implements.ts'),
         tsPropertyDefinition: readJS('ts-property-definition.ts'),
         tsPrivateIdentifier: readJS('ts-private-identifier.ts'),
@@ -420,5 +422,15 @@ test('estree-to-babel: parse: ParenthesizedExpression', (t) => {
     update('parens', result);
     
     t.jsonEqual(result, fixture.ast.parens);
+    t.end();
+});
+
+test('estree-to-babel: parse: OptionalCallExpression', (t) => {
+    const ast = acornParse(fixture.js.optionalCallExpression);
+    const result = estreeToBabel(ast);
+    
+    update('optional-call-expression', result);
+    
+    t.jsonEqual(result, fixture.ast.optionalCallExpression);
     t.end();
 });
