@@ -1,0 +1,251 @@
+{
+    "type": "File",
+    "start": 0,
+    "end": 44,
+    "loc": {
+        "start": {
+            "line": 1,
+            "column": 0,
+            "index": 0
+        },
+        "end": {
+            "line": 2,
+            "column": 0,
+            "index": 44
+        }
+    },
+    "errors": [],
+    "program": {
+        "type": "Program",
+        "start": 0,
+        "end": 44,
+        "loc": {
+            "start": {
+                "line": 1,
+                "column": 0,
+                "index": 0
+            },
+            "end": {
+                "line": 2,
+                "column": 0,
+                "index": 44
+            }
+        },
+        "sourceType": "script",
+        "interpreter": null,
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "start": 0,
+                "end": 43,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 0,
+                        "index": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 43,
+                        "index": 43
+                    }
+                },
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "start": 6,
+                        "end": 42,
+                        "loc": {
+                            "start": {
+                                "line": 1,
+                                "column": 6,
+                                "index": 6
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 42,
+                                "index": 42
+                            }
+                        },
+                        "id": {
+                            "type": "Identifier",
+                            "start": 6,
+                            "end": 29,
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 6,
+                                    "index": 6
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 29,
+                                    "index": 29
+                                },
+                                "identifierName": "a"
+                            },
+                            "name": "a",
+                            "typeAnnotation": {
+                                "type": "TSTypeAnnotation",
+                                "start": 7,
+                                "end": 29,
+                                "loc": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 7,
+                                        "index": 7
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 29,
+                                        "index": 29
+                                    }
+                                },
+                                "typeAnnotation": {
+                                    "type": "TSArrayType",
+                                    "start": 9,
+                                    "end": 29,
+                                    "loc": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 9,
+                                            "index": 9
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 29,
+                                            "index": 29
+                                        }
+                                    },
+                                    "elementType": {
+                                        "type": "TSUnionType",
+                                        "start": 10,
+                                        "end": 26,
+                                        "loc": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 10,
+                                                "index": 10
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 26,
+                                                "index": 26
+                                            }
+                                        },
+                                        "types": [
+                                            {
+                                                "type": "TSBooleanKeyword",
+                                                "start": 10,
+                                                "end": 17,
+                                                "loc": {
+                                                    "start": {
+                                                        "line": 1,
+                                                        "column": 10,
+                                                        "index": 10
+                                                    },
+                                                    "end": {
+                                                        "line": 1,
+                                                        "column": 17,
+                                                        "index": 17
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "TSNumberKeyword",
+                                                "start": 20,
+                                                "end": 26,
+                                                "loc": {
+                                                    "start": {
+                                                        "line": 1,
+                                                        "column": 20,
+                                                        "index": 20
+                                                    },
+                                                    "end": {
+                                                        "line": 1,
+                                                        "column": 26,
+                                                        "index": 26
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "extra": {
+                                            "parenthesized": true
+                                        },
+                                        "trailingComments": [],
+                                        "leadingComments": [],
+                                        "innerComments": []
+                                    }
+                                }
+                            }
+                        },
+                        "init": {
+                            "type": "ArrayExpression",
+                            "start": 32,
+                            "end": 42,
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 32,
+                                    "index": 32
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 42,
+                                    "index": 42
+                                }
+                            },
+                            "elements": [
+                                {
+                                    "type": "BooleanLiteral",
+                                    "start": 33,
+                                    "end": 38,
+                                    "loc": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 33,
+                                            "index": 33
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 38,
+                                            "index": 38
+                                        }
+                                    },
+                                    "value": false,
+                                    "extra": {}
+                                },
+                                {
+                                    "type": "NumericLiteral",
+                                    "start": 40,
+                                    "end": 41,
+                                    "loc": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 40,
+                                            "index": 40
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 41,
+                                            "index": 41
+                                        }
+                                    },
+                                    "extra": {
+                                        "rawValue": 1,
+                                        "raw": "1"
+                                    },
+                                    "value": 1,
+                                    "raw": "1"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "kind": "const"
+            }
+        ],
+        "directives": []
+    },
+    "comments": []
+}

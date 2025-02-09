@@ -99,6 +99,7 @@ const fixture = {
         tsPrivateIdentifier: readJSON('ts-private-identifier.json'),
         tsInterfaceHeritage: readJSON('ts-interface-heritage.json'),
         tsAbstractMethodDefinition: readJSON('ts-abstract-method-definition.json'),
+        tsParenthesizedType: readJSON('ts-parenthesized-type.json'),
     },
     js: {
         bigInt: readJS('big-int.js'),
@@ -127,6 +128,7 @@ const fixture = {
         tsPrivateIdentifier: readJS('ts-private-identifier.ts'),
         tsInterfaceHeritage: readJS('ts-interface-heritage.ts'),
         tsAbstractMethodDefinition: readJS('ts-abstract-method-definition.ts'),
+        tsParenthesizedType: readJS('ts-parenthesized-type.ts'),
     },
 };
 
@@ -422,6 +424,20 @@ test('estree-to-babel: parse: ParenthesizedExpression', (t) => {
     update('parens', result);
     
     t.jsonEqual(result, fixture.ast.parens);
+    t.end();
+});
+
+test('estree-to-babel: parse: TSParenthesizedType', (t) => {
+    const ast = babel.parse(fixture.js.tsParenthesizedType, {
+        plugins: ['typescript'],
+        createParenthesizedExpressions: true,
+    });
+    
+    const result = estreeToBabel(ast);
+    
+    update('ts-parenthesized-type', result);
+    
+    t.jsonEqual(result, fixture.ast.tsParenthesizedType);
     t.end();
 });
 

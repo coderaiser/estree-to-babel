@@ -46,6 +46,7 @@ Also [`@babel/parser`](https://babeljs.io/docs/en/babel-parser) has differences 
 - `PrivateName` instead of `PrivateIdentifier`;
 - `TSQualifiedName` instead of `MemberExpression`  in `TSInterfaceHeritage`;
 - `TSDeclaredMethod` with `abstract=true` instead of `TSAbstractMethodDefinition`;
+- `extra.parenthesized=true` instead of `TSParenthesizedType`;
 - etc...
 
 `estree-to-babel` aims to smooth this differences.
