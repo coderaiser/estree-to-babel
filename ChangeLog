@@ -1,3 +1,8 @@
+2025.02.09, v10.5.0
+
+feature:
+- f023116 estree-to-babel: add ability to disable convertParens
+
 2025.02.09, v10.4.0
 
 feature:
