@@ -1,3 +1,10 @@
+2025.02.09, v10.4.0
+
+feature:
+- c0a538d estree-to-babel: eslint-plugin-putout v24.0.2
+- 196695d estree-to-babel: putout v38.0.10
+- 4caca6d estree-to-babel: TSParenthesizedType: add
+
 2025.01.27, v10.3.0
 
 feature:
