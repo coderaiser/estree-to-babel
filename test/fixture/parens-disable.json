@@ -1,0 +1,167 @@
+{
+    "type": "File",
+    "program": {
+        "type": "Program",
+        "start": 0,
+        "end": 22,
+        "loc": {
+            "start": {
+                "line": 1,
+                "column": 0
+            },
+            "end": {
+                "line": 2,
+                "column": 0
+            }
+        },
+        "body": [
+            {
+                "type": "VariableDeclaration",
+                "start": 0,
+                "end": 21,
+                "loc": {
+                    "start": {
+                        "line": 1,
+                        "column": 0
+                    },
+                    "end": {
+                        "line": 1,
+                        "column": 21
+                    }
+                },
+                "declarations": [
+                    {
+                        "type": "VariableDeclarator",
+                        "start": 6,
+                        "end": 21,
+                        "loc": {
+                            "start": {
+                                "line": 1,
+                                "column": 6
+                            },
+                            "end": {
+                                "line": 1,
+                                "column": 21
+                            }
+                        },
+                        "id": {
+                            "type": "Identifier",
+                            "start": 6,
+                            "end": 7,
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 6
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 7
+                                }
+                            },
+                            "name": "d"
+                        },
+                        "init": {
+                            "type": "BinaryExpression",
+                            "start": 10,
+                            "end": 21,
+                            "loc": {
+                                "start": {
+                                    "line": 1,
+                                    "column": 10
+                                },
+                                "end": {
+                                    "line": 1,
+                                    "column": 21
+                                }
+                            },
+                            "left": {
+                                "type": "ParenthesizedExpression",
+                                "start": 10,
+                                "end": 17,
+                                "loc": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 10
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 17
+                                    }
+                                },
+                                "expression": {
+                                    "type": "BinaryExpression",
+                                    "start": 11,
+                                    "end": 16,
+                                    "loc": {
+                                        "start": {
+                                            "line": 1,
+                                            "column": 11
+                                        },
+                                        "end": {
+                                            "line": 1,
+                                            "column": 16
+                                        }
+                                    },
+                                    "left": {
+                                        "type": "Identifier",
+                                        "start": 11,
+                                        "end": 12,
+                                        "loc": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 11
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 12
+                                            }
+                                        },
+                                        "name": "a"
+                                    },
+                                    "operator": "+",
+                                    "right": {
+                                        "type": "Identifier",
+                                        "start": 15,
+                                        "end": 16,
+                                        "loc": {
+                                            "start": {
+                                                "line": 1,
+                                                "column": 15
+                                            },
+                                            "end": {
+                                                "line": 1,
+                                                "column": 16
+                                            }
+                                        },
+                                        "name": "b"
+                                    }
+                                }
+                            },
+                            "operator": "/",
+                            "right": {
+                                "type": "Identifier",
+                                "start": 20,
+                                "end": 21,
+                                "loc": {
+                                    "start": {
+                                        "line": 1,
+                                        "column": 20
+                                    },
+                                    "end": {
+                                        "line": 1,
+                                        "column": 21
+                                    }
+                                },
+                                "name": "c"
+                            }
+                        }
+                    }
+                ],
+                "kind": "const"
+            }
+        ],
+        "sourceType": "module",
+        "directives": []
+    },
+    "comments": []
+}

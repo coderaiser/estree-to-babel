@@ -77,6 +77,30 @@ traverse({
 });
 ```
 
+You can provide options:
+
+```js
+const cherow = require('cherow');
+const toBabel = require('estree-to-babel');
+const traverse = require('@babel/traverse').default;
+
+const options = {
+    convertParens: false,
+};
+
+const ast = toBabel(cherow.parse(`
+    (a = b)
+`), options);
+
+traverse({
+    AssignmentExpression(path) {
+        console.log(path.parentPath.type);
+        // output
+        'ParenthesizedExpression';
+    },
+});
+```
+
 ## License
 
 MIT

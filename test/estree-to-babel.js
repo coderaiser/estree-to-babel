@@ -77,6 +77,7 @@ const fixture = {
         objectMethod: readJSON('object-method.json'),
         objectMethodNoLoc: readJSON('object-method-no-loc.json'),
         parens: readJSON('parens.json'),
+        parensDisable: readJSON('parens-disable.json'),
         stringLiteral: readJSON('string-literal.json'),
         numericLiteral: readJSON('numeric-literal.json'),
         nullLiteral: readJSON('null-literal.json'),
@@ -100,6 +101,7 @@ const fixture = {
         tsInterfaceHeritage: readJSON('ts-interface-heritage.json'),
         tsAbstractMethodDefinition: readJSON('ts-abstract-method-definition.json'),
         tsParenthesizedType: readJSON('ts-parenthesized-type.json'),
+        tsParenthesizedTypeDisable: readJSON('ts-parenthesized-type-disable.json'),
     },
     js: {
         bigInt: readJS('big-int.js'),
@@ -107,6 +109,7 @@ const fixture = {
         property: readJS('property.js'),
         objectMethod: readJS('object-method.js'),
         parens: readJS('parens.js'),
+        parensDisable: readJS('parens-disable.js'),
         stringLiteral: readJS('string-literal.js'),
         numericLiteral: readJS('numeric-literal.js'),
         nullLiteral: readJS('null-literal.js'),
@@ -129,6 +132,7 @@ const fixture = {
         tsInterfaceHeritage: readJS('ts-interface-heritage.ts'),
         tsAbstractMethodDefinition: readJS('ts-abstract-method-definition.ts'),
         tsParenthesizedType: readJS('ts-parenthesized-type.ts'),
+        tsParenthesizedTypeDisable: readJS('ts-parenthesized-type-disable.ts'),
     },
 };
 
@@ -427,6 +431,18 @@ test('estree-to-babel: parse: ParenthesizedExpression', (t) => {
     t.end();
 });
 
+test('estree-to-babel: parse: ParenthesizedExpression: disable', (t) => {
+    const ast = acornParse(fixture.js.parensDisable);
+    const result = estreeToBabel(ast, {
+        convertParens: false,
+    });
+    
+    update('parens-disable', result);
+    
+    t.jsonEqual(result, fixture.ast.parensDisable);
+    t.end();
+});
+
 test('estree-to-babel: parse: TSParenthesizedType', (t) => {
     const ast = babel.parse(fixture.js.tsParenthesizedType, {
         plugins: ['typescript'],
@@ -438,6 +454,22 @@ test('estree-to-babel: parse: TSParenthesizedType', (t) => {
     update('ts-parenthesized-type', result);
     
     t.jsonEqual(result, fixture.ast.tsParenthesizedType);
+    t.end();
+});
+
+test('estree-to-babel: parse: TSParenthesizedType: disable', (t) => {
+    const ast = babel.parse(fixture.js.tsParenthesizedTypeDisable, {
+        plugins: ['typescript'],
+        createParenthesizedExpressions: true,
+    });
+    
+    const result = estreeToBabel(ast, {
+        convertParens: false,
+    });
+    
+    update('ts-parenthesized-type-disable', result);
+    
+    t.jsonEqual(result, fixture.ast.tsParenthesizedTypeDisable);
     t.end();
 });
 
