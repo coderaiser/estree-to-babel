@@ -1,3 +1,14 @@
+2025.03.31, v11.0.0
+
+feature:
+- 6fb05cb estree-to-babel: migrate to ESM
+- 7e46880 estree-to-babel: drop support of node < 20
+- 47f733e estree-to-babel: supertape v11.0.4
+- 142ff4e estree-to-babel: putout v39.6.0
+- cad8c00 estree-to-babel: madrun v11.0.0
+- 622e49f estree-to-babel: eslint-plugin-putout v26.1.0
+- 85090d7 estree-to-babel: check-dts v0.9.0
+
 2025.02.09, v10.5.0
 
 feature:
