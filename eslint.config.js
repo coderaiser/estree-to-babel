@@ -1,11 +1,12 @@
 'use strict';
 
-const {safeAlign} = require('eslint-plugin-putout/config');
+const {defineConfig} = require('eslint/config');
+const {safeAlign} = require('eslint-plugin-putout');
 
-module.exports = [
-    ...safeAlign, {
+module.exports = defineConfig([
+    safeAlign, {
         rules: {
             'no-useless-return': 'off',
         },
     },
-];
+]);
