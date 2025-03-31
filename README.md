@@ -80,15 +80,15 @@ traverse({
 You can provide options:
 
 ```js
-const cherow = require('cherow');
-const toBabel = require('estree-to-babel');
-const traverse = require('@babel/traverse').default;
+import * as cherow from 'cherow';
+import {estreeToBabel} from 'estree-to-babel';
+import traverse from '@babel/traverse';
 
 const options = {
     convertParens: false,
 };
 
-const ast = toBabel(cherow.parse(`
+const ast = estreeToBabel(cherow.parse(`
     (a = b)
 `), options);
 

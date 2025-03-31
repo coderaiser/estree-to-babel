@@ -7,7 +7,7 @@ import * as espree from 'espree';
 import babel from '@putout/babel';
 import * as meriyah from 'meriyah';
 import tsEstree from '@typescript-eslint/typescript-estree';
-import estreeToBabel from '../lib/estree-to-babel.js';
+import {estreeToBabel} from '../lib/estree-to-babel.js';
 
 const require = createRequire(import.meta.url);
 const json = (a) => JSON.parse(JSON.stringify(a));
