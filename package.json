@@ -37,7 +37,7 @@
     "acorn": "^8.0.1",
     "acorn-stage3": "^4.0.0",
     "c8": "^10.1.2",
-    "check-dts": "^0.8.0",
+    "check-dts": "^0.9.0",
     "eslint": "^9.8.0",
     "eslint-plugin-putout": "^24.0.2",
     "espree": "^10.0.1",
