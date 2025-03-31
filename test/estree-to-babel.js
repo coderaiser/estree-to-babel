@@ -1,17 +1,15 @@
-'use strict';
+import process from 'node:process';
+import {join} from 'node:path';
+import {readFileSync, writeFileSync} from 'node:fs';
+import {createRequire} from 'node:module';
+import {extend} from 'supertape';
+import * as espree from 'espree';
+import babel from '@putout/babel';
+import * as meriyah from 'meriyah';
+import tsEstree from '@typescript-eslint/typescript-estree';
+import estreeToBabel from '../lib/estree-to-babel.js';
 
-const process = require('node:process');
-const {join} = require('node:path');
-const {readFileSync, writeFileSync} = require('node:fs');
-
-const {extend} = require('supertape');
-const espree = require('espree');
-const babel = require('@putout/babel');
-const meriyah = require('meriyah');
-const tsEstree = require('@typescript-eslint/typescript-estree');
-
-const estreeToBabel = require('..');
-
+const require = createRequire(import.meta.url);
 const json = (a) => JSON.parse(JSON.stringify(a));
 
 const test = extend({
@@ -56,7 +54,7 @@ const acornParse = (source) => {
     });
 };
 
-const fixtureDir = join(__dirname, 'fixture');
+const fixtureDir = new URL('fixture', import.meta.url).pathname;
 
 const isUpdate = process.env.UPDATE;
 const update = (a, json) => {

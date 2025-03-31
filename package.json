@@ -1,7 +1,7 @@
 {
   "name": "estree-to-babel",
   "version": "10.5.0",
-  "type": "commonjs",
+  "type": "module",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "convert estree ast to babel",
   "homepage": "http://github.com/coderaiser/estree-to-babel",
