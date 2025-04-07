@@ -1,6 +1,9 @@
 {
+    "exclude": ["test/fixture"],
     "compilerOptions": {
         "module": "node18",
+        "moduleResolution": "node16",
+        "skipLibCheck": true,
         "strict": true,
         "verbatimModuleSyntax": true
     }
