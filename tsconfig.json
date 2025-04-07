@@ -1,7 +1,8 @@
 {
+    "exclude": ["test/fixture"],
     "compilerOptions": {
-        "module": "node18",
-        "strict": true,
-        "verbatimModuleSyntax": true
+        "module": "node20",
+        "skipLibCheck": true,
+        "strict": true
     }
 }
