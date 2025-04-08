@@ -1,3 +1,8 @@
+2025.04.08, v11.0.2
+
+fix:
+- 68a1461 estree-to-babel: export types (#18)
+
 2025.03.31, v11.0.1
 
 fix:
