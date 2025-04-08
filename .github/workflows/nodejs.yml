@@ -36,7 +36,7 @@ jobs:
           message: "chore: ${{ env.NAME }}: actions: lint ☘️"
           pull: --rebase --autostash
       - name: Coverage
-        run: redrun coverage report
+        run: redrun test:dts coverage report
       - name: Coveralls
         uses: coverallsapp/github-action@v2
         continue-on-error: true
