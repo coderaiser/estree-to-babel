@@ -1,3 +1,10 @@
+2025.05.29, v11.0.3
+
+feature:
+- d854a67 estree-to-babel: get back to CommonJS
+- f94cf21 estree-to-babel: eslint-plugin-putout v27.0.0
+- 82aab48 estree-to-babel: putout v40.2.6
+
 2025.04.08, v11.0.2
 
 fix:
