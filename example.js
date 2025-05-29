@@ -1,6 +1,8 @@
-import cherow from 'espree';
-import {traverse} from '@putout/babel';
-import toBabel from './index.js';
+'use strict';
+
+const cherow = require('espree');
+const {traverse} = require('@putout/babel');
+const toBabel = require('./index.js');
 
 const ast = toBabel(cherow.parse(`
     const f = ({a}) => a;
