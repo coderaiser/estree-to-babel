@@ -8,8 +8,9 @@ const espree = require('espree');
 const babel = require('@putout/babel');
 const meriyah = require('meriyah');
 const tsEstree = require('@typescript-eslint/typescript-estree');
-const {estreeToBabel} = require('../lib/estree-to-babel.js');
+
 const {JSONStringify, JSONParse} = require('json-with-bigint');
+const {estreeToBabel} = require('../lib/estree-to-babel.js');
 
 const json = (a) => JSONParse(JSONStringify(a));
 
