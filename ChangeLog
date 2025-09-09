@@ -1,3 +1,10 @@
+2025.09.09, v11.1.0
+
+feature:
+- 4f3077a estree-to-babel: eslint-plugin-putout v28.0.5
+- 1fdd485 estree-to-babel: @putout/babel v4.2.0
+- b961b21 estree-to-babel: @putout/babel v4.0.1
+
 2025.05.29, v11.0.3
 
 feature:
