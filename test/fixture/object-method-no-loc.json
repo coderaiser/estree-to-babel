@@ -63,14 +63,16 @@
                                                         "property": {
                                                             "type": "Identifier",
                                                             "name": "parse"
-                                                        }
+                                                        },
+                                                        "optional": false
                                                     },
                                                     "arguments": [
                                                         {
                                                             "type": "Identifier",
                                                             "name": "source"
                                                         }
-                                                    ]
+                                                    ],
+                                                    "optional": false
                                                 }
                                             }
                                         ],

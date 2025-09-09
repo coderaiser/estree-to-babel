@@ -9,8 +9,9 @@ const babel = require('@putout/babel');
 const meriyah = require('meriyah');
 const tsEstree = require('@typescript-eslint/typescript-estree');
 const {estreeToBabel} = require('../lib/estree-to-babel.js');
+const {JSONStringify, JSONParse} = require('json-with-bigint');
 
-const json = (a) => JSON.parse(JSON.stringify(a));
+const json = (a) => JSONParse(JSONStringify(a));
 
 const test = extend({
     jsonEqual: (operator) => (actual, expected, message = 'should jsonEqual') => {
@@ -61,7 +62,7 @@ const update = (a, json) => {
     if (!isUpdate)
         return;
     
-    writeFileSync(`${fixtureDir}/${a}.json`, JSON.stringify(json, null, 4));
+    writeFileSync(`${fixtureDir}/${a}.json`, JSONStringify(json, null, 4));
 };
 
 const readJS = (a) => readFileSync(join(`${fixtureDir}/${a}`), 'utf8');

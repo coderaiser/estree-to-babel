@@ -1,5 +1,8 @@
 {
     "printer": "putout",
+    "rules": {
+        "putout/apply-lowercase-to-node-builders": "on"
+    },
     "match": {
         "example.js": {
             "remove-console": "off",

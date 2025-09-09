@@ -127,7 +127,6 @@
                                                 },
                                                 "name": "a"
                                             },
-                                            "kind": "init",
                                             "value": {
                                                 "type": "Identifier",
                                                 "start": 12,
@@ -143,7 +142,8 @@
                                                     }
                                                 },
                                                 "name": "a"
-                                            }
+                                            },
+                                            "kind": "init"
                                         }
                                     ]
                                 }
