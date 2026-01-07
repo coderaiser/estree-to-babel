@@ -60,11 +60,11 @@ npm i estree-to-babel
 ### Example
 
 ```js
-const cherow = require('cherow');
-const toBabel = require('estree-to-babel');
-const traverse = require('@babel/traverse').default;
+import {parse} from 'cherow';
+import {estreeToBabel} from 'estree-to-babel';
+import {traverse} from '@babel/traverse';
 
-const ast = toBabel(cherow.parse(`
+const ast = estreeToBabel(parse(`
     const f = ({a}) => a;
 `));
 

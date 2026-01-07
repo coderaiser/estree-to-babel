@@ -2,16 +2,16 @@
     "type": "File",
     "program": {
         "type": "Program",
-        "start": 13,
-        "end": 31,
+        "start": 0,
+        "end": 33,
         "loc": {
             "start": {
-                "line": 2,
+                "line": 1,
                 "column": 0
             },
             "end": {
-                "line": 2,
-                "column": 18
+                "line": 4,
+                "column": 0
             }
         },
         "body": [

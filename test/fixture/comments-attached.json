@@ -2,16 +2,16 @@
     "type": "File",
     "program": {
         "type": "Program",
-        "start": 13,
-        "end": 119,
+        "start": 0,
+        "end": 120,
         "loc": {
             "start": {
-                "line": 2,
-                "column": 8
+                "line": 1,
+                "column": 0
             },
             "end": {
-                "line": 6,
-                "column": 31
+                "line": 7,
+                "column": 0
             }
         },
         "body": [
@@ -127,6 +127,28 @@
                     }
                 ],
                 "kind": "const",
+                "leadingComments": [
+                    {
+                        "type": "CommentBlock",
+                        "value": " b ",
+                        "start": 5,
+                        "end": 12,
+                        "range": [
+                            5,
+                            12
+                        ],
+                        "loc": {
+                            "start": {
+                                "line": 2,
+                                "column": 0
+                            },
+                            "end": {
+                                "line": 2,
+                                "column": 7
+                            }
+                        }
+                    }
+                ],
                 "trailingComments": [
                     {
                         "type": "CommentBlock",
