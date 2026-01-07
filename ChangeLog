@@ -1,3 +1,16 @@
+2026.01.07, v12.0.0
+
+feature:
+- 55ab109 estree-to-babel: migrate to ESM
+- c74058a drop support of node < 22
+- 708cb57 estree-to-babel: supertape v12.0.0
+- cc8a60b estree-to-babel: putout v41.6.1
+- 2a5227c estree-to-babel: meriyah v7.0.0
+- 9cef59b estree-to-babel: madrun v12.1.0
+- 7d4cded estree-to-babel: espree v11.0.0
+- 925c460 estree-to-babel: eslint-plugin-putout v29.3.0
+- 483c196 estree-to-babel: @putout/babel v5.1.2
+
 2025.09.09, v11.1.0
 
 feature:
