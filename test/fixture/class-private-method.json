@@ -211,6 +211,9 @@
                                 "directives": []
                             },
                             "static": false,
+                            "async": false,
+                            "computed": false,
+                            "generator": false,
                             "trailingComments": [],
                             "leadingComments": [],
                             "innerComments": [],
@@ -224,8 +227,7 @@
                                     "column": 5
                                 }
                             },
-                            "expression": false,
-                            "generator": false
+                            "expression": false
                         }
                     ]
                 }
