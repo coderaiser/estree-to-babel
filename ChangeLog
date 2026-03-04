@@ -1,3 +1,13 @@
+2026.03.04, v12.0.1
+
+feature:
+- 4cac5ae estree-to-babel: putout v42.0.25
+- 5785a75 estree-to-babel: madrun v13.0.0
+- dc5f5b5 estree-to-babel: eslint-plugin-putout v31.0.2
+- 54162f6 estree-to-babel: eslint v10.0.2
+- 55daa3f estree-to-babel: superc8 v12.2.4
+- cad706c estree-to-babel: eslint-plugin-putout v30.0.2
+
 2026.01.07, v12.0.0
 
 feature:
