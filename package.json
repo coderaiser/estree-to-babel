@@ -42,7 +42,7 @@
     "espree": "^11.0.0",
     "estree-util-attach-comments": "^3.0.0",
     "json-with-bigint": "^3.4.4",
-    "madrun": "^12.1.0",
+    "madrun": "^13.0.0",
     "meriyah": "^7.0.0",
     "nodemon": "^3.0.1",
     "putout": "^41.6.1",
