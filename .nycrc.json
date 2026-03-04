@@ -2,13 +2,13 @@
     "check-coverage": true,
     "all": true,
     "exclude": [
-        "example.js",
         "**/*.spec.js",
-        "**/fixture",
         "**/*.d.ts",
-        "test",
+        "**/*.config.*",
+        "**/fixture",
         ".*.{js,mjs}",
-        "**/*.config.*"
+        "example.js",
+        "test"
     ],
     "branches": 100,
     "lines": 100,

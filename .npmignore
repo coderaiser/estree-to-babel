@@ -1,8 +1,11 @@
-.*
 *.spec.js
-test
-example.js
-yarn-error.log
-
-coverage
 *.config.*
+*.log
+*.loc
+
+.*
+
+example.js
+
+test
+coverage
